@@ -15,17 +15,17 @@
     content: "";
     width: 1px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgb(0 0 0 / 20%);
     top: 0;
     bottom: 0;
     margin: auto;
   }
-  .main-nav ul.navbar-nav > li > a::after {
+  /* .main-nav ul.navbar-nav > li > a::after {
     position: absolute;
     content: "";
     width: 100%;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgb(0 0 0 / 20%);
+    border-left: 1px solid rgb(0 0 0 / 20%);
     height: 100%;
     background: rgba(255, 255, 255, 0.2);
     top: 0;
@@ -36,7 +36,7 @@
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
     opacity: 0;
-  }
+  } */
   .main-nav ul.navbar-nav > li > a:hover::after {
     opacity: 1;
   }

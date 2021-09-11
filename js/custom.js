@@ -37,8 +37,9 @@ jQuery(function ($) {
 
 	$(window).on('scroll', function () {
 
+
 		/**Fixed header**/
-		if ($(window).scrollTop() > 250) {
+		if ($(window).scrollTop() > 124) {
 			$('.is-ts-sticky').addClass('sticky fade_down_effect');
 		} else {
 			$('.is-ts-sticky').removeClass('sticky fade_down_effect');
@@ -390,4 +391,17 @@ $('.MoneyAsk').on('click', () => {
 $('.CloseBtnForMoneyAsk , .SendMessageToSendBtn').on('click', () => {
 	$('.SendMessageToInMobile').hide(300);
 	$('.SendMessageToInMobileOverllay').hide(300);
+})
+
+$('.navbar-toggler').on('click', () => {
+	$('.sideBarMenuMobile').show(300);
+	$('.overLaySideMenuMobile').show(300);
+	$('#navbarSupportedContent').show(300);
+})
+
+$('.overLaySideMenuMobile').on('click', () => {
+	$('.sideBarMenuMobile').hide(300);
+	$('.overLaySideMenuMobile').hide(300);
+	$('#navbarSupportedContent').show(300);
+
 })
