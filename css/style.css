@@ -53,6 +53,14 @@ Last Update : 1399/1/1
       format("truetype");
 }
 @font-face {
+  font-family: BYekan;
+  src: url(/fonts/B_Yekan/Yekan.ttf);
+}
+@font-face {
+  font-family: BYekanPlus;
+  src: url(/fonts/yekan/Yekan+.ttf);
+}
+@font-face {
   font-family: IRANSansfanum;
   font-style: normal;
   font-weight: bold;
@@ -693,7 +701,7 @@ Last Update : 1399/1/1
   src: url("fonts/aviny/ttf/aviny.ttf") format("truetype");
 }
 @font-face {
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
   font-style: normal;
   font-weight: bold;
   src: url("fonts/'iranyekan'/eot/'iranyekan'bold.eot");
@@ -708,7 +716,7 @@ Last Update : 1399/1/1
 }
 
 @font-face {
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
   font-style: normal;
   font-weight: 300;
   src: url("fonts/'iranyekan'/eot/'iranyekan'light.eot");
@@ -723,7 +731,7 @@ Last Update : 1399/1/1
 }
 
 @font-face {
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
   font-style: normal;
   font-weight: normal;
   src: url("fonts/'iranyekan'/eot/'iranyekan'.eot");
@@ -893,7 +901,7 @@ p {
   text-rendering: optimizeLegibility;
   direction: rtl;
   text-align: right;
-  font-family: IRANSansfanum;
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 h1,
@@ -920,13 +928,13 @@ h2 {
 h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 h4 {
   font-size: 18px;
   line-height: 28px;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 h5 {
@@ -965,7 +973,7 @@ a:visited {
 }
 
 a {
-  color: #434899;
+  color: #414998;
   -webkit-transition: all ease 0.4s;
   -o-transition: all ease 0.4s;
   transition: all ease 0.4s;
@@ -977,7 +985,7 @@ a:hover {
 }
 
 a.read-more {
-  color: #434899;
+  color: #414998;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1727,7 +1735,7 @@ ul {
 .form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid #434899;
+  border: 1px solid #414998;
 }
 
 .form-control.input-msg {
@@ -1812,7 +1820,7 @@ cite::after {
 
 /* Button */
 .btn {
-  background: #434899;
+  background: #414998;
   color: #fff;
   padding: 10px 30px;
 }
@@ -1820,7 +1828,7 @@ cite::after {
 .btn:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-color: #434899;
+  background-color: #414998;
 }
 
 .btn:hover {
@@ -1843,11 +1851,11 @@ cite::after {
 
 .btn-white.btn-primary {
   background: #fff;
-  color: #434899;
+  color: #414998;
 }
 
 .btn-primary {
-  background: #434899;
+  background: #414998;
 }
 
 .btn-dark {
@@ -1889,7 +1897,7 @@ li {
   font-family: "FontAwesome";
   content: "\f138";
   margin-left: 10px;
-  color: #434899;
+  color: #414998;
   font-size: 12px;
 }
 
@@ -1901,7 +1909,7 @@ ul.list-arrow li:before {
   font-family: "FontAwesome";
   content: "\f105";
   margin-left: 10px;
-  color: #434899;
+  color: #414998;
   font-size: 16px;
 }
 
@@ -1909,7 +1917,7 @@ ul.list-check li:before {
   font-family: "FontAwesome";
   content: "\f00c";
   margin-left: 10px;
-  color: #434899;
+  color: #414998;
   font-size: 14px;
 }
 
@@ -1966,7 +1974,7 @@ a[href^="tel"] {
 /*-- Block title --*/
 .block-title {
   letter-spacing: 0px;
-  color: #434899;
+  color: #414998;
   line-height: 25px;
   font-weight: 800;
   font-size: 16px;
@@ -1978,7 +1986,10 @@ a[href^="tel"] {
   display: inline-block;
   padding: 0 15px 0 0;
   position: relative;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
+  color: #444bb7;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .block-title .title-angle-shap::after,
@@ -1986,7 +1997,7 @@ a[href^="tel"] {
   position: absolute;
   top: 0;
   content: "";
-  background: #434899;
+  background: #414998;
   right: 0;
 }
 
@@ -2038,11 +2049,11 @@ a[href^="tel"] {
 
 /* Post title */
 .post-title {
-  font-size: 15px;
-  line-height: 24px;
-  margin: 12px 0 10px;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 12px 0 14px;
   font-weight: 600;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .post-title a {
@@ -2050,7 +2061,7 @@ a[href^="tel"] {
 }
 
 .post-title a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .text-light .post-title a {
@@ -2058,7 +2069,7 @@ a[href^="tel"] {
 }
 
 .text-light .post-title a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .post-title.title-xl {
@@ -2074,14 +2085,16 @@ a[href^="tel"] {
   margin-top: 15px;
   margin-bottom: 10px;
   font-weight: 700;
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .post-title.title-md {
-  font-size: 24px;
+  font-size: 19px;
   line-height: 28px;
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: 700;
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .post-title.title-sm {
@@ -2141,7 +2154,7 @@ a[href^="tel"] {
 }
 
 .post-meta li a.view .icon {
-  color: #434899;
+  color: #414998;
 }
 
 .post-meta .post-author a {
@@ -2150,7 +2163,7 @@ a[href^="tel"] {
 }
 
 .post-meta .post-author a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .post-meta .post-author img {
@@ -2339,8 +2352,8 @@ span.post-comment span i {
 }
 
 .owl-carousel .owl-dots .owl-dot.active span {
-  background: #434899;
-  border-color: #434899;
+  background: #414998;
+  border-color: #414998;
   height: 20px;
   border-radius: 10px;
 }
@@ -2384,14 +2397,14 @@ span.post-comment span i {
   transform: translateY(-50%);
   top: 50%;
   position: absolute;
-  background: #434899;
+  background: #414998;
   text-align: center;
   border-radius: 50%;
   opacity: 0;
 }
 
 .owl-carousel .owl-nav .owl-prev {
-  background: #434899;
+  background: #414998;
   right: -25px;
   left: auto;
 }
@@ -2443,7 +2456,7 @@ span.post-comment span i {
 }
 
 .load-more-btn .btn:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .ts-social-list {
@@ -2560,7 +2573,7 @@ span.post-comment span i {
 }
 
 .ts-social li a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .backto {
@@ -2568,7 +2581,7 @@ span.post-comment span i {
   left: 15px;
   bottom: 15px;
   z-index: 10;
-  background: #434899;
+  background: #414998;
   border-radius: 50%;
   color: #979797;
   cursor: pointer;
@@ -2599,7 +2612,7 @@ span.post-comment span i {
 }
 
 .backto:hover {
-  background: #c93b00;
+  background: #1a1e6e;
 }
 
 .breadcrumb {
@@ -2619,7 +2632,7 @@ span.post-comment span i {
 }
 
 .breadcrumb li a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .breadcrumb li:last-child i {
@@ -2655,7 +2668,7 @@ span.post-comment span i {
 .ts-pagination li a:hover,
 .ts-pagination li a.active {
   color: #fff;
-  background: #434899;
+  background: #414998;
   -webkit-box-shadow: 0px 5px 15px 0px rgba(252, 74, 0, 0.25);
   box-shadow: 0px 5px 15px 0px rgba(252, 74, 0, 0.25);
 }
@@ -2694,7 +2707,7 @@ span.post-comment span i {
 }
 
 .trending-title .tsicon {
-  color: #434899;
+  color: #414998;
 }
 
 .owl-carousel.owl-theme.trending-slide .owl-nav {
@@ -2769,7 +2782,7 @@ span.post-comment span i {
 }
 
 .top-nav li a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 /* Top social */
@@ -2836,7 +2849,7 @@ span.post-comment span i {
 }
 
 .top-bar-border ul.top-info li i {
-  color: #434899;
+  color: #414998;
 }
 
 /* =================================================
@@ -2928,7 +2941,11 @@ span.post-comment span i {
 
 /*-- Logo --*/
 .logo {
-  padding: 28px 0;
+  padding: 10px 0;
+}
+
+.logo img {
+  width: 200px;
 }
 
 /* header right */
@@ -2974,7 +2991,7 @@ ul.top-info-box > li.nav-search i {
 
 .main-nav {
   background: #fff;
-  border-top: 1px solid #434899;
+  border-top: 1px solid rgb(0 0 0 / 20%);
   min-height: 70px;
 }
 
@@ -2989,7 +3006,7 @@ ul.top-info-box > li.nav-search i {
 .navbar-toggler {
   color: #fff;
   padding: 8px 15px;
-  background: #434899;
+  background: #414998;
   position: absolute;
   top: -55px;
   z-index: 9;
@@ -3047,7 +3064,7 @@ ul.navbar-nav > li > a:focus {
 
 ul.navbar-nav > li:hover a::before,
 ul.navbar-nav > li.active a::before {
-  border-color: #434899;
+  border-color: #414998;
   opacity: 1;
   -webkit-transform: scale(1) translateZ(0);
   transform: scale(1) translateZ(0);
@@ -3140,7 +3157,7 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .dropdown-menu-large > li > ul > li.active > a {
-  color: #434899;
+  color: #414998;
 }
 
 .navbar-nav > li > .dropdown-menu > a {
@@ -3169,12 +3186,12 @@ ul.navbar-nav > li.mega-dropdown {
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > .dropdown-menu > .active > a {
   background: none;
-  color: #434899;
+  color: #414998;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  background: #434899;
+  background: #414998;
   color: #fff;
 }
 
@@ -3224,7 +3241,7 @@ ul.navbar-nav > li.mega-dropdown {
 
 .main-nav.dark-bg ul.navbar-nav > li.active,
 .main-nav.dark-bg ul.navbar-nav > li:hover {
-  background: #434899;
+  background: #414998;
 }
 
 .main-nav.dark-bg .nav-search i {
@@ -3484,7 +3501,7 @@ ul.navbar-nav > li.mega-dropdown {
   margin-left: -1px;
   border: 1px solid #dedede;
   border-left: 0;
-  color: #434899;
+  color: #414998;
   cursor: pointer;
 }
 
@@ -3553,7 +3570,7 @@ ul.navbar-nav > li.mega-dropdown {
     background: transparent;
   }
   ul.navbar-nav > li > a {
-    color: #646464;
+    color: #8c8c8c;
     padding: 0 22px;
   }
   .header.header-menu ul.navbar-nav > li.mega-dropdown,
@@ -3700,8 +3717,16 @@ ul.navbar-nav > li.mega-dropdown {
 .post-overaly-style .post-content {
   position: absolute;
   bottom: 0;
-  padding: 25px;
+  padding: 15px;
   z-index: 1;
+  width: 100%;
+  text-align: center;
+  background: rgba(217, 217, 217, 0.3);
+  background: linear-gradient(
+    178deg,
+    rgb(217 217 217 / 0%) 18%,
+    rgb(244 244 244 / 43%) 93%
+  );
 }
 
 .post-overaly-style .post-content .post-title a {
@@ -3718,7 +3743,7 @@ ul.navbar-nav > li.mega-dropdown {
   transform: scale(1.15);
 }
 
-.post-overaly-style.overlay-primary::after {
+/* .post-overaly-style.overlay-primary::after {
   background: -webkit-gradient(
     linear,
     right top,
@@ -3742,7 +3767,7 @@ ul.navbar-nav > li.mega-dropdown {
     rgba(252, 74, 0, 0.89) 100%
   );
   opacity: 0.9;
-}
+} */
 
 .post-overaly-style.overlay-primary:hover::after {
   opacity: 0.7;
@@ -3784,7 +3809,7 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .featured-tab .nav-tabs .nav-link.active .tab-head > span.tab-text-title {
-  color: #434899;
+  color: #414998;
   background: transparent;
   border: none;
 }
@@ -3796,7 +3821,7 @@ ul.navbar-nav > li.mega-dropdown {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #434899;
+  background: #414998;
   top: -5px;
   bottom: 0;
   margin: auto;
@@ -3849,7 +3874,7 @@ ul.navbar-nav > li.mega-dropdown {
 .list-post-block .list-post .post-block-style .post-content .post-title {
   margin: 5px 0;
   line-height: 17px;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .list-post-block .list-post li:last-child .post-block-style .post-thumb {
@@ -3976,7 +4001,7 @@ ul.navbar-nav > li.mega-dropdown {
 .post-tab .nav-tabs .nav-item .nav-link {
   text-transform: uppercase;
   color: #d3d3d3;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .post-tab .nav-tabs .nav-item .nav-link::after,
@@ -3984,7 +4009,7 @@ ul.navbar-nav > li.mega-dropdown {
   position: absolute;
   top: 0;
   content: "";
-  background: #434899;
+  background: #414998;
   right: 0;
   opacity: 1;
 }
@@ -3999,14 +4024,14 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .post-tab .nav-tabs .nav-item .nav-link.active::before {
-  background: #434899;
+  background: #414998;
   border-radius: 0;
   height: 12px;
   top: -6px;
 }
 
 .post-tab .nav-tabs .nav-item .nav-link.active::after {
-  background: #434899;
+  background: #414998;
   border-radius: 0;
   height: 3px;
   width: 12px;
@@ -4035,7 +4060,7 @@ ul.navbar-nav > li.mega-dropdown {
   position: absolute;
   top: 0;
   right: 12px;
-  background: #434899;
+  background: #414998;
   display: block;
   border-radius: 50%;
   color: #fff;
@@ -4068,7 +4093,7 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .ts-author a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .ts-author-comments {
@@ -4226,11 +4251,11 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .newsletter-area .newsletter-submit:hover {
-  background: #434899;
+  background: #414998;
 }
 
 .ts-footer {
-  background: #222;
+  background: #f6f7ff;
   padding-top: 70px;
   padding-bottom: 20px;
 }
@@ -4259,13 +4284,14 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .ts-footer .widget-title {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 500;
   color: #fff;
-  line-height: 28px;
+  line-height: 20px;
   padding-right: 0;
   position: relative;
   margin-bottom: 40px;
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .ts-footer .widget-title::before {
@@ -4281,29 +4307,53 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .ts-footer .AdColor {
-  color: #ffab89 !important;
+  color: #252525 !important;
 }
 
 .ts-footer .AdColor::before {
   position: absolute;
   right: 0;
-  top: 0;
-  width: 100%;
+  top: 50px;
+  width: 25%;
   height: 1px;
   bottom: 0;
   margin: auto;
   content: "";
-  background: #ffc7b0 !important;
+  background: #8c8c8cad !important;
+}
+.ts-footer .NotBorder {
+  color: #252525 !important;
+  margin-bottom: 30px;
+}
+
+.ts-footer .NotBorder::before {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  background: #8c8c8cad !important;
 }
 
 .ts-footer .widget-title span {
-  background: #222;
+  /* background: #222; */
   padding-left: 40px;
   position: relative;
 }
 
 .ts-footer .widget-content p {
-  color: #fff;
+  color: #8c8c8c;
+}
+
+.ts-footer .widget-content a {
+  color: #8c8c8c;
+}
+
+.ts-footer .widget-content a:hover {
+  color: #585858;
 }
 
 .ts-footer .footer-widtet {
@@ -4335,7 +4385,7 @@ ul.navbar-nav > li.mega-dropdown {
   .post-content
   .post-title
   a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .ts-copyright {
@@ -4378,7 +4428,7 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .single-post .post-meta li a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .single-post .post-meta li.social-share {
@@ -4391,7 +4441,7 @@ ul.navbar-nav > li.mega-dropdown {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #434899;
+  background: #414998;
   color: #fff;
   display: block;
   text-align: center;
@@ -4452,7 +4502,7 @@ ul.navbar-nav > li.mega-dropdown {
 
 .single-post .tag-lists span {
   padding: 4px 13px;
-  background: #434899;
+  background: #414998;
   color: #fff;
   border-radius: 35px;
   margin-left: 6px;
@@ -4479,8 +4529,8 @@ ul.navbar-nav > li.mega-dropdown {
 
 .single-post .tag-lists a:hover {
   color: #fff;
-  background: #434899;
-  border-color: #434899;
+  background: #414998;
+  border-color: #414998;
 }
 
 .single-post .post-navigation {
@@ -4495,7 +4545,7 @@ ul.navbar-nav > li.mega-dropdown {
 
 .single-post .post-navigation .post-next a:hover span,
 .single-post .post-navigation .post-previous a:hover span {
-  color: #434899;
+  color: #414998;
 }
 
 .single-post .post-navigation .post-previous {
@@ -4573,7 +4623,7 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .author-box .author-url a:hover {
-  color: #434899;
+  color: #414998;
 }
 
 .author-box .author-counter span {
@@ -4718,29 +4768,22 @@ ul.navbar-nav > li.mega-dropdown {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: 2px;
-  box-shadow: 1px 3px 11px 0px #00000036;
+  margin: 5px;
+  box-shadow: 0px 3px 7px 0px #00000029;
   background-color: #fff;
+  padding: 9px;
+  border-radius: 9px;
 }
 
 .imageRight {
-  width: 34%;
+  width: 33%;
   position: relative;
-}
-
-.ImageBotom {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  background: #e5e5e5;
-  color: #3e3e3e;
-  padding: 3px 7px;
-  border-radius: 4px;
 }
 
 .imageRight > img {
   width: 100%;
   height: 220px;
+  border-radius: 9px;
 }
 
 .contentLeft {
@@ -4750,91 +4793,104 @@ ul.navbar-nav > li.mega-dropdown {
 .TopLeft {
   display: flex;
   position: absolute;
-  left: 6px;
-  top: 5px;
-  justify-content: space-between;
-  width: 27%;
+  left: 86px;
+  bottom: 9px;
+  width: auto;
   font-size: 12px;
 }
-/* 
+
 .TopLeft > .Like {
-  border-bottom: 1px solid rgb(218, 18, 18);
-} */
+  color: #8c8c8c;
+}
+.TopLeft > .Coments {
+  color: #8c8c8c;
+}
+
+.TopLeft > .Stars {
+  color: #8c8c8c;
+}
 
 .TopLeft > .Like i {
-  color: rgb(218, 18, 18);
+  color: #414998;
+  margin: 0 0px 0px 8px;
 }
-/* 
-.TopLeft > .Coments {
-  border-bottom: 1px solid #4e4e4e;
-} */
 .TopLeft > .Coments i {
-  color: #4e4e4e;
+  color: #414998;
+  margin: 0 0px 0px 8px;
 }
-/* 
-.TopLeft > .Stars {
-  border-bottom: 1px solid #efbe0e;
-} */
 
 .TopLeft > .Stars i {
-  color: #efbe0e;
+  color: #414998;
+  margin: 0 0px 0px 8px;
 }
 
 .TopRight {
   position: absolute;
   right: 35%;
-  top: 8px;
+  top: 15px;
 }
 
 .TopRight h1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
-  font-family: "iranyekan";
-  width: 50%;
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .TopRight h2 {
   font-size: 13px;
   font-weight: 400;
   line-height: 1;
-  font-family: "iranyekan";
+  color: #4751b7;
+  font-family: "iranyekan", "BYekanPlus";
 }
 .TopRight h3 {
+  color: #8c8c8c;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.2;
   margin: 0;
   padding: 16px 0;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
 }
 .BottomRight h4 {
   font-size: 12px;
-  font-weight: 500;
+  color: #8c8c8c;
+  font-weight: 400;
+  font-family: "iranyekan", "BYekanPlus";
   line-height: 1;
 }
 
 .BottomLeft {
-  width: 110px;
+  width: auto;
   position: absolute;
-  left: 5px;
-  bottom: 5px;
+  left: 22px;
+  bottom: 11px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 500;
+}
+
+.BottomLeft i {
+  margin-right: 4px;
 }
 
 .Discount {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1;
-  font-family: "IRANSansfanum";
+  border-radius: 9px;
+  position: absolute;
+  right: 35%;
+  bottom: 1px;
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .BottomRight {
   position: absolute;
   right: 35%;
-  bottom: 3px;
+  bottom: 50px;
   font-family: "'iranyekan'";
 }
 
@@ -4878,7 +4934,7 @@ ul.navbar-nav > li.mega-dropdown {
   position: absolute;
   right: 20px;
   font-size: 20px;
-  color: #434899;
+  color: #414998;
   cursor: pointer;
 }
 
@@ -4933,15 +4989,15 @@ ul.navbar-nav > li.mega-dropdown {
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 6px;
-  color: #434899 !important;
+  color: #414998 !important;
   font-weight: 600;
   background-color: #fff;
 }
 
 .CityItemInModal:hover {
-  border: 1px solid #434899;
+  border: 1px solid #414998;
   color: #fff !important;
-  background-color: #434899;
+  background-color: #414998;
 }
 
 body.modal-open {
@@ -5072,7 +5128,7 @@ body {
   .BottomLeft {
     width: 62%;
     font-size: 12px;
-    background: #434899;
+    background: #414998;
     color: #fff;
     padding: 4px;
     border-radius: 10px;
@@ -5125,7 +5181,7 @@ body {
   display: none;
   font-weight: 600;
   text-align: center;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
   margin-top: 10px;
 }
 
@@ -5137,7 +5193,7 @@ body {
 
 .SendMessageTo i {
   font-size: 20px;
-  color: #434899;
+  color: #414998;
 }
 
 .SendMessageTo .input-group-text {
@@ -5145,8 +5201,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #434899;
-  border: 1px solid #434899;
+  background: #414998;
+  border: 1px solid #414998;
 }
 
 .SendMessageTo .input-group-text i {
@@ -5187,7 +5243,7 @@ body {
   left: 46%;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-bottom: 9px solid #434899;
+  border-bottom: 9px solid #414998;
 }
 
 .MoneyAsk {
@@ -5290,7 +5346,7 @@ body {
   }
 
   .RateTextFh {
-    font-family: "iranyekan";
+    font-family: "iranyekan", "BYekanPlus";
     margin: 0;
     padding: 0;
     line-height: 1.3;
@@ -5301,7 +5357,7 @@ body {
 #ShowCityChoice {
   border-radius: 7px;
   background: #fff;
-  color: #434899;
+  color: #414998;
   box-shadow: 0px 2px 7px #0000001c;
   font-size: 14px;
   padding: 12px 15px 10px 24px;
@@ -5312,12 +5368,12 @@ body {
   position: absolute;
   font-size: 16px;
   left: 10px;
-  top: 16px;
+  top: 19px;
 }
 
 #SubmitOffer {
   border-radius: 7px;
-  background: #434899;
+  background: #414998;
   box-shadow: 0px 2px 7px #0000001c;
   margin: 0 10px;
 }
@@ -5342,7 +5398,7 @@ body {
 .LogSignBtn {
   border-radius: 7px;
   background: #fff !important;
-  color: #434899 !important;
+  color: #414998 !important;
   box-shadow: 0px 2px 7px #0000001c;
   font-size: 12px !important;
   margin: 0 10px;
@@ -5356,7 +5412,7 @@ body {
 }
 
 .LogSignBtn a {
-  color: #434899;
+  color: #414998;
 }
 
 #SubmitOffer h6 {
@@ -5364,7 +5420,7 @@ body {
   position: relative;
   left: -13px;
   top: 4px;
-  font-family: "iranyekan";
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 @media only screen and (max-width: 767px) {
@@ -5469,4 +5525,110 @@ body {
 
 .SideBarMenu {
   margin: 30px 15px;
+}
+
+.StartsInItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffc655;
+  font-size: 12px;
+}
+
+.StartsInItem i {
+  margin: 0 3px;
+}
+
+.SearchForItem {
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 9px;
+  padding: 14px 0;
+  margin: 0;
+}
+
+.SearchForItem .btn {
+  border-radius: 9px;
+}
+
+.SearchForItem input {
+  font-family: "FontAwesome";
+}
+
+.SearchForItem .form-control {
+  border: 0 !important;
+  font-family: "iranyekan", "BYekanPlus", "FontAwesome";
+  background-color: #fff;
+  color: #606060;
+  padding: 10px !important;
+  border-radius: 7px;
+  box-shadow: rgb(0 0 0 / 7%) 0px 4px 6px;
+}
+
+.SearchForItem .form-control::placeholder {
+  font-size: 15px;
+}
+
+.SearchForItem select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("/images/donwAngle.svg");
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+  background-size: 12px;
+  background-position-y: 11px;
+}
+
+.title-angle-Reverse {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  position: relative;
+  font-family: "iranyekan", "BYekanPlus";
+}
+
+.title-angle-Reverse::after,
+.title-angle-Reverse::before {
+  position: absolute;
+  bottom: -9px;
+  content: "";
+  background: #414998;
+  left: 2px;
+}
+
+.title-angle-Reverse::before {
+  width: 3px;
+  height: 12px;
+}
+
+.title-angle-Reverse::after {
+  width: 12px;
+  height: 3px;
+}
+
+.haveBottomBorder {
+  width: 96%;
+  margin: auto;
+  border-bottom: 1px solid rgb(65 73 152 / 47%);
+}
+
+.footer-ads img {
+  border-radius: 9px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+.FooterSocial div {
+  margin: 0 47px;
+  margin-bottom: 10px;
+}
+
+.FooterSocial i {
+  font-size: 35px;
+  color: #414998;
 }

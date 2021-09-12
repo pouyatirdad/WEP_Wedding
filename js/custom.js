@@ -37,13 +37,13 @@ jQuery(function ($) {
 
 	$(window).on('scroll', function () {
 
-
 		/**Fixed header**/
-		if ($(window).scrollTop() > 124) {
-			$('.is-ts-sticky').addClass('sticky fade_down_effect');
+		if ($(window).scrollTop() >= 135.5) {
+			$('.is-ts-sticky').addClass('sticky ');
 		} else {
-			$('.is-ts-sticky').removeClass('sticky fade_down_effect');
+			$('.is-ts-sticky').removeClass('sticky ');
 		}
+
 	});
 
 
