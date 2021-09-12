@@ -4911,19 +4911,33 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .ModalCity {
-  width: 80%;
+  width: 50%;
+  min-width: 280px;
   height: 90%;
   background: #fafafa;
   border-radius: 20px;
   padding: 20px;
+  position: relative;
+}
+.FooterModal {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.FooterModal button {
+  border-radius: 0 0 17px 17px;
+  width: 100%;
 }
 
 .HeaderModal {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-bottom: 50px;
   border-bottom: 2px solid rgb(65, 65, 65);
   position: relative;
+  padding-right: 7px;
 }
 
 .HeaderModal > h4 {
@@ -4941,10 +4955,24 @@ ul.navbar-nav > li.mega-dropdown {
 .SearchAreaInModal {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 38px;
   width: 100%;
+  margin: auto;
   z-index: 14;
-  display: none;
+  display: flex;
+  justify-content: center;
+}
+
+.SearchAreaInModal form {
+  width: 100%;
+}
+
+.SearchAreaInModal input {
+  font-family: "iranyekan", "BYekanPlus", "FontAwesome";
+  text-align: right;
+  color: #000 !important;
+  font-size: 12px;
+  border-radius: 10px !important;
 }
 
 .CloseSearchAreaInModal {
@@ -4975,7 +5003,7 @@ ul.navbar-nav > li.mega-dropdown {
 
 .CloseModal {
   position: absolute;
-  left: 20px;
+  left: 8px;
   font-size: 20px;
   color: rgb(211, 16, 16);
   cursor: pointer;
@@ -4983,23 +5011,65 @@ ul.navbar-nav > li.mega-dropdown {
 
 .CityModalBody {
   overflow-y: auto;
+  height: 80%;
 }
-
+.ReadyForCitySerach {
+  display: none;
+}
 .CityItemInModal {
   padding: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 6px;
+  border-bottom: 1px solid #cccccc;
   color: #414998 !important;
   font-weight: 600;
-  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /* background-color: #fff; */
 }
-
-.CityItemInModal:hover {
-  border: 1px solid #414998;
-  color: #fff !important;
-  background-color: #414998;
+.CityItemInModal h5 {
+  font-size: 17px;
+  font-family: "iranyekan";
 }
-
+.HasCheckbox {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+  color: #414998 !important;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /* background-color: #fff; */
+}
+.HasCheckbox h5 {
+  font-size: 17px;
+  font-family: "iranyekan";
+}
+.BackBtnInCityList {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+  color: #414998 !important;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.BackBtnInCityList h5 {
+  font-size: 17px;
+  margin: 0 10px;
+  font-family: "iranyekan";
+}
+.MoreArrow {
+  font-size: 19px;
+}
+.ShowCityParent {
+  display: flex;
+}
+.ShowCityChild {
+  display: none;
+}
 body.modal-open {
   position: fixed;
   overflow-y: hidden;
@@ -5368,7 +5438,7 @@ body {
   position: absolute;
   font-size: 16px;
   left: 10px;
-  top: 19px;
+  top: 17px;
 }
 
 #SubmitOffer {

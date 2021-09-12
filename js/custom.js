@@ -405,3 +405,64 @@ $('.overLaySideMenuMobile').on('click', () => {
 	$('#navbarSupportedContent').show(300);
 
 })
+
+function SelectCheckBox(im) {
+
+	// console.log(im.childNodes[3]);
+	// var thisCheckBox = $(this).find('input');
+
+
+	var Trues = $(".HasCheckbox input:checkbox:checked").map(function () {
+		return $(this);
+	});
+	var thisCheckBox = im.childNodes[3];
+	var IsTF = thisCheckBox.checked;
+
+	if (!IsTF) {
+		if (Trues.length <= 0) {
+			thisCheckBox.checked = true;
+			CheckReadySearch();
+		}
+	} else {
+		thisCheckBox.checked = false;
+		CheckReadySearch();
+
+	}
+
+
+}
+
+
+$('.CityItemInModal').on('click', () => {
+	$('.ShowCityParent').hide(400);
+	$('.ShowCityChild').show(400);
+})
+
+$('.BackBtnInCityList').on('click', () => {
+	$('.ShowCityParent').show(400);
+	$('.ShowCityChild').hide(400);
+
+	var Alls = $(".HasCheckbox input:checkbox:checked").map(function () {
+		return $(this);
+	}).get();
+
+	Alls.map((item) => {
+		item.prop('checked', false)
+	})
+
+	CheckReadySearch();
+
+})
+
+function CheckReadySearch() {
+	var Trues = $(".HasCheckbox input:checkbox:checked").map(function () {
+		return $(this);
+	});
+
+	if (Trues.length > 0) {
+		$('.ReadyForCitySerach').show(400)
+	} else {
+		$('.ReadyForCitySerach').hide(300)
+	}
+	return null;
+}

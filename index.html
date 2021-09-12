@@ -19,7 +19,6 @@
 
 	<!-- CSS
 	================================================== -->
-
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -85,30 +84,12 @@
 						<button class="comments-btn btn btn-primary " style="position: relative;" id="SubmitOffer"
 							type="submit">
 							<h6>
-								ثبت آگهی در ازدواج ایرانی
+								ثبت رایگان آگهی در ازدواج ایرانی
 							</h6>
 							<i class="fas fa-plus"></i>
 						</button>
 					</div>
 
-					<div class="HrBr">
-
-					</div>
-
-					<div class="d-flex justify-content-end text-left ">
-
-						<button class="comments-btn btn btn-primary LogSignBtn" style="position: relative;">
-							<a href="#">
-								ورود
-							</a>
-							<span>
-								/
-							</span>
-							<a href="#">
-								عضویت
-							</a>
-						</button>
-					</div>
 
 				</div><!-- header right end -->
 			</div><!-- Row end -->
@@ -123,192 +104,118 @@
 				<h4>
 					شهر ها
 				</h4>
-				<div class="SearchModal">
-					<i class="fa fa-search"></i>
-				</div>
 				<div class="SearchAreaInModal">
 					<form>
 						<div class="form-group">
 							<input type="text" class="form-control bg-white rounded-top" id="exampleFormControlInput1"
-								placeholder="جستجو">
+								placeholder="&#xF002; جستجو در شهر ها">
 						</div>
 					</form>
-				</div>
-				<div class="CloseSearchAreaInModal">
-					<i class="fa fa-close"></i>
-				</div>
-				<div class="CloseModal">
-					<i class="fa fa-close"></i>
 				</div>
 			</div>
 			<div class="CityModalBody pt-3">
 
 				<div class="container-fluid">
 
-					<div class="row d-flex justify-content-center align-items-center">
+					<div class="row justify-content-center align-items-center ShowCityParent">
 
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
+						<div class="col-12 p-2 CityItemInModal">
+							<div class="">
+								<h5>
+									تهران
+								</h5>
+							</div>
+							<div class="MoreArrow">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
 
+						<div class="col-12 p-2 CityItemInModal">
+							<div class="">
+								<h5>
+									آذربایجان
+								</h5>
+							</div>
+							<div class="MoreArrow">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
 
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
+						<div class="col-12 p-2 CityItemInModal">
+							<div class="">
+								<h5>
+									کرمان
+								</h5>
+							</div>
+							<div class="MoreArrow">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
 
 
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
+					</div>
 
 
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
+					<div class="row justify-content-center align-items-center ShowCityChild">
 
+						<div class="col-12 p-2  BackBtnInCityList">
 
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
+							<div class="MoreArrow">
+								<i class="fas fa-angle-left"></i>
+							</div>
+							<div class="">
+								<h5>
+									بازگشت
+								</h5>
+							</div>
+						</div>
 
+						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+							<div class="">
+								<h5>
+									همه شهرها
+								</h5>
+							</div>
+							<input class="CityCheckbox" type="checkbox">
+						</div>
 
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
+						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+							<div class="">
+								<h5>
+									آذر شهر
+								</h5>
+							</div>
+							<input class="CityCheckbox" type="checkbox">
+						</div>
 
+						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+							<div class="">
+								<h5>
+									بناب
+								</h5>
+							</div>
+							<input class="CityCheckbox" type="checkbox">
+						</div>
 
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
+						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+							<div class="">
+								<h5>
+									اهر
+								</h5>
+							</div>
+							<input class="CityCheckbox" type="checkbox">
+						</div>
 
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
-
-						<a href="javascript:void(0)" class="col-1 text-center m-2 CityItemInModal">
-							تهران
-						</a>
 
 					</div>
 
 				</div>
 
+			</div>
+			<div class="FooterModal">
+				<button class=" btn btn-primary ReadyForCitySerach">
+					تایید
+				</button>
 			</div>
 		</div>
 
