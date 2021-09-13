@@ -432,13 +432,11 @@ $('.CloseBtnForMoneyAsk , .SendMessageToSendBtn ').on('click', () => {
 
 $('.navbar-toggler').on('click', () => {
 	$('.sideBarMenuMobile').show("drop", { direction: "right" }, 300);
-	$('.overLaySideMenuMobile').show("slide", { direction: "right" }, 300);
 	$('#navbarSupportedContent').show("slide", { direction: "right" }, 300);
 })
 
-$('.overLaySideMenuMobile').on('click', () => {
+$('.CloseIconForMM').on('click', () => {
 	$('.sideBarMenuMobile').hide("drop", { direction: "right" }, 300);
-	$('.overLaySideMenuMobile').hide("slide", { direction: "right" }, 300);
 	$('#navbarSupportedContent').hide("slide", { direction: "right" }, 300);
 
 })
@@ -454,3 +452,18 @@ $('.BackBtnInCityList').on('click', () => {
 	$('.ShowCityChild').hide(400);
 
 })
+
+var previousScroll = 0;
+$(window).scroll(function (event) {
+	var scroll = $(this).scrollTop();
+	if (scroll > previousScroll) {
+		$('.SubmitOfferMobile').hide();
+		$('.main-nav').css('min-height', '88px');
+
+	} else {
+		$('.SubmitOfferMobile').fadeIn();
+		$('.main-nav').css('min-height', '130px');
+
+	}
+	previousScroll = scroll;
+});
