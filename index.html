@@ -14,8 +14,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--Favicon-->
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favIcon.png" type="image/x-icon">
+	<link rel="icon" href="images/favIcon.png" type="image/x-icon">
 
 	<!-- CSS
 	================================================== -->
@@ -176,7 +176,6 @@
 									همه شهرها
 								</h5>
 							</div>
-							<input class="CityCheckbox" type="checkbox">
 						</div>
 
 						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
@@ -185,7 +184,6 @@
 									آذر شهر
 								</h5>
 							</div>
-							<input class="CityCheckbox" type="checkbox">
 						</div>
 
 						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
@@ -194,7 +192,6 @@
 									بناب
 								</h5>
 							</div>
-							<input class="CityCheckbox" type="checkbox">
 						</div>
 
 						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
@@ -203,7 +200,6 @@
 									اهر
 								</h5>
 							</div>
-							<input class="CityCheckbox" type="checkbox">
 						</div>
 
 
@@ -212,12 +208,62 @@
 				</div>
 
 			</div>
-			<div class="FooterModal">
-				<button class=" btn btn-primary ReadyForCitySerach">
-					تایید
-				</button>
-			</div>
 		</div>
+
+	</div>
+
+	<div class="SendMessageToInMobileIndexOverllay"></div>
+
+	<div class="sidebar SendMessageToInMobileIndex HideMeinBig">
+		<div class="sidebar-widget social-widget">
+
+			<h2 class="block-title">
+				<span class="title-angle-shap"> ارسال پیام</span>
+			</h2>
+
+			<div class="SendMessageToIndex">
+				<div class="CloseBtnForMoneyAsk">
+					<i class="fa fa-close"></i>
+				</div>
+				<h4 class="text-center">
+					<i class="fas fa-envelope"></i>
+					<br>
+					پیام به آرایشگاه فلان
+				</h4>
+
+				<form>
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="نام شما" aria-describedby="basic-addon1">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">
+								<i class="fas fa-user-alt"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="شماره همراه"
+							aria-describedby="basic-addon1">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">
+								<i class="fas fa-mobile"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="input-group">
+						<textarea class="form-control" style="height: 100px;" placeholder="پیام"></textarea>
+					</div>
+
+					<button type="button"
+						class="btn btn-primary w-100 text-center mt-1 SendMessageToSendBtn">ارسال</button>
+
+				</form>
+
+			</div>
+
+		</div><!-- widget end -->
 
 	</div>
 
@@ -341,8 +387,20 @@
 				</nav>
 				<!--/ Navigation end -->
 
+				<div class="LogoMobile ">
+
+					<a href="index.html">
+						<img src="images/logos/logo.png" />
+					</a>
+
+				</div>
+
 				<div class="col-lg-4 text-right nav-social-wrap">
 
+					<button class="comments-btn btn btn-primary ShowCityChoiceMobile" style="position: relative;">
+						شهر
+						<i class="fas fa-angle-down"></i>
+					</button>
 
 					<div class="nav-search">
 						<a href="#search-popup" class="xs-modal-popup">
@@ -368,9 +426,19 @@
 						</div>
 					</div><!-- End xs modal -->
 				</div>
+
 			</div>
 			<!--/ Row end -->
 		</div>
+
+		<button class="comments-btn btn btn-primary SubmitOfferMobile" style="position: relative;" id="SubmitOffer"
+			type="submit">
+			<h6>
+				ثبت رایگان آگهی در ازدواج ایرانی
+			</h6>
+			<i class="fas fa-plus"></i>
+		</button>
+
 		<!--/ Container end -->
 	</div><!-- Menu wrapper end -->
 
@@ -733,7 +801,9 @@
 						<div class="tab-content my-2">
 							<div class="Medias">
 								<div class="imageRight">
-									<img src="images/NewIMages/sortiem1.jpg" alt="">
+									<a href="single.html">
+										<img src="images/NewIMages/sortiem1.jpg" alt="">
+									</a>
 								</div>
 								<div class="contentLeft p-2">
 
@@ -854,7 +924,7 @@
 			</h2>
 
 			<div class="row ts-gutter-30 justify-content-lg-between justify-content-center pt-4">
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<div class="widget-content">
 							<p>
@@ -880,7 +950,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<div class="widget-content">
 							<p>
@@ -906,7 +976,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<div class="widget-content">
 							<p>
@@ -932,7 +1002,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet ">
 						<div class="widget-content">
 							<p>
@@ -969,7 +1039,7 @@
 		<div class="container">
 
 			<div class="row ts-gutter-30 justify-content-lg-between justify-content-center">
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<h3 class="widget-title AdColor"><span>تهران</span></h3>
 						<div class="widget-content">
@@ -996,7 +1066,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<h3 class="widget-title AdColor"><span>تهران</span></h3>
 						<div class="widget-content">
@@ -1023,7 +1093,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<h3 class="widget-title AdColor"><span>تهران</span></h3>
 						<div class="widget-content">
@@ -1050,7 +1120,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet ">
 						<h3 class="widget-title AdColor"><span>تهران</span></h3>
 						<div class="widget-content">
@@ -1086,7 +1156,7 @@
 
 
 			<div class="row ts-gutter-30 justify-content-lg-between justify-content-center ">
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<h3 class="widget-title NotBorder"><span>ارتباط با ازدواج ایرانی</span></h3>
 						<div class="widget-content">
@@ -1103,7 +1173,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<h3 class="widget-title NotBorder"><span>چرا ازدواج ایرانی؟</span></h3>
 						<div class="widget-content">
@@ -1120,7 +1190,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<h3 class="widget-title NotBorder"><span>بیشتر بدانید</span></h3>
 						<div class="widget-content">
@@ -1137,7 +1207,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
 					<div class="footer-widtet">
 						<h3 class="widget-title NotBorder"><span>بیشتر</span></h3>
 						<div class="widget-content">
@@ -1204,19 +1274,27 @@
 			<div class=" ts-gutter-30 d-flex justify-content-center FooterSocial pt-5">
 
 				<div>
-					<i class="fab fa-twitter"></i>
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
 				</div>
 
 				<div>
-					<i class="fab fa-pinterest"></i>
+					<a href="#">
+						<i class="fab fa-pinterest"></i>
+					</a>
 				</div>
 
 				<div>
-					<i class="fab fa-instagram"></i>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
 				</div>
 
 				<div>
-					<i class="fab fa-facebook"></i>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
 				</div>
 
 			</div>
@@ -1256,6 +1334,10 @@
 
 	<!-- initialize jQuery Library -->
 	<script src="js/jquery.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+		integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- Popper Jquery -->
 	<script src="js/popper.min.js"></script>
 	<!-- Bootstrap jQuery -->

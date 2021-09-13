@@ -334,21 +334,35 @@ $('.CloseSearchAreaInModal').on('click', () => {
 	$('.CloseSearchAreaInModal').css('display', 'none');
 })
 
-$('#ShowCityChoice').on('click', () => {
-	$('.CityChoiceModal').addClass("showMe");
+$('#ShowCityChoice , .ShowCityChoiceMobile ').on('click', () => {
+	$('.CityChoiceModal').show("drop", { direction: "up" }, 400);
+	$('.CityChoiceModal').addClass('showMe');
 	$("body").addClass("modal-open");
 })
 
 $('.CloseModal').on('click', () => {
-	$('.CityChoiceModal').removeClass("showMe");
+	$('.CityChoiceModal').hide("drop", { direction: "down" }, 400);
+
+	setTimeout(() => {
+		$('.CityChoiceModal').removeClass("showMe");
+	}, 330);
+
 	$("body").removeClass("modal-open");
 })
 
 $(window).click(function () {
-	$(".CityChoiceModal").removeClass("showMe");
+	$('.CityChoiceModal').hide("drop", { direction: "down" }, 400);
+
+	setTimeout(() => {
+		$('.CityChoiceModal').removeClass("showMe");
+	}, 330);
+
 	$("body").removeClass("modal-open");
 });
 
+$('.ShowCityChoiceMobile').click(function (event) {
+	event.stopPropagation();
+});
 $('#ShowCityChoice').click(function (event) {
 	event.stopPropagation();
 });
@@ -383,54 +397,51 @@ $('.ShowContactInfo').click(function (event) {
 	event.stopPropagation();
 });
 
-$('.MoneyAsk').on('click', () => {
-	$('.SendMessageToInMobile').show(300);
-	$('.SendMessageToInMobileOverllay').show(300);
+$('.Discount').on('click', () => {
+	$('.SendMessageToInMobileIndex').show("slide", { direction: "right" }, 300);
+	$('.SendMessageToInMobileIndexOverllay').show("slide", { direction: "right" }, 300);
 })
 
-$('.CloseBtnForMoneyAsk , .SendMessageToSendBtn').on('click', () => {
-	$('.SendMessageToInMobile').hide(300);
-	$('.SendMessageToInMobileOverllay').hide(300);
+$('.MoneyAsk').on('click', () => {
+	$('.SendMessageToInMobile').show("slide", { direction: "right" }, 300);
+	$('.SendMessageToInMobileOverllay').show("slide", { direction: "right" }, 300);
+})
+
+$('.CloseBtnForMoneyAsk , .SendMessageToSendBtn ').on('click', () => {
+
+	var mq = window.matchMedia("(max-width: 991px)");
+
+	$('.SendMessageToSendBtn').text('پیام شما ارسال شد');
+
+
+	if (mq.matches) {
+		$('.SendMessageToInMobile').hide("slide", { direction: "right" }, 1200);
+		$('.SendMessageToInMobileOverllay').hide("slide", { direction: "right" }, 1200);
+	}
+
+	$('.SendMessageToInMobileIndex').hide("slide", { direction: "right" }, 1200);
+	$('.SendMessageToInMobileIndexOverllay').hide("slide", { direction: "right" }, 1200);
+
+	setTimeout(() => {
+
+		$('.SendMessageToSendBtn').text('ارسال');
+
+	}, 1000);
+
 })
 
 $('.navbar-toggler').on('click', () => {
-	$('.sideBarMenuMobile').show(300);
-	$('.overLaySideMenuMobile').show(300);
-	$('#navbarSupportedContent').show(300);
+	$('.sideBarMenuMobile').show("drop", { direction: "right" }, 300);
+	$('.overLaySideMenuMobile').show("slide", { direction: "right" }, 300);
+	$('#navbarSupportedContent').show("slide", { direction: "right" }, 300);
 })
 
 $('.overLaySideMenuMobile').on('click', () => {
-	$('.sideBarMenuMobile').hide(300);
-	$('.overLaySideMenuMobile').hide(300);
-	$('#navbarSupportedContent').show(300);
+	$('.sideBarMenuMobile').hide("drop", { direction: "right" }, 300);
+	$('.overLaySideMenuMobile').hide("slide", { direction: "right" }, 300);
+	$('#navbarSupportedContent').hide("slide", { direction: "right" }, 300);
 
 })
-
-function SelectCheckBox(im) {
-
-	// console.log(im.childNodes[3]);
-	// var thisCheckBox = $(this).find('input');
-
-
-	var Trues = $(".HasCheckbox input:checkbox:checked").map(function () {
-		return $(this);
-	});
-	var thisCheckBox = im.childNodes[3];
-	var IsTF = thisCheckBox.checked;
-
-	if (!IsTF) {
-		if (Trues.length <= 0) {
-			thisCheckBox.checked = true;
-			CheckReadySearch();
-		}
-	} else {
-		thisCheckBox.checked = false;
-		CheckReadySearch();
-
-	}
-
-
-}
 
 
 $('.CityItemInModal').on('click', () => {
@@ -442,27 +453,4 @@ $('.BackBtnInCityList').on('click', () => {
 	$('.ShowCityParent').show(400);
 	$('.ShowCityChild').hide(400);
 
-	var Alls = $(".HasCheckbox input:checkbox:checked").map(function () {
-		return $(this);
-	}).get();
-
-	Alls.map((item) => {
-		item.prop('checked', false)
-	})
-
-	CheckReadySearch();
-
 })
-
-function CheckReadySearch() {
-	var Trues = $(".HasCheckbox input:checkbox:checked").map(function () {
-		return $(this);
-	});
-
-	if (Trues.length > 0) {
-		$('.ReadyForCitySerach').show(400)
-	} else {
-		$('.ReadyForCitySerach').hide(300)
-	}
-	return null;
-}
