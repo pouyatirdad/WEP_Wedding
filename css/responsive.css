@@ -9,6 +9,7 @@
     line-height: 70px;
     display: inline-block;
   }
+
   .main-nav ul.navbar-nav > li > a::before {
     position: absolute;
     right: 0;
@@ -518,7 +519,7 @@
   }
   ul.navbar-nav li a i,
   .dropdown-submenu > a:after {
-    color: #333;
+    /* color: #333; */
     float: left;
     line-height: 28px;
     margin-top: -5px;

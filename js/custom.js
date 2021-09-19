@@ -407,14 +407,11 @@ $('.MoneyAsk').on('click', () => {
 	$('.SendMessageToInMobileOverllay').show("slide", { direction: "right" }, 300);
 })
 
-$('.CloseBtnForMoneyAsk , .SendMessageToSendBtn ').on('click', () => {
+$(".CloseBtnForMoneyAsk ").on('click', () => {
 
-	var mq = window.matchMedia("(max-width: 991px)");
+	var mq2 = window.matchMedia("(max-width: 991px)");
 
-	$('.SendMessageToSendBtn').text('پیام شما ارسال شد');
-
-
-	if (mq.matches) {
+	if (mq2.matches) {
 		$('.SendMessageToInMobile').hide("slide", { direction: "right" }, 1200);
 		$('.SendMessageToInMobileOverllay').hide("slide", { direction: "right" }, 1200);
 	}
@@ -422,11 +419,81 @@ $('.CloseBtnForMoneyAsk , .SendMessageToSendBtn ').on('click', () => {
 	$('.SendMessageToInMobileIndex').hide("slide", { direction: "right" }, 1200);
 	$('.SendMessageToInMobileIndexOverllay').hide("slide", { direction: "right" }, 1200);
 
-	setTimeout(() => {
 
-		$('.SendMessageToSendBtn').text('ارسال');
+})
 
-	}, 1000);
+$('.SendMessageToSendBtn ').on('click', () => {
+
+	var firstINT = $(".firstInputName input").val();
+	var firstLBL = $(".firstInputName i");
+
+	var secondINT = $(".SecondInputNumber  input").val();
+	var secondLBL = $(".SecondInputNumber i");
+
+	if ((firstINT.length > 0) && (secondINT.length > 0)) {
+
+		$('.SendMessageToSendBtn').removeClass("RedWarningFieldBG");
+
+		firstLBL.removeClass("RedWarningFieldCL");
+
+		secondLBL.removeClass("RedWarningFieldCL");
+
+		var mq = window.matchMedia("(max-width: 991px)");
+
+
+		setTimeout(() => {
+			$('.SendMessageToSendBtn').text('.');
+
+		}, 200);
+
+
+		setTimeout(() => {
+			$('.SendMessageToSendBtn').text('..');
+
+		}, 500);
+
+
+		setTimeout(() => {
+			$('.SendMessageToSendBtn').text('...');
+
+		}, 900);
+
+		setTimeout(() => {
+			$('.SendMessageToSendBtn').text('پیام شما ارسال شد');
+
+		}, 1200);
+
+
+		setTimeout(() => {
+
+
+			if (mq.matches) {
+				$('.SendMessageToInMobile').hide("slide", { direction: "right" }, 2300);
+				$('.SendMessageToInMobileOverllay').hide("slide", { direction: "right" }, 2300);
+			}
+
+			$('.SendMessageToInMobileIndex').hide("slide", { direction: "right" }, 2300);
+			$('.SendMessageToInMobileIndexOverllay').hide("slide", { direction: "right" }, 2300);
+
+		}, 1400);
+
+		setTimeout(() => {
+			$('.SendMessageToSendBtn').text('ارسال');
+
+		}, 4000);
+
+	} else {
+
+		$('.SendMessageToSendBtn').addClass("RedWarningFieldBG");
+
+		$('.SendMessageToSendBtn').text('اطلاعات را درست وارد کنید');
+
+		firstLBL.addClass("RedWarningFieldCL");
+
+		secondLBL.addClass("RedWarningFieldCL");
+
+	}
+
 
 })
 
@@ -453,17 +520,24 @@ $('.BackBtnInCityList').on('click', () => {
 
 })
 
-var previousScroll = 0;
-$(window).scroll(function (event) {
-	var scroll = $(this).scrollTop();
-	if (scroll > previousScroll) {
-		$('.SubmitOfferMobile').hide();
-		$('.main-nav').css('min-height', '88px');
+var mq = window.matchMedia("(max-width: 991px)");
+if (mq.matches) {
 
-	} else {
-		$('.SubmitOfferMobile').fadeIn();
-		$('.main-nav').css('min-height', '130px');
+	var previousScroll = 0;
+	$(window).scroll(function (event) {
+		var scroll = $(this).scrollTop();
+		if (scroll > previousScroll) {
+			$('.SubmitOfferMobile').hide();
+			$('.main-nav').css('min-height', '88px');
 
-	}
-	previousScroll = scroll;
-});
+		} else {
+			$('.SubmitOfferMobile').fadeIn();
+			$('.main-nav').css('min-height', '130px');
+
+		}
+		previousScroll = scroll;
+	});
+}
+else {
+	$('.SubmitOfferMobile').hide();
+}

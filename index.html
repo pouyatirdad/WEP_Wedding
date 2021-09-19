@@ -226,26 +226,33 @@
 					<i class="fa fa-close"></i>
 				</div>
 				<h4 class="text-center">
-					<i class="fas fa-envelope"></i>
-					<br>
 					پیام به آرایشگاه فلان
+
+					<p class="text-center">
+						بعد از ثبت درخواست با شما تماس گرفته خواهد شد.
+					</p>
 				</h4>
+
 
 				<form>
 
-					<div class="input-group mb-3">
-						<input type="text" class="form-control" placeholder="نام شما" aria-describedby="basic-addon1">
-						<div class="input-group-prepend">
+					<div class="input-group firstInputName mb-3">
+						<label for="">
+							نام و نام خانوادگی
+						</label>
+						<input type="text" class="form-control" aria-describedby="basic-addon1">
+						<div class="input-group-append">
 							<span class="input-group-text" id="basic-addon1">
 								<i class="fas fa-user-alt"></i>
 							</span>
 						</div>
 					</div>
-
-					<div class="input-group mb-3">
-						<input type="text" class="form-control" placeholder="شماره همراه"
-							aria-describedby="basic-addon1">
-						<div class="input-group-prepend">
+					<div class="input-group SecondInputNumber mb-3">
+						<label for="">
+							شماره همراه
+						</label>
+						<input type="text" class="form-control" aria-describedby="basic-addon1">
+						<div class="input-group-append">
 							<span class="input-group-text" id="basic-addon1">
 								<i class="fas fa-mobile"></i>
 							</span>
@@ -253,7 +260,10 @@
 					</div>
 
 					<div class="input-group">
-						<textarea class="form-control" style="height: 100px;" placeholder="پیام"></textarea>
+						<label for="">
+							پیام
+						</label>
+						<textarea class="form-control" style="height: 100px;"></textarea>
 					</div>
 
 					<button type="button"
@@ -876,7 +886,7 @@
 
 
 				<div class="col-lg-4">
-					<div class="sidebar">
+					<div class="sidebar m-0">
 						<div class="sidebar-widget social-widget">
 							<h2 class="block-title">
 								<span class="title-angle-shap"> تبلیغات</span>
