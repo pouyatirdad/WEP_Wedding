@@ -651,7 +651,7 @@
 
 	<section class="main-content pt-5 mt-2">
 		<div class="container">
-			<div class="row ts-gutter-30">
+			<div class="row ts-gutter-30 mobileReverseColumn">
 
 				<div class="col-md-5">
 
@@ -680,14 +680,16 @@
 
 							<li>
 
-								<div>
+								<div class="HDTopLeft">
 									<h5>
 										اطلاعات تماس
 									</h5>
 								</div>
 
-								<div>
-									<i class="fa fa-instagram"></i>
+								<div class="HDRightInsta">
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
 								</div>
 
 							</li>
@@ -695,14 +697,16 @@
 
 							<li>
 
-								<div>
+								<div class="HDTopRight">
 									<h5>
 										درخواست قیمت
 									</h5>
 								</div>
 
-								<div>
-									<i class="fa fa-whatsapp"></i>
+								<div class="HDRightWhats">
+									<a href="#">
+										<i class="fa fa-whatsapp"></i>
+									</a>
 								</div>
 
 							</li>
@@ -710,14 +714,16 @@
 
 							<li>
 
-								<div>
+								<div class="HDBottomLeft">
 									<h6>
 										20% تخفیف برای کسایی که بگن از سایت اومدن
 									</h6>
 								</div>
 
-								<div>
-									<i class="fab fa-telegram-plane"></i>
+								<div class="HDRightTel">
+									<a href="#">
+										<i class="fab fa-telegram-plane"></i>
+									</a>
 								</div>
 
 							</li>
@@ -734,7 +740,7 @@
 						<div class="post-media mb-20">
 
 							<!-- post wraper start-->
-							<section class="trending-slider pt-lg-0 pb-0">
+							<section class="trending-slider pt-0 pb-0">
 								<div class="container">
 									<div class="ts-grid-box">
 										<div class="owl-carousel dot-style2 transing-slide-style2">
@@ -760,12 +766,7 @@
 											</div>
 										</div>
 										<!-- 
-										<img style="
-										width: 100%;
-										height: 497px;
-										position: relative;
-										top: -10px;
-										padding: 0;" src="images/EmptyImage slider.png" alt=""> -->
+										<img class="emptySlider" src="images/EmptyImage slider.png" alt=""> -->
 
 									</div>
 									<!-- ts-populer-post-box end-->
@@ -777,244 +778,247 @@
 					</div><!-- single-post end -->
 				</div><!-- col-lg-7 -->
 
-				<div class="col-12">
+			</div><!-- row end -->
+		</div><!-- container end -->
+	</section><!-- category-layout end -->
 
-					<div class="map">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25921.407865295278!2d51.34251803237306!3d35.69728674523834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dfe05732c2e91%3A0xfcbec017befd15f4!2sAzadi%20Tower!5e0!3m2!1sen!2s!4v1632118095015!5m2!1sen!2s"
-							width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	<div class="container">
 
-						<!-- <img style="
-							width: 100%;
-							height: 350px;
-							margin-bottom: 20px;
-							border-radius: 7px;" src="images/EmptyImage location.png" alt=""> -->
+		<div class="col-12 mx-0 px-0">
 
-						<div class="map-route">
-							<div>
-								<i class="fas fa-map-marker-alt"></i>
-								<h5>
-									تهران ، خیابان آزادی ، کوچه اول ، پلاک سوم ، واحد دوم
-								</h5>
-							</div>
-							<div>
-								<h5>
-									مسیریابی با گوگل
-								</h5>
-								<i class="fab fa-google"></i>
-							</div>
-							<div>
-								<h5>
-									مسیریابی با ویز
-								</h5>
-								<i class="fab fa-waze"></i>
-							</div>
-						</div>
-					</div>
+			<div class="map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25921.407865295278!2d51.34251803237306!3d35.69728674523834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dfe05732c2e91%3A0xfcbec017befd15f4!2sAzadi%20Tower!5e0!3m2!1sen!2s!4v1632118095015!5m2!1sen!2s"
+					width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-					<div class="post-content-area">
+				<!-- <img class="emptyLocation" src="images/EmptyImage location.png" alt=""> -->
+
+				<div class="map-route">
+					<div>
+						<i class="fas fa-map-marker-alt"></i>
 						<h5>
-							درباره سالن زیبایی فلان
+							تهران ، خیابان آزادی ، کوچه اول ، پلاک سوم ، واحد دوم
 						</h5>
-						<p>
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-							است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+					</div>
+					<div>
+						<a href="#">
+							<h5>
+								مسیریابی با گوگل
+							</h5>
+							<i class="fab fa-google"></i>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<h5>
+								مسیریابی با ویز
+							</h5>
+							<i class="fab fa-waze"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="post-content-area">
+				<h5>
+					درباره سالن زیبایی فلان
+				</h5>
+				<p>
+					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+					است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+					فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+					کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+					طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+					فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+					موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+					دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+					گیرد.
+				</p>
+			</div><!-- post-content-area end -->
+			<div class=" post-other-images">
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<img src="images/NewIMages/item1.jpg" alt="">
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<img src="images/NewIMages/item2.jpg" alt="">
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<img src="images/NewIMages/item3.jpg" alt="">
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<img src="images/NewIMages/item4.jpg" alt="">
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<img src="images/NewIMages/item5.jpg" alt="">
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<img src="images/NewIMages/item6.jpg" alt="">
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<img src="images/NewIMages/item7.jpg" alt="">
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<img src="images/NewIMages/item8.png" alt="">
+				</div>
+
+			</div>
+
+			<div class="post-faqs">
+
+				<h3>
+					پرسش و پاسخ
+				</h3>
+
+				<ul>
+					<li>
+						<i class="fas fa-circle"></i>
+						ساعت کاری سالن
+					</li>
+					<li>
+						10 صبح ال 8 شب
+					</li>
+
+					<li>
+						<i class="fas fa-circle"></i>
+						ساعت کاری سالن
+					</li>
+					<li>
+						10 صبح ال 8 شب
+					</li>
+
+					<li>
+						<i class="fas fa-circle"></i>
+						ساعت کاری سالن
+					</li>
+					<li>
+						10 صبح ال 8 شب
+					</li>
+
+					<li>
+						<i class="fas fa-circle"></i>
+						ساعت کاری سالن
+					</li>
+					<li>
+						10 صبح ال 8 شب
+					</li>
+
+					<li>
+						<i class="fas fa-circle"></i>
+						ساعت کاری سالن
+					</li>
+					<li>
+						10 صبح ال 8 شب
+					</li>
+
+					<li>
+						<i class="fas fa-circle"></i>
+						ساعت کاری سالن
+					</li>
+					<li>
+						10 صبح ال 8 شب
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="post-comments-new">
+				<div class="sendCm">
+					<div class="top">
+						<h5>
+							نظر شما
+						</h5>
+					</div>
+
+					<div class="Dta">
+						<form>
+
+							<div class="input-group firstInputName mb-3">
+								<input type="text" class="form-control" placeholder="نام و نام خانوادگی"
+									aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group">
+								<textarea class="form-control" placeholder="متن نظر"></textarea>
+							</div>
+
+							<button type="button" class="btn btn-primary w-100 text-center mt-1">
+								ارسال نظر
+							</button>
+
+						</form>
+					</div>
+				</div>
+
+				<div class="showCm">
+
+					<div class="top">
+						<h5>
+							نظرات
+						</h5>
+						<span>
+							15 نظر
+						</span>
+					</div>
+
+					<div class="Dta">
+
+						<div class="Text">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+							گرافیک
+							است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+							شرایط
 							فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-							کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-							طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
-							فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
-							موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
-							دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
-							گیرد.
-						</p>
-					</div><!-- post-content-area end -->
-					<div class="post-other-images">
-
-						<div class="col-sm-6 col-md-3">
-							<img src="images/NewIMages/item1.jpg" alt="">
+							<span class="Date">
+								<i class="far fa-clock"></i>
+								18 اردیبهشت 1399
+							</span>
 						</div>
 
-						<div class="col-sm-6 col-md-3">
-							<img src="images/NewIMages/item2.jpg" alt="">
+						<div class="Text">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+							گرافیک
+							است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+							شرایط
+							فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+							<span class="Date">
+								<i class="far fa-clock"></i>
+								18 اردیبهشت 1399
+							</span>
 						</div>
 
-						<div class="col-sm-6 col-md-3">
-							<img src="images/NewIMages/item3.jpg" alt="">
+						<div class="Text">
+							من دو روز پیش عروسیم بود ، رفتم گریمور
+							<span class="Date">
+								<i class="far fa-clock"></i>
+								18 اردیبهشت 1399
+							</span>
 						</div>
 
-						<div class="col-sm-6 col-md-3">
-							<img src="images/NewIMages/item4.jpg" alt="">
+						<div class="showMoreCM">
+							<h6>
+								نمایش نظرات بیشتر
+								<i class="fas fa-angle-double-down"></i>
+							</h6>
 						</div>
 
-						<div class="col-sm-6 col-md-3">
-							<img src="images/NewIMages/item5.jpg" alt="">
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<img src="images/NewIMages/item6.jpg" alt="">
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<img src="images/NewIMages/item7.jpg" alt="">
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<img src="images/NewIMages/item8.png" alt="">
-						</div>
-
-					</div>
-
-					<div class="post-faqs">
-
-						<h3>
-							پرسش و پاسخ
-						</h3>
-
-						<ul>
-							<li>
-								<i class="fas fa-circle"></i>
-								ساعت کاری سالن
-							</li>
-							<li>
-								10 صبح ال 8 شب
-							</li>
-
-							<li>
-								<i class="fas fa-circle"></i>
-								ساعت کاری سالن
-							</li>
-							<li>
-								10 صبح ال 8 شب
-							</li>
-
-							<li>
-								<i class="fas fa-circle"></i>
-								ساعت کاری سالن
-							</li>
-							<li>
-								10 صبح ال 8 شب
-							</li>
-
-							<li>
-								<i class="fas fa-circle"></i>
-								ساعت کاری سالن
-							</li>
-							<li>
-								10 صبح ال 8 شب
-							</li>
-
-							<li>
-								<i class="fas fa-circle"></i>
-								ساعت کاری سالن
-							</li>
-							<li>
-								10 صبح ال 8 شب
-							</li>
-
-							<li>
-								<i class="fas fa-circle"></i>
-								ساعت کاری سالن
-							</li>
-							<li>
-								10 صبح ال 8 شب
-							</li>
-						</ul>
-
-					</div>
-
-					<div class="post-comments-new">
-						<div class="sendCm">
-							<div class="top">
-								<h5>
-									نظر شما
-								</h5>
-							</div>
-
-							<div class="Dta">
-								<form>
-
-									<div class="input-group firstInputName mb-3">
-										<input type="text" class="form-control" placeholder="نام و نام خانوادگی"
-											aria-describedby="basic-addon1">
-									</div>
-
-									<div class="input-group">
-										<textarea class="form-control" placeholder="متن نظر"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary w-100 text-center mt-1">
-										ارسال نظر
-									</button>
-
-								</form>
-							</div>
-						</div>
-
-						<div class="showCm">
-
-							<div class="top">
-								<h5>
-									نظرات
-								</h5>
-								<span>
-									15 نظر
-								</span>
-							</div>
-
-							<div class="Dta">
-
-								<div class="Text">
-									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
-									گرافیک
-									است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-									شرایط
-									فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-									<span class="Date">
-										<i class="far fa-clock"></i>
-										18 اردیبهشت 1399
-									</span>
-								</div>
-
-								<div class="Text">
-									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
-									گرافیک
-									است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-									شرایط
-									فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-									<span class="Date">
-										<i class="far fa-clock"></i>
-										18 اردیبهشت 1399
-									</span>
-								</div>
-
-								<div class="Text">
-									من دو روز پیش عروسیم بود ، رفتم گریمور
-									<span class="Date">
-										<i class="far fa-clock"></i>
-										18 اردیبهشت 1399
-									</span>
-								</div>
-
-								<div class="showMoreCM">
-									<h6>
-										نمایش نظرات بیشتر
-										<i class="fas fa-angle-double-down"></i>
-									</h6>
-								</div>
-
-								<!-- <img width="100%" src="images/EmptyImage Cm.png" alt="notfound"> -->
-
-							</div>
-
-						</div>
+						<!-- <img width="100%" src="images/EmptyImage Cm.png" alt="notfound"> -->
 
 					</div>
 
 				</div>
 
-			</div><!-- row end -->
-		</div><!-- container end -->
-	</section><!-- category-layout end -->
+			</div>
+
+		</div>
+	</div>
 
 	<!-- ad banner start-->
 	<div class="newsletter-area">
