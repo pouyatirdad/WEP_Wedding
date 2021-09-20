@@ -6404,7 +6404,7 @@ body {
 
 .post-other-images {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -6417,25 +6417,33 @@ body {
 }
 
 .post-faqs {
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: 0 2px 7px #00000017;
   background: #fff;
-  padding: 17px;
-  margin-bottom: 14px;
+  padding: 30px 17px;
+  margin-bottom: 27px;
+  margin-top: 20px;
 }
 .post-faqs h3 {
-  font-size: 22px;
+  font-size: 27px;
   margin: 0;
-  padding-bottom: 14px;
+  padding-bottom: 30px;
   color: #414998;
   font-weight: 600;
   font-family: "BYekanPlus";
 }
 
-.post-faqs li:nth-child(even) {
+.post-faqs ul {
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+}
+
+.post-faqs li:nth-child(odd) {
   position: relative;
   font-size: 20px;
   margin: 0;
+  padding-top: 10px;
   color: rgb(17, 17, 17);
   font-weight: 600;
   font-family: "BYekanPlus";
@@ -6443,15 +6451,164 @@ body {
 
 .post-faqs li:nth-child(odd) i {
   position: absolute;
-  right: 0;
+  right: -25px;
+  top: 19px;
   color: #414998;
-  font-size: 16px;
+  font-size: 9px;
 }
 
 .post-faqs li:nth-child(even) {
-  font-size: 18px;
+  padding: 10px 0;
+  font-size: 17px;
   margin: 0;
   color: rgb(146, 146, 146);
   font-weight: 600;
   font-family: "BYekanPlus";
+}
+
+.post-comments-new {
+  border-radius: 7px;
+  box-shadow: 0 2px 7px #00000017;
+  background: #f6f7ff;
+  padding: 17px;
+  margin-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-comments-new .sendCm {
+  width: 40%;
+  padding: 0 10px;
+}
+
+.post-comments-new .showCm {
+  width: 60%;
+  padding: 0 10px;
+  position: relative;
+}
+
+.post-comments-new .sendCm .input-group {
+  width: 100%;
+}
+
+.post-comments-new h5 {
+  font-size: 22px;
+  margin: 0;
+  padding-bottom: 20px;
+  color: #414998;
+  font-weight: 600;
+  font-family: "BYekanPlus";
+}
+
+.post-comments-new .sendCm input {
+  background: #fff;
+  border-radius: 6px !important;
+  border: 0;
+  padding: 6px 9px;
+  color: #909090;
+  font-weight: 700;
+  margin-bottom: 10px !important;
+}
+
+.post-comments-new .sendCm textarea {
+  background: #fff;
+  border-radius: 6px !important;
+  height: 215px;
+  border: 0;
+  padding: 6px 9px;
+  color: #909090;
+  font-weight: 700;
+  margin-bottom: 10px !important;
+}
+
+.post-comments-new .sendCm button {
+  border-radius: 6px !important;
+  margin-bottom: 10px !important;
+}
+
+.post-comments-new .sendCm input::placeholder,
+textarea::placeholder {
+  color: #909090;
+  font-weight: 700;
+}
+
+.post-comments-new .showCm .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-comments-new .showCm .top span {
+  background-color: #fff;
+  color: #414998;
+  font-size: 13px;
+  font-family: "BYekanPlus";
+  font-weight: 600;
+  border-radius: 10px;
+  height: 30px;
+  padding: 3px 10px;
+}
+
+.post-comments-new .showCm .Dta .Text {
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  color: #656565de;
+  background: #fff;
+  border-radius: 9px;
+  padding: 10px;
+  margin-bottom: 33px;
+}
+
+.post-comments-new .showCm .Dta .Text .Date {
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  background: #fff;
+  padding: 0 2px;
+  color: #5963c1;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: baseline;
+  border-radius: 9px;
+  height: 20px;
+}
+
+.post-comments-new .showCm .Dta .Text .Date i {
+  padding-left: 4px;
+}
+.showMoreCM {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.showMoreCM h6 {
+  font-size: 14px;
+  margin: 0;
+  color: #414998;
+  font-weight: 600;
+  font-family: "BYekanPlus";
+}
+.showMoreCM h6 i {
+  position: absolute;
+  top: 3px;
+  padding-right: 4px;
+  animation: flash 1s ease-in-out 1s infinite alternate;
+  -webkit-animation: flash 1s ease-in-out 1s infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 1px;
+  }
+
+  100% {
+    top: 3px;
+  }
 }
