@@ -6778,3 +6778,33 @@ textarea::placeholder {
   left: auto;
   width: 82%;
 }
+
+.LeftSideAreaBlog {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  height: 433px;
+  position: relative;
+  left: 30px;
+}
+
+.LeftSidePartsBlog {
+  height: 50%;
+}
+
+.LeftSideItemBlog {
+  height: 100%;
+}
+
+.LeftSideItemBlog:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.LeftSideItemBlog img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.LeftSideItemBlog:nth-child(2) {
+  height: calc(100% - 20px);
+}

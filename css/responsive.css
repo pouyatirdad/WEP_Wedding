@@ -1344,3 +1344,12 @@
     font-size: 18px !important;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .LeftSideItemBlog:nth-child(1) {
+    height: calc(100% - 25px);
+  }
+  .LeftSideItemBlog:nth-child(2) {
+    height: calc(100% - 25px);
+  }
+}
