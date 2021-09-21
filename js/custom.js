@@ -541,3 +541,43 @@ if (mq.matches) {
 else {
 	$('.SubmitOfferMobile').hide();
 }
+
+
+$('.HDTopLeft').on('click', () => {
+
+	$('.HDTopLeft').css('background', '#F8F9FF');
+
+	$('.HDTopRight , .HDBottomLeft').css('opacity', 0)
+
+	$('.ContactChild').show("slide", { direction: "up" }, 200);
+
+	$('.CLoseMeCCD').show("puff", { direction: "left" }, 200);
+
+	$('.CCDs1').show("slide", { direction: "up" }, 300);
+	$('.CCDs2').show("slide", { direction: "up" }, 500);
+	$('.CCDs3').show("slide", { direction: "up" }, 900);
+
+	setTimeout(() => {
+		$('.CCDs1').css('display', "flex");
+		$('.CCDs2').css('display', "flex");
+		$('.CCDs3').css('display', "flex");
+	}, 901);
+
+})
+
+
+$('.CLoseMeCCD').on('click', () => {
+
+	$('.HDTopLeft').css('background', '#FFF');
+
+	$('.HDTopRight , .HDBottomLeft').css('opacity', 1)
+
+	$('.ContactChild').hide("slide", { direction: "down" }, 200);
+
+	$('.CLoseMeCCD').hide("puff", { direction: "right" }, 400);
+
+	$('.CCDs1').hide("slide", { direction: "down" }, 300);
+	$('.CCDs2').hide("slide", { direction: "down" }, 500);
+	$('.CCDs3').hide("slide", { direction: "down" }, 900);
+
+})
