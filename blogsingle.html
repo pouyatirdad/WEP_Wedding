@@ -58,7 +58,7 @@
 <body>
 
     <!-- Header start -->
-    <header id="header" class="header">
+    <header id="header" class="header is-ts-sticky">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-3 col-sm-12">
@@ -342,7 +342,7 @@
         <!--/ Collapse end -->
     </div>
 
-    <div class="main-nav clearfix is-ts-sticky">
+    <div class="main-nav clearfix is-ts-sticky2">
         <div class="container">
             <div class="row justify-content-between">
                 <nav class="navbar navbar-expand-lg col-lg-8">
@@ -421,9 +421,12 @@
                     </button>
 
                     <div class="nav-search">
-                        <a href="#search-popup" class="xs-modal-popup">
+                        <a href="javascript:void(0)" class="NavSearchPc">
                             <i class="icon icon-search1"></i>
                         </a>
+                        <form class="SearchAreaInPc">
+                            <input type="text">
+                        </form>
                     </div><!-- Search end -->
 
                     <div class="zoom-anim-dialog mfp-hide modal-searchPanel ts-search-form" id="search-popup">
@@ -460,596 +463,357 @@
         <!--/ Container end -->
     </div><!-- Menu wrapper end -->
 
-    <div class="gap-30"></div>
+    <div class="gap-40"></div>
 
     <div class="container">
+        <div class="row">
 
-        <div class="CategorySlider">
-            <h2 class="block-title d-flex justify-content-between">
-                <span class="title-angle-shap"> دسته بندی خدمات </span>
+            <div class="col-sm-12 col-md-7">
 
-                <a href="#" class="title-angle-shap-custom"> نمایش همه </a>
-            </h2>
-            <div class="owl-carousel owl-theme CategoryCarousel">
-                <div class="item CategorySliderMedia">
-                    <img src="images/NewIMages/item4.jpg" alt="img">
-                    <div class="CSDowner">
-                        آرایشگاه داماد
+
+                <section class="trending-slider pt-0 pb-0">
+                    <div class="container">
+                        <div class="ts-grid-box">
+                            <div class="owl-carousel dot-style2 transing-slide-style2">
+                                <div class="item post-overaly-style post-lg"
+                                    style="background-image:url(images/news/fashion/image1.png)">
+                                    <a href="#" class="image-link">&nbsp;</a>
+
+                                </div>
+                                <div class="item post-overaly-style post-lg"
+                                    style="background-image:url(images/news/travel/image1.png)">
+                                    <a href="#" class="image-link">&nbsp;</a>
+
+                                </div>
+                                <div class="item post-overaly-style post-lg"
+                                    style="background-image:url(images/news/lifestyle/image2.png)">
+                                    <a href="#" class="image-link">&nbsp;</a>
+
+                                </div>
+                                <div class="item post-overaly-style post-lg"
+                                    style="background-image:url(images/news/lifestyle/image3.png)">
+                                    <a href="#" class="image-link">&nbsp;</a>
+
+                                </div>
+                            </div>
+                            <!-- 
+										<img class="emptySlider" src="images/EmptyImage slider.png" alt=""> -->
+
+                        </div>
+                        <!-- ts-populer-post-box end-->
                     </div>
-                </div>
-                <div class="item CategorySliderMedia">
-                    <img src="images/NewIMages/item4.jpg" alt="img">
-                    <div class="CSDowner">
-                        آرایشگاه داماد
+                    <!-- container end-->
+                </section>
+
+            </div>
+
+            <div class="d-none d-md-block col-md-5">
+
+                <div class=" LeftSideAreaBlog">
+
+                    <div class="LeftSidePartsBlog">
+
+                        <div class="LeftSideItemBlog">
+                            <img width="100%" src="images/NewIMages/item3.jpg" alt="">
+                        </div>
+
+                        <div class="LeftSideItemBlog">
+                            <img width="100%" src="images/NewIMages/item3.jpg" alt="">
+                        </div>
+
                     </div>
-                </div>
-                <div class="item CategorySliderMedia">
-                    <img src="images/NewIMages/item4.jpg" alt="img">
-                    <div class="CSDowner">
-                        آرایشگاه داماد
+
+                    <div class="LeftSidePartsBlog">
+
+                        <div class="LeftSideItemBlog">
+                            <img width="100%" src="images/NewIMages/item3.jpg" alt="">
+                        </div>
+
+                        <div class="LeftSideItemBlog">
+                            <img width="100%" src="images/NewIMages/item3.jpg" alt="">
+                        </div>
+
                     </div>
-                </div>
-                <div class="item CategorySliderMedia">
-                    <img src="images/NewIMages/item4.jpg" alt="img">
-                    <div class="CSDowner">
-                        آرایشگاه داماد
-                    </div>
-                </div>
-                <div class="item CategorySliderMedia">
-                    <img src="images/NewIMages/item4.jpg" alt="img">
-                    <div class="CSDowner">
-                        آرایشگاه داماد
-                    </div>
-                </div>
-                <div class="item CategorySliderMedia">
-                    <img src="images/NewIMages/item4.jpg" alt="img">
-                    <div class="CSDowner">
-                        آرایشگاه داماد
-                    </div>
+
                 </div>
 
             </div>
-        </div>
 
+        </div>
     </div>
 
-    <!-- post wraper start-->
-    <section class="trending-slider pb-0">
-        <div class="container">
-            <div class="ts-grid-box">
+    <div class="gap-50"></div>
+
+    <div class="container">
+        <div class="row mobileReverseColumn">
+            <div class="col-sm-12 col-md-8 col-lg-8 mt-sm-4 mt-md-0">
                 <h2 class="block-title">
-                    <span class="title-angle-shap"> بهترین ها </span>
+                    <span class="title-angle-shap">عنوان مقاله</span>
                 </h2>
-                <div class="row">
 
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item1.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <h2 class="block-title">
+                    <span class="title-angle-shap"> پربازدید ها</span>
+                </h2>
 
-                                    </div>
-
-                                    <h2 class="post-title">
-                                        <a href="#">تاج و اکسسوری عروس دایموند </a>
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
+                <div class="SideBarBlog">
+                    <div class="SideBarBlogRight">
+                        <a href="blogsingle.html">
+                            <img src="images/NewIMages/item3.jpg" alt="image">
+                        </a>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item2.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item3.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item4.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item5.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item6.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item7.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item8.png)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-
-                    <!-- start add slider -->
-                    <div class="w-100 px-2">
-
-                        <div class="owl-carousel owl-theme mainPageAddCarousel">
-
-                            <div class="item mainPageAddData">
-                                <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg"
-                                    alt="img">
-                            </div>
-
-                            <div class="item mainPageAddData">
-                                <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg"
-                                    alt="img">
-                            </div>
-
-                            <div class="item mainPageAddData">
-                                <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg"
-                                    alt="img">
-                            </div>
-
-                            <div class="item mainPageAddData">
-                                <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg"
-                                    alt="img">
-                            </div>
-
-                            <div class="item mainPageAddData">
-                                <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg"
-                                    alt="img">
-                            </div>
-
-                            <div class="item mainPageAddData">
-                                <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg"
-                                    alt="img">
-                            </div>
-
+                    <div class="SideBarBlogLeft">
+                        <h3>
+                            چند نکته طلایی برای انتخاب کارت عروسی که باید بدانید
+                        </h3>
+                        <div>
+                            <h5>
+                                <i class="far fa-edit"></i>
+                                اریانا محسنی
+                            </h5>
+                            <h6>
+                                <i class="far fa-clock"></i>
+                                1400/04/22
+                            </h6>
                         </div>
+                        <div>
+                            <h5>
+                                <i class="far fa-heart"></i>
+                                25
+                            </h5>
+                            <h6>
+                                <a href="blogsingle.html">
 
+                                    اطلاعات بیشتر
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </h6>
+                        </div>
                     </div>
-                    <!-- end add slider -->
-
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item1.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-                                    </div>
-
-                                    <h2 class="post-title">
-                                        <a href="#">تاج و اکسسوری عروس دایموند </a>
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item2.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item3.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item4.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item5.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item6.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item7.jpg)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 px-2">
-                        <div class="item post-overaly-style post-md my-2"
-                            style="background-image:url(images/NewIMages/item8.png)">
-                            <a href="#" class="image-link">&nbsp;</a>
-                            <div class="overlay-post-content">
-                                <div class="post-content">
-                                    <div class="grid-category">
-
-
-                                    </div>
-
-                                    <h2 class="post-title"> <a href="#">تاج و اکسسوری عروس دایموند </a>
-
-                                    </h2>
-
-                                    <div class="StartsInItem">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- Item 1 end -->
-                    </div>
-
                 </div>
-                <!-- most-populers end-->
-            </div>
-            <!-- ts-populer-post-box end-->
-        </div>
-        <!-- container end-->
-    </section>
-    <!-- .section -->
 
-    <section class="pb-2">
-
-        <div class="container">
-
-            <div class="formUperInMedia">
-
-                <form>
-                    <div class="row SearchForItem">
-
-                        <div class="form-group m-0 col-md-4">
-                            <input type="text" class="form-control bg-white" placeholder=" &#xF002; جستجو...">
-                        </div>
-
-                        <div class="form-group m-0 col-md-3">
-                            <select class="form-control bg-white">
-                                <option>شهر ها</option>
-                                <option>تهران</option>
-                                <option>تهران</option>
-                                <option>تهران</option>
-                                <option>تهران</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group m-0 col-md-3">
-                            <select class="form-control bg-white">
-                                <option>مشاغل</option>
-                                <option>آرایشگاه</option>
-                                <option>آرایشگاه</option>
-                                <option>آرایشگاه</option>
-                                <option>آرایشگاه</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-primary w-100">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-
+                <div class="SideBarBlog">
+                    <div class="SideBarBlogRight">
+                        <a href="blogsingle.html">
+                            <img src="images/NewIMages/item3.jpg" alt="image">
+                        </a>
                     </div>
-                </form>
+                    <div class="SideBarBlogLeft">
+                        <h3>
+                            چند نکته طلایی برای انتخاب کارت عروسی که باید بدانید
+                        </h3>
+                        <div>
+                            <h5>
+                                <i class="far fa-edit"></i>
+                                اریانا محسنی
+                            </h5>
+                            <h6>
+                                <i class="far fa-clock"></i>
+                                1400/04/22
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>
+                                <i class="far fa-heart"></i>
+                                25
+                            </h5>
+                            <h6>
+                                <a href="blogsingle.html">
+
+                                    اطلاعات بیشتر
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="SideBarBlog">
+                    <div class="SideBarBlogRight">
+                        <a href="blogsingle.html">
+                            <img src="images/NewIMages/item3.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="SideBarBlogLeft">
+                        <h3>
+                            چند نکته طلایی برای انتخاب کارت عروسی که باید بدانید
+                        </h3>
+                        <div>
+                            <h5>
+                                <i class="far fa-edit"></i>
+                                اریانا محسنی
+                            </h5>
+                            <h6>
+                                <i class="far fa-clock"></i>
+                                1400/04/22
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>
+                                <i class="far fa-heart"></i>
+                                25
+                            </h5>
+                            <h6>
+                                <a href="blogsingle.html">
+
+                                    اطلاعات بیشتر
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="SideBarBlog">
+                    <div class="SideBarBlogRight">
+                        <a href="blogsingle.html">
+                            <img src="images/NewIMages/item3.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="SideBarBlogLeft">
+                        <h3>
+                            چند نکته طلایی برای انتخاب کارت عروسی که باید بدانید
+                        </h3>
+                        <div>
+                            <h5>
+                                <i class="far fa-edit"></i>
+                                اریانا محسنی
+                            </h5>
+                            <h6>
+                                <i class="far fa-clock"></i>
+                                1400/04/22
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>
+                                <i class="far fa-heart"></i>
+                                25
+                            </h5>
+                            <h6>
+                                <a href="blogsingle.html">
+
+                                    اطلاعات بیشتر
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="SideBarBlog">
+                    <div class="SideBarBlogRight">
+                        <a href="blogsingle.html">
+                            <img src="images/NewIMages/item3.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="SideBarBlogLeft">
+                        <h3>
+                            چند نکته طلایی برای انتخاب کارت عروسی که باید بدانید
+                        </h3>
+                        <div>
+                            <h5>
+                                <i class="far fa-edit"></i>
+                                اریانا محسنی
+                            </h5>
+                            <h6>
+                                <i class="far fa-clock"></i>
+                                1400/04/22
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>
+                                <i class="far fa-heart"></i>
+                                25
+                            </h5>
+                            <h6>
+                                <a href="blogsingle.html">
+
+                                    اطلاعات بیشتر
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="SideBarBlog">
+                    <div class="SideBarBlogRight">
+                        <a href="blogsingle.html">
+                            <img src="images/NewIMages/item3.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="SideBarBlogLeft">
+                        <h3>
+                            چند نکته طلایی برای انتخاب کارت عروسی که باید بدانید
+                        </h3>
+                        <div>
+                            <h5>
+                                <i class="far fa-edit"></i>
+                                اریانا محسنی
+                            </h5>
+                            <h6>
+                                <i class="far fa-clock"></i>
+                                1400/04/22
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>
+                                <i class="far fa-heart"></i>
+                                25
+                            </h5>
+                            <h6>
+                                <a href="blogsingle.html">
+
+                                    اطلاعات بیشتر
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="SideBarBlog">
+                    <div class="SideBarBlogRight">
+                        <a href="blogsingle.html">
+                            <img src="images/NewIMages/item3.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="SideBarBlogLeft">
+                        <h3>
+                            چند نکته طلایی برای انتخاب کارت عروسی که باید بدانید
+                        </h3>
+                        <div>
+                            <h5>
+                                <i class="far fa-edit"></i>
+                                اریانا محسنی
+                            </h5>
+                            <h6>
+                                <i class="far fa-clock"></i>
+                                1400/04/22
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>
+                                <i class="far fa-heart"></i>
+                                25
+                            </h5>
+                            <h6>
+                                <a href="blogsingle.html">
+
+                                    اطلاعات بیشتر
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-
         </div>
+    </div>
 
-    </section>
+    <div class="gap-30"></div>
 
     <section class="block-wrapper">
         <div class="container">
@@ -1058,65 +822,214 @@
                     <!--- Featured Tab startet -->
                     <div class="featured-tab">
                         <h2 class="block-title">
-                            <span class="title-angle-shap"> پیشنهادات</span>
+                            <span class="title-angle-shap"> مقالات ملزومات عروسی</span>
                         </h2>
 
                         <div class="tab-content my-2">
-                            <div class="Medias">
+                            <div class="Medias BlogMedias">
                                 <div class="imageRight">
-                                    <a href="single.html">
+                                    <a href="blogsingle.html">
                                         <img src="images/NewIMages/sortiem1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="contentLeft p-2">
 
-                                    <div class="TopLeft">
+                                    <div class="ShortDescBl">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                                        ابزارهای کاربردی می باشد،
 
-                                        <div class="Like">
-                                            23
-                                            <i class="far fa-heart"></i>
-                                        </div>
-
-                                        <div class="Coments">
-                                            12
-                                            <i class="far fa-comment"></i>
-                                        </div>
-
-                                        <div class="Stars">
-                                            14
-                                            <i class="far fa-star"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="TopRight">
-                                        <h1>
-                                            سالن زیبایی فلان
-                                        </h1>
-                                        <h2>
-                                            سالن زیبایی ، سالن زیبایی تهران
-                                        </h2>
-                                        <h3>
-                                            سالن زیبایی فلان با ظرفیت 23000 ، دارای فلان چیز ، کاملا زیبا
-                                        </h3>
-                                    </div>
-
-                                    <div class="BottomRight">
-                                        <h4>
-                                            آدرس : تهران تهران
-                                        </h4>
+                                        <span>
+                                            دسته بندی
+                                        </span>
 
                                     </div>
 
-                                    <h5 class="Discount comments-btn btn btn-primary ">
-                                        درخواست قیمت
-                                    </h5>
+                                    <div class="BottomBlog">
+                                        <div>
+                                            <h5>
+                                                اریا حسینی
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <i class="far fa-clock"></i>
+                                                1400/04/22
+                                            </h6>
+                                        </div>
+                                        <div>
+                                            <h5>
+                                                <i class="far fa-eye"></i>
+                                                25
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="blogsingle.html">
 
-                                    <a class="BottomLeft" href="single.html">
+                                                    اطلاعات بیشتر
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
 
-                                        جزییات
-                                        <i class="fas fa-angle-double-left"></i>
+                                </div>
+                            </div>
 
+                            <div class="Medias BlogMedias">
+                                <div class="imageRight">
+                                    <a href="blogsingle.html">
+                                        <img src="images/NewIMages/sortiem1.jpg" alt="">
                                     </a>
+                                </div>
+                                <div class="contentLeft p-2">
+
+                                    <div class="ShortDescBl">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                                        ابزارهای کاربردی می باشد،
+
+                                        <span>
+                                            دسته بندی
+                                        </span>
+
+                                    </div>
+
+                                    <div class="BottomBlog">
+                                        <div>
+                                            <h5>
+                                                اریا حسینی
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <i class="far fa-clock"></i>
+                                                1400/04/22
+                                            </h6>
+                                        </div>
+                                        <div>
+                                            <h5>
+                                                <i class="far fa-eye"></i>
+                                                25
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="blogsingle.html">
+
+                                                    اطلاعات بیشتر
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="Medias BlogMedias">
+                                <div class="imageRight">
+                                    <a href="blogsingle.html">
+                                        <img src="images/NewIMages/sortiem1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="contentLeft p-2">
+
+                                    <div class="ShortDescBl">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                                        ابزارهای کاربردی می باشد،
+
+                                        <span>
+                                            دسته بندی
+                                        </span>
+
+                                    </div>
+
+                                    <div class="BottomBlog">
+                                        <div>
+                                            <h5>
+                                                اریا حسینی
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <i class="far fa-clock"></i>
+                                                1400/04/22
+                                            </h6>
+                                        </div>
+                                        <div>
+                                            <h5>
+                                                <i class="far fa-eye"></i>
+                                                25
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="blogsingle.html">
+
+                                                    اطلاعات بیشتر
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="Medias BlogMedias">
+                                <div class="imageRight">
+                                    <a href="blogsingle.html">
+                                        <img src="images/NewIMages/sortiem1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="contentLeft p-2">
+
+                                    <div class="ShortDescBl">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                                        ابزارهای کاربردی می باشد،
+
+                                        <span>
+                                            دسته بندی
+                                        </span>
+
+                                    </div>
+
+                                    <div class="BottomBlog">
+                                        <div>
+                                            <h5>
+                                                اریا حسینی
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <i class="far fa-clock"></i>
+                                                1400/04/22
+                                            </h6>
+                                        </div>
+                                        <div>
+                                            <h5>
+                                                <i class="far fa-eye"></i>
+                                                25
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="blogsingle.html">
+
+                                                    اطلاعات بیشتر
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -1147,9 +1060,9 @@
                 </div><!-- Sidebar Col end -->
             </div><!-- Row end -->
         </div><!-- Container end -->
-    </section><!-- First block end -->
+    </section>
 
-
+    <div class="gap-30"></div>
 
     <!-- ad banner start-->
     <div class="block-wrapper no-padding">
@@ -1600,34 +1513,6 @@
     <!-- Template custom -->
     <script src="js/custom.js"></script>
 
-    <script>
-        $('.CategoryCarousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: false,
-            nav: true,
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            responsive: {
-                0: {
-                    items: 3
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
-                }
-            }
-        })
-        $('.mainPageAddCarousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: false,
-            nav: true,
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            items: 2
-        })
-    </script>
 
 </body>
 
