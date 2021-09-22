@@ -57,8 +57,9 @@
 
 <body>
 
+
     <!-- Header start -->
-    <header id="header" class="header">
+    <header id="header" class="header is-ts-sticky">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-3 col-sm-12">
@@ -96,6 +97,121 @@
         </div><!-- Logo and banner area end -->
     </header>
     <!--/ Header end -->
+
+    <div class="CityChoiceModal">
+
+        <div class="ModalCity">
+            <div class="HeaderModal">
+                <h4>
+                    شهر ها
+                </h4>
+                <div class="SearchAreaInModal">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white rounded-top" id="exampleFormControlInput1"
+                                placeholder="&#xF002; جستجو در شهر ها">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="CityModalBody pt-3">
+
+                <div class="container-fluid">
+
+                    <div class="row justify-content-center align-items-center ShowCityParent">
+
+                        <div class="col-12 p-2 CityItemInModal">
+                            <div class="">
+                                <h5>
+                                    تهران
+                                </h5>
+                            </div>
+                            <div class="MoreArrow">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-12 p-2 CityItemInModal">
+                            <div class="">
+                                <h5>
+                                    آذربایجان
+                                </h5>
+                            </div>
+                            <div class="MoreArrow">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-12 p-2 CityItemInModal">
+                            <div class="">
+                                <h5>
+                                    کرمان
+                                </h5>
+                            </div>
+                            <div class="MoreArrow">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row justify-content-center align-items-center ShowCityChild">
+
+                        <div class="col-12 p-2  BackBtnInCityList">
+
+                            <div class="MoreArrow">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    بازگشت
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+                            <div class="">
+                                <h5>
+                                    همه شهرها
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+                            <div class="">
+                                <h5>
+                                    آذر شهر
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+                            <div class="">
+                                <h5>
+                                    بناب
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+                            <div class="">
+                                <h5>
+                                    اهر
+                                </h5>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
     <div class="SendMessageToInMobileIndexOverllay"></div>
 
@@ -162,6 +278,7 @@
 
     </div>
 
+
     <div class="sideBarMenuMobile">
         <div class="CloseIconForMM">
             <i class="fa fa-close"></i>
@@ -226,7 +343,7 @@
         <!--/ Collapse end -->
     </div>
 
-    <div class="main-nav clearfix is-ts-sticky">
+    <div class="main-nav clearfix is-ts-sticky2">
         <div class="container">
             <div class="row justify-content-between">
                 <nav class="navbar navbar-expand-lg col-lg-8">
@@ -299,10 +416,18 @@
 
                 <div class="col-lg-4 text-right nav-social-wrap">
 
+                    <button class="comments-btn btn btn-primary ShowCityChoiceMobile" style="position: relative;">
+                        شهر
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+
                     <div class="nav-search">
-                        <a href="#search-popup" class="xs-modal-popup">
+                        <a href="javascript:void(0)" class="NavSearchPc">
                             <i class="icon icon-search1"></i>
                         </a>
+                        <form class="SearchAreaInPc">
+                            <input type="text">
+                        </form>
                     </div><!-- Search end -->
 
                     <div class="zoom-anim-dialog mfp-hide modal-searchPanel ts-search-form" id="search-popup">

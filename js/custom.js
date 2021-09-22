@@ -401,12 +401,12 @@ $('.ShowContactInfo').click(function (event) {
 	event.stopPropagation();
 });
 
-$('.Discount').on('click', () => {
+$('.Discount, .HDTopRight').on('click', () => {
 	$('.SendMessageToInMobileIndex').show("slide", { direction: "right" }, 300);
 	$('.SendMessageToInMobileIndexOverllay').show("slide", { direction: "right" }, 300);
 })
 
-$('.MoneyAsk').on('click', () => {
+$('.MoneyAsk ').on('click', () => {
 	$('.SendMessageToInMobile').show("slide", { direction: "right" }, 300);
 	$('.SendMessageToInMobileOverllay').show("slide", { direction: "right" }, 300);
 })

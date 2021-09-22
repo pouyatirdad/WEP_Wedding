@@ -57,411 +57,412 @@
 
 <body>
 
-    <!-- Header start -->
-    <header id="header" class="header is-ts-sticky">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-3 col-sm-12">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logos/logo.png" alt="">
-                        </a>
-                    </div>
-                </div><!-- logo col end -->
-
-                <div class="col-md-8 col-sm-12 header-right d-flex justify-content-end FlexCenterInMobile">
-
-                    <div class="d-flex justify-content-end text-left">
-
-                        <button class="comments-btn btn btn-primary" style="position: relative;" id="ShowCityChoice"
-                            type="submit">
-                            شهر
-                            <i class="fas fa-angle-down"></i>
-                        </button>
-                    </div>
-
-                    <div class="d-flex justify-content-end text-left ">
-                        <button class="comments-btn btn btn-primary " style="position: relative;" id="SubmitOffer"
-                            type="submit">
-                            <h6>
-                                ثبت رایگان آگهی در ازدواج ایرانی
-                            </h6>
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-
-
-                </div><!-- header right end -->
-            </div><!-- Row end -->
-        </div><!-- Logo and banner area end -->
-    </header>
-    <!--/ Header end -->
-
-    <div class="CityChoiceModal">
-
-        <div class="ModalCity">
-            <div class="HeaderModal">
-                <h4>
-                    شهر ها
-                </h4>
-                <div class="SearchAreaInModal">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control bg-white rounded-top" id="exampleFormControlInput1"
-                                placeholder="&#xF002; جستجو در شهر ها">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="CityModalBody pt-3">
-
-                <div class="container-fluid">
-
-                    <div class="row justify-content-center align-items-center ShowCityParent">
-
-                        <div class="col-12 p-2 CityItemInModal">
-                            <div class="">
-                                <h5>
-                                    تهران
-                                </h5>
-                            </div>
-                            <div class="MoreArrow">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-
-                        <div class="col-12 p-2 CityItemInModal">
-                            <div class="">
-                                <h5>
-                                    آذربایجان
-                                </h5>
-                            </div>
-                            <div class="MoreArrow">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-
-                        <div class="col-12 p-2 CityItemInModal">
-                            <div class="">
-                                <h5>
-                                    کرمان
-                                </h5>
-                            </div>
-                            <div class="MoreArrow">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="row justify-content-center align-items-center ShowCityChild">
-
-                        <div class="col-12 p-2  BackBtnInCityList">
-
-                            <div class="MoreArrow">
-                                <i class="fas fa-angle-left"></i>
-                            </div>
-                            <div class="">
-                                <h5>
-                                    بازگشت
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
-                            <div class="">
-                                <h5>
-                                    همه شهرها
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
-                            <div class="">
-                                <h5>
-                                    آذر شهر
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
-                            <div class="">
-                                <h5>
-                                    بناب
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
-                            <div class="">
-                                <h5>
-                                    اهر
-                                </h5>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <div class="SendMessageToInMobileIndexOverllay"></div>
-
-    <div class="sidebar SendMessageToInMobileIndex HideMeinBig">
-        <div class="sidebar-widget social-widget">
-
-            <h2 class="block-title">
-                <span class="title-angle-shap"> ارسال پیام</span>
-            </h2>
-
-            <div class="SendMessageToIndex">
-                <div class="CloseBtnForMoneyAsk">
-                    <i class="fa fa-close"></i>
-                </div>
-                <h4 class="text-center">
-                    پیام به آرایشگاه فلان
-
-                    <p class="text-center">
-                        بعد از ثبت درخواست با شما تماس گرفته خواهد شد.
-                    </p>
-                </h4>
-
-
-                <form>
-
-                    <div class="input-group firstInputName mb-3">
-                        <label for="">
-                            نام و نام خانوادگی
-                        </label>
-                        <input type="text" class="form-control" aria-describedby="basic-addon1">
-                        <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon1">
-                                <i class="fas fa-user-alt"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="input-group SecondInputNumber mb-3">
-                        <label for="">
-                            شماره همراه
-                        </label>
-                        <input type="text" class="form-control" aria-describedby="basic-addon1">
-                        <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon1">
-                                <i class="fas fa-mobile"></i>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="">
-                            پیام
-                        </label>
-                        <textarea class="form-control" style="height: 100px;"></textarea>
-                    </div>
-
-                    <button type="button"
-                        class="btn btn-primary w-100 text-center mt-1 SendMessageToSendBtn">ارسال</button>
-
-                </form>
-
-            </div>
-
-        </div><!-- widget end -->
-
-    </div>
-
-
-    <div class="sideBarMenuMobile">
-        <div class="CloseIconForMM">
-            <i class="fa fa-close"></i>
-        </div>
-        <div class="SideBarMenu">
-            <img src="images/logos/logoSmall.png" alt="">
-        </div>
-
-        <div class="SearchInMenu">
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control bg-white rounded-top" id="exampleFormControlInput1"
-                        placeholder=" جستجو...">
-                </div>
-            </form>
-        </div>
-
-        <div id="navbarSupportedContent" class="collapse navbar-collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav">
-                <li class="nav-item dropdown active">
-                    <a href="#" class="menu-dropdown" data-toggle="dropdown">سالن زیبایی <i
-                            class="fa fa-angle-right"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
-                        <li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
-                        <li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown active">
-                    <a href="#" class="menu-dropdown" data-toggle="dropdown"> سالن عروسی
-                        <i class="fa fa-angle-right"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
-                        <li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
-                        <li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown active">
-                    <a href="#" class="menu-dropdown" data-toggle="dropdown"> آرایشگاه <i
-                            class="fa fa-angle-right"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
-                        <li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
-                        <li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown active">
-                    <a href="#" class="menu-dropdown" data-toggle="dropdown">آتلیه فیلم و عکس <i
-                            class="fa fa-angle-right"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
-                        <li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
-                        <li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!--/ Nav ul end -->
-        </div>
-        <!--/ Collapse end -->
-    </div>
-
-    <div class="main-nav clearfix is-ts-sticky2">
-        <div class="container">
-            <div class="row justify-content-between">
-                <nav class="navbar navbar-expand-lg col-lg-8">
-                    <div class="site-nav-inner float-left">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="true" aria-label="Toggle navigation">
-                            <span class="fa fa-bars"></span>
-                        </button>
-                        <!-- End of Navbar toggler -->
-
-                        <div id="navbarSupportedContent"
-                            class="collapse navbar-collapse navbar-responsive-collapse hideSm">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item dropdown active">
-                                    <a href="#" class="menu-dropdown" data-toggle="dropdown">سالن زیبایی <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
-                                        <li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
-                                        <li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown active">
-                                    <a href="#" class="menu-dropdown" data-toggle="dropdown"> سالن عروسی
-                                        <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
-                                        <li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
-                                        <li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown active">
-                                    <a href="#" class="menu-dropdown" data-toggle="dropdown"> آرایشگاه <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
-                                        <li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
-                                        <li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown active">
-                                    <a href="#" class="menu-dropdown" data-toggle="dropdown">آتلیه فیلم و عکس <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
-                                        <li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
-                                        <li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <!--/ Nav ul end -->
-                        </div>
-                        <!--/ Collapse end -->
-
-                    </div><!-- Site Navbar inner end -->
-                </nav>
-                <!--/ Navigation end -->
-
-                <div class="LogoMobile ">
-
-                    <a href="index.html">
-                        <img src="images/logos/logo.png" />
-                    </a>
-
-                </div>
-
-                <div class="col-lg-4 text-right nav-social-wrap">
-
-                    <button class="comments-btn btn btn-primary ShowCityChoiceMobile" style="position: relative;">
-                        شهر
-                        <i class="fas fa-angle-down"></i>
-                    </button>
-
-                    <div class="nav-search">
-                        <a href="javascript:void(0)" class="NavSearchPc">
-                            <i class="icon icon-search1"></i>
-                        </a>
-                        <form class="SearchAreaInPc">
-                            <input type="text">
-                        </form>
-                    </div><!-- Search end -->
-
-                    <div class="zoom-anim-dialog mfp-hide modal-searchPanel ts-search-form" id="search-popup">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="xs-search-panel">
-                                    <form class="ts-search-group">
-                                        <div class="input-group">
-                                            <input type="search" class="form-control" name="s" placeholder="جستجو"
-                                                value="">
-                                            <button class="input-group-btn search-button">
-                                                <i class="icon icon-search1"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End xs modal -->
-                </div>
-
-            </div>
-            <!--/ Row end -->
-        </div>
-
-        <button class="comments-btn btn btn-primary SubmitOfferMobile" style="position: relative;" id="SubmitOffer"
-            type="submit">
-            <h6>
-                ثبت رایگان آگهی در ازدواج ایرانی
-            </h6>
-            <i class="fas fa-plus"></i>
-        </button>
-
-        <!--/ Container end -->
-    </div><!-- Menu wrapper end -->
+    
+	<!-- Header start -->
+	<header id="header" class="header is-ts-sticky">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-md-3 col-sm-12">
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logos/logo.png" alt="">
+						</a>
+					</div>
+				</div><!-- logo col end -->
+
+				<div class="col-md-8 col-sm-12 header-right d-flex justify-content-end FlexCenterInMobile">
+
+					<div class="d-flex justify-content-end text-left">
+
+						<button class="comments-btn btn btn-primary" style="position: relative;" id="ShowCityChoice"
+							type="submit">
+							شهر
+							<i class="fas fa-angle-down"></i>
+						</button>
+					</div>
+
+					<div class="d-flex justify-content-end text-left ">
+						<button class="comments-btn btn btn-primary " style="position: relative;" id="SubmitOffer"
+							type="submit">
+							<h6>
+								ثبت رایگان آگهی در ازدواج ایرانی
+							</h6>
+							<i class="fas fa-plus"></i>
+						</button>
+					</div>
+
+
+				</div><!-- header right end -->
+			</div><!-- Row end -->
+		</div><!-- Logo and banner area end -->
+	</header>
+	<!--/ Header end -->
+
+	<div class="CityChoiceModal">
+
+		<div class="ModalCity">
+			<div class="HeaderModal">
+				<h4>
+					شهر ها
+				</h4>
+				<div class="SearchAreaInModal">
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control bg-white rounded-top" id="exampleFormControlInput1"
+								placeholder="&#xF002; جستجو در شهر ها">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="CityModalBody pt-3">
+
+				<div class="container-fluid">
+
+					<div class="row justify-content-center align-items-center ShowCityParent">
+
+						<div class="col-12 p-2 CityItemInModal">
+							<div class="">
+								<h5>
+									تهران
+								</h5>
+							</div>
+							<div class="MoreArrow">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
+
+						<div class="col-12 p-2 CityItemInModal">
+							<div class="">
+								<h5>
+									آذربایجان
+								</h5>
+							</div>
+							<div class="MoreArrow">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
+
+						<div class="col-12 p-2 CityItemInModal">
+							<div class="">
+								<h5>
+									کرمان
+								</h5>
+							</div>
+							<div class="MoreArrow">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
+
+
+					</div>
+
+
+					<div class="row justify-content-center align-items-center ShowCityChild">
+
+						<div class="col-12 p-2  BackBtnInCityList">
+
+							<div class="MoreArrow">
+								<i class="fas fa-angle-left"></i>
+							</div>
+							<div class="">
+								<h5>
+									بازگشت
+								</h5>
+							</div>
+						</div>
+
+						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+							<div class="">
+								<h5>
+									همه شهرها
+								</h5>
+							</div>
+						</div>
+
+						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+							<div class="">
+								<h5>
+									آذر شهر
+								</h5>
+							</div>
+						</div>
+
+						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+							<div class="">
+								<h5>
+									بناب
+								</h5>
+							</div>
+						</div>
+
+						<div onclick=" SelectCheckBox(this) " class="col-12 p-2  HasCheckbox">
+							<div class="">
+								<h5>
+									اهر
+								</h5>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="SendMessageToInMobileIndexOverllay"></div>
+
+	<div class="sidebar SendMessageToInMobileIndex HideMeinBig">
+		<div class="sidebar-widget social-widget">
+
+			<h2 class="block-title">
+				<span class="title-angle-shap"> ارسال پیام</span>
+			</h2>
+
+			<div class="SendMessageToIndex">
+				<div class="CloseBtnForMoneyAsk">
+					<i class="fa fa-close"></i>
+				</div>
+				<h4 class="text-center">
+					پیام به آرایشگاه فلان
+
+					<p class="text-center">
+						بعد از ثبت درخواست با شما تماس گرفته خواهد شد.
+					</p>
+				</h4>
+
+
+				<form>
+
+					<div class="input-group firstInputName mb-3">
+						<label for="">
+							نام و نام خانوادگی
+						</label>
+						<input type="text" class="form-control" aria-describedby="basic-addon1">
+						<div class="input-group-append">
+							<span class="input-group-text" id="basic-addon1">
+								<i class="fas fa-user-alt"></i>
+							</span>
+						</div>
+					</div>
+					<div class="input-group SecondInputNumber mb-3">
+						<label for="">
+							شماره همراه
+						</label>
+						<input type="text" class="form-control" aria-describedby="basic-addon1">
+						<div class="input-group-append">
+							<span class="input-group-text" id="basic-addon1">
+								<i class="fas fa-mobile"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="input-group">
+						<label for="">
+							پیام
+						</label>
+						<textarea class="form-control" style="height: 100px;"></textarea>
+					</div>
+
+					<button type="button"
+						class="btn btn-primary w-100 text-center mt-1 SendMessageToSendBtn">ارسال</button>
+
+				</form>
+
+			</div>
+
+		</div><!-- widget end -->
+
+	</div>
+
+
+	<div class="sideBarMenuMobile">
+		<div class="CloseIconForMM">
+			<i class="fa fa-close"></i>
+		</div>
+		<div class="SideBarMenu">
+			<img src="images/logos/logoSmall.png" alt="">
+		</div>
+
+		<div class="SearchInMenu">
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control bg-white rounded-top" id="exampleFormControlInput1"
+						placeholder=" جستجو...">
+				</div>
+			</form>
+		</div>
+
+		<div id="navbarSupportedContent" class="collapse navbar-collapse navbar-responsive-collapse">
+			<ul class="nav navbar-nav">
+				<li class="nav-item dropdown active">
+					<a href="#" class="menu-dropdown" data-toggle="dropdown">سالن زیبایی <i
+							class="fa fa-angle-right"></i></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
+						<li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
+						<li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
+					</ul>
+				</li>
+
+				<li class="nav-item dropdown active">
+					<a href="#" class="menu-dropdown" data-toggle="dropdown"> سالن عروسی
+						<i class="fa fa-angle-right"></i></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
+						<li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
+						<li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
+					</ul>
+				</li>
+
+				<li class="nav-item dropdown active">
+					<a href="#" class="menu-dropdown" data-toggle="dropdown"> آرایشگاه <i
+							class="fa fa-angle-right"></i></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
+						<li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
+						<li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
+					</ul>
+				</li>
+
+				<li class="nav-item dropdown active">
+					<a href="#" class="menu-dropdown" data-toggle="dropdown">آتلیه فیلم و عکس <i
+							class="fa fa-angle-right"></i></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
+						<li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
+						<li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!--/ Nav ul end -->
+		</div>
+		<!--/ Collapse end -->
+	</div>
+
+	<div class="main-nav clearfix is-ts-sticky2">
+		<div class="container">
+			<div class="row justify-content-between">
+				<nav class="navbar navbar-expand-lg col-lg-8">
+					<div class="site-nav-inner float-left">
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="true" aria-label="Toggle navigation">
+							<span class="fa fa-bars"></span>
+						</button>
+						<!-- End of Navbar toggler -->
+
+						<div id="navbarSupportedContent"
+							class="collapse navbar-collapse navbar-responsive-collapse hideSm">
+							<ul class="nav navbar-nav">
+								<li class="nav-item dropdown active">
+									<a href="#" class="menu-dropdown" data-toggle="dropdown">سالن زیبایی <i
+											class="fa fa-angle-down"></i></a>
+									<ul class="dropdown-menu" role="menu">
+										<li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
+										<li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
+										<li class=""><a href="index.html">بهترین سالن زیبایی در تهران</a></li>
+									</ul>
+								</li>
+
+								<li class="nav-item dropdown active">
+									<a href="#" class="menu-dropdown" data-toggle="dropdown"> سالن عروسی
+										<i class="fa fa-angle-down"></i></a>
+									<ul class="dropdown-menu" role="menu">
+										<li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
+										<li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
+										<li class=""><a href="index.html">بهترین سالن عروسی در تهران</a></li>
+									</ul>
+								</li>
+
+								<li class="nav-item dropdown active">
+									<a href="#" class="menu-dropdown" data-toggle="dropdown"> آرایشگاه <i
+											class="fa fa-angle-down"></i></a>
+									<ul class="dropdown-menu" role="menu">
+										<li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
+										<li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
+										<li class=""><a href="index.html">بهترین آرایشگاه در تهران</a></li>
+									</ul>
+								</li>
+
+								<li class="nav-item dropdown active">
+									<a href="#" class="menu-dropdown" data-toggle="dropdown">آتلیه فیلم و عکس <i
+											class="fa fa-angle-down"></i></a>
+									<ul class="dropdown-menu" role="menu">
+										<li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
+										<li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
+										<li class=""><a href="index.html">آتلیه فیلم و عکس</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!--/ Nav ul end -->
+						</div>
+						<!--/ Collapse end -->
+
+					</div><!-- Site Navbar inner end -->
+				</nav>
+				<!--/ Navigation end -->
+
+				<div class="LogoMobile ">
+
+					<a href="index.html">
+						<img src="images/logos/logo.png" />
+					</a>
+
+				</div>
+
+				<div class="col-lg-4 text-right nav-social-wrap">
+
+					<button class="comments-btn btn btn-primary ShowCityChoiceMobile" style="position: relative;">
+						شهر
+						<i class="fas fa-angle-down"></i>
+					</button>
+
+					<div class="nav-search">
+						<a href="javascript:void(0)" class="NavSearchPc">
+							<i class="icon icon-search1"></i>
+						</a>
+						<form class="SearchAreaInPc">
+							<input type="text">
+						</form>
+					</div><!-- Search end -->
+
+					<div class="zoom-anim-dialog mfp-hide modal-searchPanel ts-search-form" id="search-popup">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="xs-search-panel">
+									<form class="ts-search-group">
+										<div class="input-group">
+											<input type="search" class="form-control" name="s" placeholder="جستجو"
+												value="">
+											<button class="input-group-btn search-button">
+												<i class="icon icon-search1"></i>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div><!-- End xs modal -->
+				</div>
+
+			</div>
+			<!--/ Row end -->
+		</div>
+
+		<button class="comments-btn btn btn-primary SubmitOfferMobile" style="position: relative;" id="SubmitOffer"
+			type="submit">
+			<h6>
+				ثبت رایگان آگهی در ازدواج ایرانی
+			</h6>
+			<i class="fas fa-plus"></i>
+		</button>
+
+		<!--/ Container end -->
+	</div><!-- Menu wrapper end -->
 
     <div class="gap-40"></div>
 
@@ -550,7 +551,50 @@
                 <h2 class="block-title">
                     <span class="title-angle-shap">عنوان مقاله</span>
                 </h2>
-
+                <div class="BlogDetail">
+                    <div class="mainImage">
+                        <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg"
+                            alt="image">
+                    </div>
+                    <h1>
+                        چند نکته طلایی برای انتخاب کارت عروسی
+                    </h1>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                        زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <h3>
+                        بهترین کارت عروسی چه ویژگی دارد؟
+                    </h3>
+                    <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg" alt="">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                        زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <img src="images/NewIMages/A Country & Vintage Style Wedding - Rustic Wedding Chic.jpg" alt="">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                        زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <h2 class="block-title">
@@ -579,7 +623,7 @@
                         </div>
                         <div>
                             <h5>
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-eye"></i>
                                 25
                             </h5>
                             <h6>
@@ -615,7 +659,7 @@
                         </div>
                         <div>
                             <h5>
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-eye"></i>
                                 25
                             </h5>
                             <h6>
@@ -651,7 +695,7 @@
                         </div>
                         <div>
                             <h5>
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-eye"></i>
                                 25
                             </h5>
                             <h6>
@@ -687,7 +731,7 @@
                         </div>
                         <div>
                             <h5>
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-eye"></i>
                                 25
                             </h5>
                             <h6>
@@ -723,7 +767,7 @@
                         </div>
                         <div>
                             <h5>
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-eye"></i>
                                 25
                             </h5>
                             <h6>
@@ -759,7 +803,7 @@
                         </div>
                         <div>
                             <h5>
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-eye"></i>
                                 25
                             </h5>
                             <h6>
@@ -795,7 +839,7 @@
                         </div>
                         <div>
                             <h5>
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-eye"></i>
                                 25
                             </h5>
                             <h6>
@@ -810,6 +854,102 @@
                 </div>
 
             </div>
+        </div>
+    </div>
+
+    <div class="gap-80"></div>
+
+    <div class="container">
+
+        <div class="post-comments-new mx-0">
+            <div class="sendCm">
+                <div class="top">
+                    <h5>
+                        نظر شما
+                    </h5>
+                </div>
+
+                <div class="Dta">
+                    <form>
+
+                        <div class="input-group firstInputName mb-3">
+                            <input type="text" class="form-control" placeholder="نام و نام خانوادگی"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" placeholder="متن نظر"></textarea>
+                        </div>
+
+                        <button type="button" class="btn btn-primary w-100 text-center mt-1">
+                            ارسال نظر
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="showCm">
+
+                <div class="top">
+                    <h5>
+                        نظرات
+                    </h5>
+                    <span>
+                        15 نظر
+                    </span>
+                </div>
+
+                <div class="Dta">
+
+                    <div class="Text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                        گرافیک
+                        است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                        شرایط
+                        فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                        <span class="Date">
+                            <i class="far fa-clock"></i>
+                            18 اردیبهشت 1399
+                        </span>
+                    </div>
+
+                    <div class="Text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                        گرافیک
+                        است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                        شرایط
+                        فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                        <span class="Date">
+                            <i class="far fa-clock"></i>
+                            18 اردیبهشت 1399
+                        </span>
+                    </div>
+
+                    <div class="Text">
+                        من دو روز پیش عروسیم بود ، رفتم گریمور
+                        <span class="Date">
+                            <i class="far fa-clock"></i>
+                            18 اردیبهشت 1399
+                        </span>
+                    </div>
+
+                    <div class="showMoreCM">
+                        <h6>
+                            <a href="javascript:void(0)">
+                                نمایش نظرات بیشتر
+
+                                <i class="fas fa-angle-double-down"></i>
+                            </a>
+                        </h6>
+                    </div>
+
+                    <!-- <img width="100%" src="images/EmptyImage Cm.png" alt="notfound"> -->
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 
