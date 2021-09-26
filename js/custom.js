@@ -342,7 +342,7 @@ $('.CloseSearchAreaInModal').on('click', () => {
 $('#ShowCityChoice , .ShowCityChoiceMobile , .ShowCityChoiceMobileInBt ').on('click', () => {
 	$('.CityChoiceModal').show("fade", { direction: "up" }, 400);
 	$('.CityChoiceModal').addClass('showMe');
-	$("body").addClass("modal-open");
+	// $("body").addClass("modal-open");
 })
 
 $('.CloseModal , .closeIconForCityModal').on('click', () => {
@@ -352,7 +352,7 @@ $('.CloseModal , .closeIconForCityModal').on('click', () => {
 		$('.CityChoiceModal').removeClass("showMe");
 	}, 330);
 
-	$("body").removeClass("modal-open");
+	// $("body").removeClass("modal-open");
 })
 
 $(window).click(function () {
@@ -362,7 +362,7 @@ $(window).click(function () {
 		$('.CityChoiceModal').removeClass("showMe");
 	}, 330);
 
-	$("body").removeClass("modal-open");
+	// $("body").removeClass("modal-open");
 });
 
 $('.ShowCityChoiceMobile , .ShowCityChoiceMobileInBt').click(function (event) {
@@ -558,8 +558,16 @@ else {
 	$(window).scroll(function () {
 		var header = $('#main-nav'),
 			scroll = $(window).scrollTop();
-		if (scroll >= 100) header.addClass('sticky');
-		else header.removeClass('sticky');
+		// console.log(scroll)
+		if (scroll >= 90) {
+			header.addClass('sticky');
+			$("body").css("padding-top", "75px");
+		}
+		else {
+			header.removeClass('sticky');
+			$("body").css("padding-top", "0px");
+
+		};
 
 	});
 
@@ -610,7 +618,6 @@ var NavNum = 0;
 $('.NavSearchPc').on('click', () => {
 	if (NavNum == 0) {
 		$('.SearchAreaInPc').show();
-		// $('.SearchAreaInPc').show("slide", { direction: "right" }, 0);
 		$('.NavSearchPc i').removeClass('icon icon-search1', 0);
 		$('.NavSearchPc i').addClass('fa fa-close', 0);
 		$('.NavSearchPc i').css('left', '10px');
@@ -619,7 +626,7 @@ $('.NavSearchPc').on('click', () => {
 		}, 200);
 	}
 	if (NavNum == 1) {
-		$('.SearchAreaInPc').hide("slide", { direction: "right" }, 0);
+		$('.SearchAreaInPc').hide();
 		$('.NavSearchPc i').addClass('icon icon-search1', 0);
 		$('.NavSearchPc i').removeClass('fa fa-close', 0);
 		$('.NavSearchPc i').css('left', '9px');
@@ -739,3 +746,30 @@ $(document).ready(function () {
 
 });
 
+$('.showMoreCM').on('click', () => {
+
+	$('.showMoreCM').hide(200);
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+	$('.post-comments-new .showCm .Dta').append("<div class='Text'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، <span class='Date'> <i class='far fa-clock'></i> 18 اردیبهشت 1399 </span> <span class='Author'> <i class='far fa-user'></i> علی احمدی </span></div>");
+
+
+	$('.post-comments-new .showCm .Dta').css('overflow-y', 'auto');
+})
