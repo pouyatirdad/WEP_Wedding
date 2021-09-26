@@ -692,10 +692,10 @@
   }
 
   .form-control {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   .form-control::placeholder {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   .post-title.title-md {
     font-size: 14px;
@@ -706,12 +706,12 @@
     font-size: 9px;
     line-height: 26px;
   }
-  .form-control {
-    font-size: 9px !important;
+  /* .form-control {
+    font-size: 11px !important;
   }
   .form-control::placeholder {
-    font-size: 9px !important;
-  }
+    font-size: 11px !important;
+  } */
   ul.navbar-nav li a {
     font-size: 9px;
   }
@@ -932,6 +932,17 @@
   .main-nav {
     display: none;
   } */
+
+  .SubmitOfferPageRightSideItems {
+    width: 70%;
+  }
+
+  #main-navMObile {
+    opacity: 1;
+    display: block;
+    transform: translateY(-100%);
+    transition: all 0.7s;
+  }
 }
 @media only screen and (max-width: 767px) {
   .post-overaly-style.post-lg {
@@ -1138,22 +1149,26 @@
 
   .CategoryCarousel .owl-nav .owl-prev {
     opacity: 1;
-    right: -40px;
+    right: -20px;
+    display: none;
   }
 
   .CategoryCarousel .owl-nav .owl-next {
     opacity: 1;
-    left: -40px;
+    left: -20px;
+    display: none;
   }
 
   .mainPageAddCarousel .owl-nav .owl-prev {
     opacity: 1;
-    right: -40px;
+    right: -20px;
+    display: none;
   }
 
   .mainPageAddCarousel .owl-nav .owl-next {
     opacity: 1;
-    left: -40px;
+    left: -20px;
+    display: none;
   }
 
   .CategorySliderMedia img {
@@ -1165,7 +1180,7 @@
   }
   .mainPageAddData img {
     border-radius: 3px;
-    height: 170px;
+    height: 130px;
   }
 
   .BlogItemDown h3 {
@@ -1270,6 +1285,44 @@
     position: relative;
     margin-right: 17px !important;
     width: calc(100% - 33px);
+  }
+
+  .SubmitOfferPageRightSideForms .custom-select {
+    margin-right: 3px !important;
+    width: calc(100% - 3px) !important;
+  }
+  .SearchForItem .btn {
+    font-size: 15px;
+  }
+
+  .SubTextBlog {
+    bottom: -14px;
+    height: 30%;
+    z-index: 1;
+  }
+
+  .SubTextBlog2 {
+    bottom: -14px;
+    height: 30%;
+    z-index: 1;
+    transition: all 600ms;
+  }
+
+  .ViewMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3px;
+  }
+
+  .ViewMore h5 {
+    font-family: "iranyekan", "BYekanPlus";
+    color: #ffc655;
+    font-size: 11px;
+  }
+  section,
+  .section-padding {
+    padding: 25px 0;
   }
 }
 

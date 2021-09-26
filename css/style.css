@@ -6190,7 +6190,7 @@ body {
 
 @media only screen and (max-width: 370px) {
   .block-title .title-angle-shap {
-    font-size: 10px;
+    /* font-size: 10px; */
     font-weight: 800;
   }
   .widget-content p {
@@ -7346,14 +7346,149 @@ img {
 }
 
 .SubmitOfferPage {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  /* display: grid;
+  grid-template-columns: 50% 50%; */
+  background-color: #fafafa;
 }
 
 .SubmitOfferPageLeftSide {
+  background-color: #4751b7;
+  width: 100%;
+  height: 100%;
+}
+
+.SubmitOfferPageLeftSide img {
+  transform: scale(1.4);
+  width: 100%;
+  height: 100%;
 }
 
 .SubmitOfferPageRightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SubmitOfferPageRightSideItems {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 50px 0;
+}
+
+.SubmitOfferPageRightSideItems img {
+  width: 180px;
+}
+
+.SubmitOfferPageRightSideItems h1 {
+  font-size: 16px;
+  color: rgb(7, 7, 7);
+  line-height: 14px;
+  font-weight: 700;
+  font-family: "iranyekan", "BYekanPlus";
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #abb2f38e;
+}
+
+.SubmitOfferPageRightSideForms {
+  background-color: #fff;
+  box-shadow: 0 0 10px #00000017;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.SubmitOfferPageRightSideForms .form-group label {
+  font-size: 15px;
+  color: rgb(88 88 88 / 84%);
+  font-weight: 600;
+  font-family: "iranyekan", "BYekanPlus";
+}
+
+.SubmitOfferPageRightSideForms .form-group input {
+  background-color: #fff;
+  border: 0;
+  border-radius: 9px;
+  box-shadow: 0px 3px 5px #0000000d;
+  padding: 8px;
+  font-size: 13px;
+  color: #6e6e6e8e;
+  font-weight: 600;
+  margin-right: 3px;
+  width: calc(100% - 3px);
+}
+
+.SubmitOfferPageRightSideForms .custom-select {
+  border: 0;
+  border-radius: 9px;
+  box-shadow: 0px 3px 5px #0000000d;
+  padding: 8px;
+  font-size: 13px;
+  color: #6e6e6e8e;
+  font-weight: 600;
+  margin-right: 3px;
+  width: calc(100% - 3px);
+}
+
+.SubmitOfferPageRightSideForms .select-selected {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url(/images/donwAngle2.svg);
+  background-repeat: no-repeat;
+  background-position-x: 1%;
+  background-size: 12px;
+  background-position-y: 1px;
+  border: 0 !important;
+}
+
+.SubmitOfferPageRightSideForms .form-check-input {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.SubmitOfferPageRightSideForms .form-check-label {
+  padding-right: 4px;
+  width: 90%;
+}
+
+.SubmitOfferPageRightSideForms .select-items div:hover,
+.same-as-selected {
+  background-color: #838bd133;
+  color: #000;
+}
+
+.SubmitOfferPageRightSideForms .form-group input::placeholder {
+  font-size: 13px;
+  color: #6e6e6e8e;
+  font-weight: 600;
+  font-family: "iranyekan", "BYekanPlus";
+}
+
+.SubmitOfferPageRightSideForms .form-group input:focus {
+  background-color: #fff;
+  border: 0;
+  border-radius: 9px;
+  box-shadow: 0px 3px 5px #0000000d;
+  padding: 8px;
+  font-size: 13px;
+  color: #6e6e6e8e;
+  font-weight: 600;
+}
+
+.SubmitOfferPageRightSideForms a {
+  color: #626abd;
+}
+
+.SubmitOfferPageRightSideForms button {
+  border-radius: 9px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 6px;
+  font-family: "BYekanPlus";
 }
 
 .closeIconForCityModal {
@@ -7415,4 +7550,37 @@ img {
   color: #fff;
   z-index: 0;
   transition: all 600ms;
+}
+
+.main-nav ul.navbar-nav > li > a:hover {
+  color: #5962af;
+}
+#main-navMObile {
+  display: none;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.7s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.sticky + div {
+  padding-top: 102px;
+}
+
+.stickyMobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transform: none !important;
+  opacity: 1 !important;
+  transition: all 0.7s;
+}
+.stickyMobile + div {
+  padding-top: 102px;
 }

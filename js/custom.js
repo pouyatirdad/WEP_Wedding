@@ -530,57 +530,39 @@ $('.BackBtnInCityList').on('click', () => {
 
 })
 
+
+
 var mq = window.matchMedia("(max-width: 991px)");
 if (mq.matches) {
-
-	var previousScroll = 0;
-	$(window).scroll(function (event) {
-		var scroll = $(this).scrollTop();
-
-		if ($(window).scrollTop() >= 20) {
-			if (scroll > previousScroll) {
-				$('.is-ts-sticky2').addClass('sticky');
-				$('.SubmitOfferMobile').hide("slide", { direction: "down" }, 300);
-				$('.main-nav').css('min-height', '88px');
-				$('body').css('margin', '20vh 0 0 0');
-			} else {
-				$('.SubmitOfferMobile').show("slide", { direction: "up" }, 200);
-				$('.main-nav').css('min-height', '130px');
-			}
-		} else {
-			$('.is-ts-sticky2').removeClass('sticky ');
-			$('body').css('margin', '0');
+	$('#main-navMObile').hide();
+	$(window).scroll(function () {
+		var header = $('#main-nav');
+		var headerMobile = $('#main-navMObile');
+		scroll = $(window).scrollTop();
+		if (scroll >= 100) {
+			header.hide();
+			headerMobile.show();
+			headerMobile.addClass('stickyMobile');
 		}
-		previousScroll = scroll;
+		else {
+			header.show('fade', 200);
+			headerMobile.hide();
+			headerMobile.removeClass('stickyMobile');
+		}
+
 	});
+
 }
 else {
-	var previousScroll = 0;
-	$(window).scroll(function (event) {
-		var scroll = $(this).scrollTop();
 
-		if ($(window).scrollTop() >= 92) {
-			if (scroll > previousScroll) {
-				$('.is-ts-sticky').removeClass('sticky ');
-				$('.is-ts-sticky2').addClass('sticky');
-				$('.is-ts-sticky2').removeClass('sticky2');
-			} else {
-				$('.is-ts-sticky2').removeClass('sticky ');
-				$('.is-ts-sticky2').addClass('sticky2 ');
-				$('.is-ts-sticky').addClass('sticky ');
-			}
-			$('body').css('margin', '10vh 0 0 0');
-		} else {
-			$('.is-ts-sticky').removeClass('sticky ');
-			$('.is-ts-sticky2').removeClass('sticky2 ');
-			$('.is-ts-sticky2').removeClass('sticky ');
-			$('body').css('margin', '0');
-		}
+	$(window).scroll(function () {
+		var header = $('#main-nav'),
+			scroll = $(window).scrollTop();
+		if (scroll >= 100) header.addClass('sticky');
+		else header.removeClass('sticky');
 
-
-		previousScroll = scroll;
 	});
-	$('.SubmitOfferMobile').hide();
+
 }
 
 
