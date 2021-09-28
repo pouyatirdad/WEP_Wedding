@@ -2425,6 +2425,9 @@ span.post-comment span i {
   .owl-carousel.h2-feature-slider .owl-dots {
     top: 35%;
   }
+  .post-other-images img {
+    height: 220px;
+  }
 }
 
 .grid-cat {
@@ -3738,7 +3741,7 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .post-overaly-style.post-lg {
-  min-height: 433px;
+  min-height: 375px;
 }
 
 .post-overaly-style:hover::after {
@@ -4454,7 +4457,7 @@ ul.navbar-nav > li.mega-dropdown {
 
 .sidebar-widget .ads-image img {
   width: 100%;
-  height: 238px;
+  height: 170px;
   border-radius: 9px;
 }
 
@@ -4899,12 +4902,19 @@ ul.navbar-nav > li.mega-dropdown {
 }
 .TopRight h3 {
   color: #8c8c8c;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.3;
   margin: 0;
   padding: 16px 0;
+  padding-top: 6px;
   font-family: "iranyekan", "BYekanPlus";
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  height: 98px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .BottomRight h4 {
   font-size: 12px;
@@ -5404,12 +5414,18 @@ body {
   font-family: "iranyekan", "BYekanPlus";
 }
 
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group {
+  z-index: 0 !important;
+}
+
 .rating .jq-ry-normal-group svg {
   fill: rgb(214, 213, 213);
+  z-index: 0 !important;
 }
 
 .rating .jq-ry-rated-group svg {
   fill: #efbe0e;
+  z-index: 0 !important;
 }
 
 .RateText {
@@ -5418,7 +5434,7 @@ body {
   text-align: center;
   font-family: "iranyekan", "BYekanPlus";
   margin: 0;
-  margin-top: 10px;
+  margin-top: 3px;
   padding: 0;
 }
 .jq-ry-container {
@@ -6194,12 +6210,13 @@ body {
     font-size: 16px;
   }
   .footer-ads img {
-    right: 10%;
+    /* right: 10%; */
   }
 
   .LogoMobile img {
     position: relative;
     top: 10px;
+    right: -10px;
     width: 150px;
   }
 }
@@ -6313,7 +6330,7 @@ body {
 }
 
 .post-header-area {
-  min-height: 430px;
+  min-height: 360px;
   background: #fff;
   border-radius: 10px;
   margin: 0 15px;
@@ -6362,7 +6379,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .post-header-area ul li div:first-child {
@@ -6532,7 +6549,7 @@ body {
 
 .post-other-images img {
   width: 100%;
-  height: 250px;
+  height: 170px;
   border-radius: 10px;
   margin: 15px 0;
   object-fit: cover;
@@ -6548,7 +6565,7 @@ body {
   margin-top: 20px;
 }
 .post-faqs h3 {
-  font-size: 25px;
+  font-size: 18px;
   margin: 0;
   padding-bottom: 30px;
   color: #414998;
@@ -6711,7 +6728,7 @@ textarea::placeholder {
   font-weight: 500;
   display: flex;
   align-items: center;
-  border-radius: 9px;
+  border-radius: 5px;
   height: 20px;
 }
 
@@ -6731,7 +6748,7 @@ textarea::placeholder {
   font-weight: 500;
   display: flex;
   align-items: center;
-  border-radius: 9px;
+  border-radius: 5px;
   height: 20px;
 }
 
@@ -7476,13 +7493,13 @@ img {
 }
 
 .SubmitOfferPageLeftSide img {
-  position: absolute;
-  width: 100%;
-  height: 90%;
+  position: fixed;
+  width: 77%;
+  height: 75%;
   object-fit: contain;
   transform: scale(1.2);
-  top: -20px;
-  left: 12%;
+  top: 100px;
+  left: -114px;
 }
 
 .SubmitOfferPageRightSide {
@@ -7548,12 +7565,13 @@ img {
   border: 0;
   border-radius: 9px;
   box-shadow: 0px 3px 5px #0000000d;
-  padding: 8px;
+  /* padding: 8px; */
   font-size: 13px;
   color: #6e6e6e8e;
   font-weight: 600;
   margin-right: 3px;
   width: calc(100% - 3px);
+  padding: 10px 4px !important;
 }
 
 .SubmitOfferPageRightSideForms .select-selected {
@@ -7617,8 +7635,8 @@ img {
 .closeIconForCityModal {
   display: block;
   position: absolute;
-  left: 6px;
-  top: 0px;
+  left: -3px;
+  top: -7px;
   cursor: pointer;
 }
 
@@ -7748,4 +7766,17 @@ img {
 
 .PostsHash .Hashs:hover a {
   color: #1a1e6e;
+}
+.jq-ry-container {
+  width: 98px !important;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
+  width: 20px;
+}
+
+.widget-content .footer-ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

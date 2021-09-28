@@ -381,7 +381,7 @@ var showRate = $('#showRateUserCm');
 
 $('.rating').on('click', () => {
 	$('.RateText').show();
-	var newNum = $('.jq-ry-rated-group').innerWidth() / 32;
+	var newNum = ($('.jq-ry-rated-group').innerWidth() + 2) / 20;
 	showRate.text(newNum.toFixed(2))
 })
 
@@ -434,6 +434,9 @@ $('.SendMessageToSendBtn ').on('click', () => {
 	var secondINT = $(".SecondInputNumber  input").val();
 	var secondLBL = $(".SecondInputNumber i");
 
+	// var textarea = $('.SendMessageToIndex textarea');
+
+
 	if ((firstINT.length > 0) && (secondINT.length > 0)) {
 
 		$('.SendMessageToSendBtn').removeClass("RedWarningFieldBG");
@@ -441,6 +444,10 @@ $('.SendMessageToSendBtn ').on('click', () => {
 		firstLBL.removeClass("RedWarningFieldCL");
 
 		secondLBL.removeClass("RedWarningFieldCL");
+
+		// textarea.removeClass("RedWarningFieldBG");
+		// textarea.removeClass("text-white");
+		// textarea.attr('placeholder', '')
 
 		var mq = window.matchMedia("(max-width: 991px)");
 
@@ -492,9 +499,29 @@ $('.SendMessageToSendBtn ').on('click', () => {
 
 		$('.SendMessageToSendBtn').text('اطلاعات را درست وارد کنید');
 
-		firstLBL.addClass("RedWarningFieldCL");
 
-		secondLBL.addClass("RedWarningFieldCL");
+		if (firstINT.length <= 0) {
+			firstLBL.addClass("RedWarningFieldCL");
+		}
+		else {
+			firstLBL.removeClass("RedWarningFieldCL");
+		}
+
+		if (secondINT.length <= 0) {
+			secondLBL.addClass("RedWarningFieldCL");
+		} else {
+			secondLBL.removeClass("RedWarningFieldCL");
+		}
+
+		// if (textarea.val().length <= 0) {
+		// 	textarea.addClass("RedWarningFieldBG");
+		// 	textarea.addClass("text-white");
+		// 	textarea.attr('placeholder', 'پیام را وارد کنید')
+		// } else {
+		// 	textarea.removeClass("RedWarningFieldBG");
+		// 	textarea.removeClass("text-white");
+		// 	textarea.attr('placeholder', '')
+		// }
 
 	}
 
@@ -540,7 +567,7 @@ if (mq3.matches) {
 		var header = $('#main-nav');
 		var headerMobile = $('#main-navMObile');
 		var scroll = $(window).scrollTop();
-		console.log(scroll);
+		// console.log(scroll);
 		if (scroll >= 100) {
 			header.hide();
 			headerMobile.show();

@@ -804,7 +804,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin: 15px 0;
   }
 
   .post-header-area ul li div:first-child {
@@ -1043,7 +1043,7 @@
   }
   .HDRightInsta {
     position: absolute;
-    right: 3%;
+    right: 1%;
     bottom: -17px;
   }
   .HDRightWhats {
@@ -1053,7 +1053,7 @@
   }
   .HDRightTel {
     position: absolute;
-    right: 38%;
+    right: 40%;
     bottom: -17px;
   }
   .mobileReverseColumn {
@@ -1089,7 +1089,7 @@
   }
   .HDRightInsta {
     position: absolute;
-    right: 3%;
+    right: 1%;
     bottom: -17px;
   }
   .HDRightWhats {
@@ -1099,7 +1099,7 @@
   }
   .HDRightTel {
     position: absolute;
-    right: 38%;
+    right: 40%;
     bottom: -17px;
   }
   .post-header-area ul li:last-child div:first-child h6 {
@@ -1150,7 +1150,7 @@
     border-radius: 4px;
   }
   .post-faqs h3 {
-    font-size: 22px;
+    font-size: 17px;
   }
   .post-faqs li:nth-child(odd) {
     font-size: 15px;
@@ -1310,7 +1310,7 @@
   .footer-ads img {
     height: 300px;
     top: 4px;
-    left: -20%;
+    /* left: -20%; */
     margin: 0;
     padding: 0;
   }
@@ -1404,6 +1404,13 @@
   .PostsHash .Hashs {
     border-radius: 3px;
   }
+
+  .form-control {
+    font-size: 12px !important;
+  }
+  .form-control::placeholder {
+    font-size: 12px !important;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1440,12 +1447,12 @@
   }
   .HDRightInsta {
     position: absolute;
-    right: 3%;
+    right: 1%;
     bottom: -17px;
   }
   .HDRightWhats {
     position: absolute;
-    right: 21%;
+    right: 19%;
     bottom: -17px;
   }
   .HDRightTel {
@@ -1502,13 +1509,13 @@
     font-size: 12px;
   }
   .post-other-images img {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: 160px;
     margin: 8px 0;
     border-radius: 4px;
   }
   .post-faqs h3 {
-    font-size: 22px;
+    font-size: 16px;
   }
   .post-faqs li:nth-child(odd) {
     font-size: 15px;
@@ -1711,6 +1718,25 @@
   .post-faqs li:nth-child(2n) {
     padding: 5px 0;
   }
+  .RateTextFh {
+    font-size: 14px;
+  }
+  .RateText {
+    font-size: 12px;
+  }
+
+  .form-control {
+    font-size: 10px !important;
+  }
+  .form-control::placeholder {
+    font-size: 10px !important;
+  }
+  .SubmitOfferPageRightSideForms .select-selected {
+    background-size: 10px;
+  }
+  .SubmitOfferPageRightSideForms .custom-select {
+    padding: 13px 2px !important;
+  }
 }
 @media only screen and (max-width: 485px) {
   .LeftSidePartsBlog {
@@ -1720,6 +1746,12 @@
 
   .LeftSideAreaBlog {
     height: 340px;
+  }
+  .form-control {
+    font-size: 9px !important;
+  }
+  .form-control::placeholder {
+    font-size: 9px !important;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1766,6 +1798,9 @@
   .post-comments-new h5 {
     padding-bottom: 10px;
   }
+  .RateTextFh {
+    font-size: 12px;
+  }
 }
 .emptySlider {
   width: 100%;
@@ -1804,14 +1839,15 @@
   }
   .HDRightInsta {
     bottom: 4px;
+    right: 3%;
   }
   .HDRightWhats {
     bottom: 4px;
-    right: 20%;
+    right: calc(20% - 1px);
   }
   .HDRightTel {
     bottom: 4px;
-    right: 37%;
+    right: 36%;
   }
   .HDRightTel i {
     position: relative;
@@ -1847,11 +1883,11 @@
     font-size: 12px !important;
   }
   .post-other-images img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 130px;
   }
   .post-faqs h3 {
-    font-size: 18px;
+    font-size: 15px;
   }
   .post-faqs li:nth-child(odd) {
     font-size: 13px;
@@ -2012,6 +2048,9 @@
   .LeftSideAreaBlog {
     height: 150px;
   }
+  .RateTextFh {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2020,5 +2059,14 @@
   }
   .LeftSideItemBlog:nth-child(2) {
     height: calc(100% - 25px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .owl-carousel.h2-feature-slider .owl-dots {
+    top: 35%;
+  }
+  .post-other-images img {
+    height: 220px;
   }
 }
