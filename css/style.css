@@ -2080,7 +2080,7 @@ a[href^="tel"] {
 }
 
 .post-title.title-lg {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 30px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -2089,7 +2089,7 @@ a[href^="tel"] {
 }
 
 .post-title.title-md {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 28px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -4821,7 +4821,7 @@ ul.navbar-nav > li.mega-dropdown {
   align-items: center;
   position: relative;
   margin: 5px;
-  box-shadow: 0px 3px 7px 0px #00000029;
+  box-shadow: 0px 3px 5px 0px #00000014;
   background-color: #fff;
   padding: 9px;
   border-radius: 9px;
@@ -4832,7 +4832,7 @@ ul.navbar-nav > li.mega-dropdown {
   position: relative;
 }
 
-.imageRight > a > img {
+.Medias .imageRight > a > img {
   width: 100%;
   height: 220px;
   border-radius: 9px;
@@ -4884,14 +4884,14 @@ ul.navbar-nav > li.mega-dropdown {
 }
 
 .TopRight h1 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1;
   font-family: "iranyekan", "BYekanPlus";
 }
 
 .TopRight h2 {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1;
   color: #4751b7;
@@ -4899,7 +4899,7 @@ ul.navbar-nav > li.mega-dropdown {
 }
 .TopRight h3 {
   color: #8c8c8c;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.2;
   margin: 0;
@@ -5199,13 +5199,15 @@ body {
 @media only screen and (max-width: 500px) {
   .TopLeft {
     font-size: 12px;
+    bottom: 1px;
   }
   .Discount {
     font-size: 9px;
-    bottom: 3px;
+    bottom: -4px;
   }
   .BottomLeft {
     font-size: 9px;
+    bottom: 1px;
   }
 
   .TopRight h1 {
@@ -5218,7 +5220,13 @@ body {
   }
   .TopRight h3 {
     font-size: 12px;
-    padding: 16px 0;
+    padding: 7px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    height: 80px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .BottomRight h4 {
     font-size: 11px;
@@ -5283,7 +5291,7 @@ body {
     font-size: 10px;
   }
   .BottomRight {
-    bottom: 21%;
+    bottom: 15%;
   }
   .BottomLeft i {
     padding-right: 0px;
@@ -5322,14 +5330,14 @@ body {
     font-size: 8px;
   }
   .BottomRight {
-    bottom: 21%;
+    bottom: 15%;
   }
   .BottomLeft i {
     padding-right: 0px;
   }
-  .imageRight > a > img {
+  .Medias .imageRight > a > img {
     border-radius: 3px;
-    height: 160px;
+    height: 140px;
   }
   .Medias {
     border-radius: 3px;
@@ -5351,7 +5359,7 @@ body {
     left: 6px;
   }
   .BottomRight {
-    bottom: 21%;
+    bottom: 15%;
   }
 }
 
@@ -5371,8 +5379,29 @@ body {
     left: 6px;
   }
   .BottomRight {
-    bottom: 21%;
+    bottom: 15%;
   }
+}
+
+.RateFieldINSingle {
+  margin: auto 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px #00000017;
+  background: #fff;
+  padding: 30px 17px;
+  padding-top: 20px;
+  margin-bottom: 27px;
+  margin-top: 20px;
+}
+
+.RateTextFh {
+  position: relative;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: rgb(17, 17, 17);
+  font-weight: 600;
+  font-family: "iranyekan", "BYekanPlus";
 }
 
 .rating .jq-ry-normal-group svg {
@@ -5388,7 +5417,12 @@ body {
   font-weight: 600;
   text-align: center;
   font-family: "iranyekan", "BYekanPlus";
+  margin: 0;
   margin-top: 10px;
+  padding: 0;
+}
+.jq-ry-container {
+  margin-top: -6px;
 }
 
 .SendMessageTo {
@@ -5711,14 +5745,6 @@ body {
   .SendMessageTo {
     width: 70%;
     position: relative;
-  }
-
-  .RateTextFh {
-    font-family: "iranyekan", "BYekanPlus";
-    margin: 0;
-    padding: 0;
-    line-height: 1.3;
-    font-size: 12px;
   }
 }
 
@@ -6307,20 +6333,20 @@ body {
 }
 
 .post-header-area .upper h4 {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
   color: #464646f0;
   margin: 0;
 }
 
 .post-header-area .upper span {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #9e9e9ed6;
 }
 
 .post-header-area .upper i {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #ffc655;
 }
@@ -6364,7 +6390,7 @@ body {
 }
 
 .post-header-area ul li:first-child div:first-child h5 {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 500;
   color: #333333e8;
   font-family: "iranyekan";
@@ -6375,7 +6401,7 @@ body {
   background-color: #414998;
 }
 .post-header-area ul li:nth-child(2) div:first-child h5 {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 500;
   color: #fff;
   font-family: "iranyekan";
@@ -6391,8 +6417,8 @@ body {
 }
 
 .HDBottomLeft h6 {
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
   color: #414998;
   font-family: "iranyekan";
   margin: 0;
@@ -6489,7 +6515,7 @@ body {
 }
 
 .post-content-area p {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding-bottom: 3px;
   color: #313131ed;
@@ -6522,7 +6548,7 @@ body {
   margin-top: 20px;
 }
 .post-faqs h3 {
-  font-size: 27px;
+  font-size: 25px;
   margin: 0;
   padding-bottom: 30px;
   color: #414998;
@@ -6538,7 +6564,7 @@ body {
 
 .post-faqs li:nth-child(odd) {
   position: relative;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
   padding-top: 10px;
   color: rgb(17, 17, 17);
@@ -6556,7 +6582,7 @@ body {
 
 .post-faqs li:nth-child(even) {
   padding: 10px 0;
-  font-size: 17px;
+  font-size: 14px;
   margin: 0;
   color: rgb(146, 146, 146);
   font-weight: 600;
@@ -6590,7 +6616,7 @@ body {
 }
 
 .post-comments-new h5 {
-  font-size: 22px;
+  font-size: 18px;
   margin: 0;
   padding-bottom: 20px;
   color: #414998;
@@ -6648,6 +6674,7 @@ textarea::placeholder {
 
 .post-comments-new .showCm .Dta {
   height: 100%;
+  overflow-y: hidden;
   max-height: 400px;
 }
 
@@ -6678,37 +6705,39 @@ textarea::placeholder {
   left: 0;
   bottom: -24px;
   background: #fff;
-  padding: 0 2px;
+  padding: 0 4px;
   color: #5963c1;
   font-size: 10px;
   font-weight: 500;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   border-radius: 9px;
   height: 20px;
 }
 
 .post-comments-new .showCm .Dta .Text .Date i {
   padding-left: 4px;
+  padding-bottom: 2px;
 }
 
 .post-comments-new .showCm .Dta .Text .Author {
   position: absolute;
-  left: 104px;
+  left: 109px;
   bottom: -24px;
   background: #fff;
-  padding: 0 2px;
+  padding: 0 4px;
   color: #5963c1;
   font-size: 10px;
   font-weight: 500;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   border-radius: 9px;
   height: 20px;
 }
 
 .post-comments-new .showCm .Dta .Text .Author i {
   padding-left: 4px;
+  padding-bottom: 2px;
 }
 
 .showMoreCM {
@@ -6717,6 +6746,8 @@ textarea::placeholder {
   left: 0;
   width: 100%;
   text-align: center;
+  background: #f6f7ff;
+  backdrop-filter: blur(4px);
 }
 .showMoreCM h6 {
   font-size: 14px;
@@ -6967,6 +6998,11 @@ img {
   line-height: 1.4;
   font-family: "iranyekan", "BYekanPlus";
   border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding-top: 10px;
   padding-bottom: 15px;
 }
@@ -7085,6 +7121,12 @@ img {
 .BlogMedias .ShortDescBl {
   position: absolute;
   top: 8px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .BlogMedias .ShortDescBl h3 {
   font-size: 18px;
@@ -7107,9 +7149,11 @@ img {
 .BlogMedias .ShortDescBl h3 a:hover {
   color: #737ccc;
 }
-.BlogMedias .ShortDescBl span {
+.BlogMedias span {
   display: block;
   width: 78px;
+  position: absolute;
+  bottom: 19%;
   text-align: center;
   font-size: 11px;
   margin: 0;
@@ -7124,8 +7168,8 @@ img {
 .BlogMedias .BottomBlog {
   position: absolute;
   bottom: 5px;
-  padding-top: 8px;
-  border-top: 1px solid #414a9860;
+  padding-top: 6px;
+  border-top: 1px solid #414a9847;
   left: 10px;
   display: flex;
   justify-content: space-around;
@@ -7160,7 +7204,7 @@ img {
 
 .BlogMedias .BottomBlog div:last-child i {
   position: absolute;
-  left: 7px;
+  left: 2px;
   top: 15px;
 }
 
@@ -7204,7 +7248,7 @@ img {
 }
 
 .BlogDetail h1 {
-  font-size: 24px;
+  font-size: 22px;
   margin: 0;
   color: #353e91c9;
   font-weight: 600;
@@ -7213,14 +7257,14 @@ img {
   padding-top: 9px;
 }
 .BlogDetail h3 {
-  font-size: 19px;
+  font-size: 17px;
   margin: 0;
   color: #444bb7;
   font-weight: 600;
   font-family: "iranyekan", "BYekanPlus";
 }
 .BlogDetail p {
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
   color: #1a1a1a;
   font-weight: 600;
@@ -7673,4 +7717,35 @@ img {
 }
 .cMTforADs {
   margin-top: 12px;
+}
+.PostsHash {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.PostsHash .Hashs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  /* border: 1px solid #3c3c3c; */
+  box-shadow: 0 0 10px #00000014;
+  text-align: center;
+  color: #3c3c3c;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "iranyekan", "BYekanPlus";
+  background-color: #fff;
+  margin: 5px;
+  padding: 1px 7px;
+}
+
+.PostsHash .Hashs a {
+  color: #3c3c3c;
+}
+
+.PostsHash .Hashs:hover a {
+  color: #1a1e6e;
 }

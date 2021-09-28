@@ -532,13 +532,15 @@ $('.BackBtnInCityList').on('click', () => {
 
 
 
-var mq = window.matchMedia("(max-width: 991px)");
-if (mq.matches) {
+
+var mq3 = window.matchMedia("(max-width: 991px)");
+if (mq3.matches) {
 	$('#main-navMObile').hide();
 	$(window).scroll(function () {
 		var header = $('#main-nav');
 		var headerMobile = $('#main-navMObile');
-		scroll = $(window).scrollTop();
+		var scroll = $(window).scrollTop();
+		console.log(scroll);
 		if (scroll >= 100) {
 			header.hide();
 			headerMobile.show();
@@ -552,8 +554,29 @@ if (mq.matches) {
 
 	});
 
+	var previousScroll = 0;
+	$(window).scroll(function (event) {
+		var thisscroll = $(this).scrollTop();
+		if (thisscroll >= 100) {
+			if (thisscroll > previousScroll) {
+				$('.SubmitOfferMobile').hide();
+				$('.main-nav').css('min-height', '88px');
+
+			} else {
+				$('.SubmitOfferMobile').show('fade', 'up', 20);
+				$('.main-nav').css('min-height', '130px');
+
+			}
+			previousScroll = thisscroll;
+		}
+		else {
+			$('.SubmitOfferMobile').show();
+		}
+	});
+
 }
 else {
+	$('.SubmitOfferMobile').hide();
 
 	$(window).scroll(function () {
 		var header = $('#main-nav'),
