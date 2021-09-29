@@ -3744,6 +3744,9 @@ ul.navbar-nav > li.mega-dropdown {
   min-height: 375px;
 }
 
+.post-overaly-style.post-lg.post-blog {
+  min-height: 435px;
+}
 .post-overaly-style:hover::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -4893,6 +4896,18 @@ ul.navbar-nav > li.mega-dropdown {
   font-family: "iranyekan", "BYekanPlus";
 }
 
+.TopRight h1 a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1;
+  font-family: "iranyekan", "BYekanPlus";
+}
+
+.TopRight h1 a:hover {
+  color: #666fbd;
+}
+
 .TopRight h2 {
   font-size: 12px;
   font-weight: 400;
@@ -5085,7 +5100,7 @@ ul.navbar-nav > li.mega-dropdown {
 .CityItemInModal {
   padding: 10px;
   border-bottom: 1px solid #cccccc;
-  color: #414998 !important;
+  color: #6e76b9;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
@@ -5134,7 +5149,7 @@ ul.navbar-nav > li.mega-dropdown {
   color: #414998 !important;
   font-weight: 600;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
 }
@@ -5571,6 +5586,7 @@ body {
   color: #ffc655;
 }
 .SendMessageToIndex {
+  display: none;
   max-width: 300px;
   min-height: 492px;
   width: 90%;
@@ -5579,6 +5595,7 @@ body {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
+  z-index: 22;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .SendMessageToIndex::-webkit-scrollbar {
@@ -5889,7 +5906,7 @@ body {
   top: 0;
   background: #f6f7ff;
   height: 100%;
-  width: auto;
+  width: 80%;
   min-width: 230px;
   z-index: 35;
 }
@@ -6458,6 +6475,7 @@ body {
   margin: auto;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -6491,6 +6509,14 @@ body {
   color: #414998;
   font-weight: 600;
   font-family: "iranyekan", "BYekanPlus";
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.map .map-route div h5:hover {
+  overflow: visible;
 }
 
 .map .map-route div:first-child {
@@ -6692,7 +6718,7 @@ textarea::placeholder {
 .post-comments-new .showCm .Dta {
   height: 100%;
   overflow-y: hidden;
-  max-height: 400px;
+  max-height: 335px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -6759,7 +6785,7 @@ textarea::placeholder {
 
 .showMoreCM {
   position: absolute;
-  bottom: -12px;
+  bottom: -7px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -6812,11 +6838,11 @@ textarea::placeholder {
   width: 56%;
   position: absolute;
   right: 14%;
-  bottom: 100px;
+  bottom: 70px;
 }
 
 .CCDs {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 10px rgb(0 0 0 / 6%);
@@ -6847,7 +6873,7 @@ textarea::placeholder {
 
 .CLoseMeCCD {
   position: absolute;
-  top: 33%;
+  top: 35%;
   left: 30%;
   font-size: 25px !important;
   color: #efbe0e !important;
@@ -7308,7 +7334,8 @@ img {
 
 .customErorPageWrapper {
   position: relative;
-  height: 450px;
+  height: 70vh;
+  min-height: 450px;
   background: #f2f2f2;
   display: flex;
   justify-content: center;
@@ -7345,7 +7372,7 @@ img {
 
 .customEror h2 {
   color: #5d5d5de0;
-  font-family: "BYekanPlus";
+  font-family: "iranyekan", "BYekanPlus";
   font-size: 28px;
   margin-bottom: -30px;
 }
@@ -7468,6 +7495,8 @@ img {
   left: 0;
   right: 0;
   z-index: 99;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .select-hide {
@@ -7487,9 +7516,14 @@ img {
 
 .SubmitOfferPageLeftSide {
   background-color: #4751b7;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 100vh;
   position: relative;
+  z-index: -2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .SubmitOfferPageLeftSide img {
@@ -7500,6 +7534,7 @@ img {
   transform: scale(1.2);
   top: 100px;
   left: -114px;
+  z-index: -1;
 }
 
 .SubmitOfferPageRightSide {
@@ -7702,7 +7737,7 @@ img {
   display: none;
   opacity: 0;
   transform: translateY(-100%);
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 
 .sticky {
@@ -7728,6 +7763,10 @@ img {
 }
 .page-link {
   color: #434886;
+  border: 0;
+  border-radius: 3px;
+  margin: 0 2px !important;
+  box-shadow: 0 3px 5px #00000005;
 }
 .page-link:hover {
   color: #fff;

@@ -859,27 +859,14 @@
   }
 
   .map .map-route div i {
-    font-size: 15px;
+    font-size: 13px;
     color: #414998;
     font-weight: 600;
     padding: 0 9px;
   }
 
-  .map .map-route div:first-child {
-    width: 58%;
-    text-align: right;
-    justify-content: flex-start;
-  }
-
-  .map .map-route div:nth-child(2) {
-    width: 20%;
-  }
-  .map .map-route div:last-child {
-    width: 20%;
-  }
-
   .map .map-route div h5 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0;
     color: #414998;
     font-weight: 600;
@@ -892,7 +879,7 @@
     bottom: 44px;
   }
   .CLoseMeCCD {
-    top: 36%;
+    top: 33%;
   }
 
   .BlogItemDown h3 {
@@ -983,7 +970,6 @@
     opacity: 1;
     display: block;
     transform: translateY(-100%);
-    transition: all 0.7s;
   }
   .SubmitOfferPage {
     display: flex;
@@ -999,6 +985,9 @@
 }
 @media only screen and (max-width: 767px) {
   .post-overaly-style.post-lg {
+    min-height: 220px;
+  }
+  .post-overaly-style.post-lg.post-blog {
     min-height: 220px;
   }
   .map iframe {
@@ -1112,29 +1101,35 @@
   .map .map-route div {
     height: 40px;
   }
-  .map .map-route div:first-child {
-    width: 78%;
-    text-align: right;
-    justify-content: flex-start;
-  }
 
-  .map .map-route div:nth-child(2) {
-    width: 10%;
-  }
-  .map .map-route div:last-child {
-    width: 10%;
-  }
   .map .map-route div i {
     font-size: 12px;
+    padding: 0 4px;
   }
+
+  .map .map-route div i {
+    font-size: 13px;
+    color: #414998;
+    font-weight: 600;
+    padding: 0 9px;
+  }
+
   .map .map-route div h5 {
     font-size: 11px;
+    margin: 0;
+    color: #414998;
+    font-weight: 600;
+    font-family: "BYekanPlus";
   }
-  .map .map-route div:nth-child(2) h5 {
-    display: none;
+  .map .map-route div:first-child {
+    width: 100%;
+    margin-bottom: 10px;
   }
-  .map .map-route div:nth-child(3) h5 {
-    display: none;
+  .map .map-route div:nth-child(2) {
+    width: 49%;
+  }
+  .map .map-route div:last-child {
+    width: 49%;
   }
   .post-header-area ul li div {
     min-height: 40px;
@@ -1411,6 +1406,11 @@
   .form-control::placeholder {
     font-size: 12px !important;
   }
+
+  .ModalCity {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1469,22 +1469,11 @@
   .map .map-route div {
     height: 30px;
   }
-  .map .map-route div:first-child {
-    width: 78%;
-    text-align: right;
-    justify-content: flex-start;
-  }
   .map .map-route div:first-child i {
     position: relative;
     bottom: 4px;
   }
 
-  .map .map-route div:nth-child(2) {
-    width: 10%;
-  }
-  .map .map-route div:last-child {
-    width: 10%;
-  }
   .map .map-route div i {
     font-size: 12px;
   }
@@ -1492,12 +1481,6 @@
     font-size: 11px;
     position: relative;
     bottom: 3px;
-  }
-  .map .map-route div:nth-child(2) h5 {
-    display: none;
-  }
-  .map .map-route div:nth-child(3) h5 {
-    display: none;
   }
   .post-header-area ul li div {
     min-height: 46px;
@@ -1737,6 +1720,11 @@
   .SubmitOfferPageRightSideForms .custom-select {
     padding: 13px 2px !important;
   }
+
+  .ModalCity {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 485px) {
   .LeftSidePartsBlog {
@@ -1925,7 +1913,7 @@
     border-radius: 3px;
   }
   .CLoseMeCCD {
-    top: 21%;
+    top: 11%;
     left: 45%;
     font-size: 18px !important;
   }

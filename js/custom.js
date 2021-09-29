@@ -404,14 +404,17 @@ $('.ShowContactInfo').click(function (event) {
 $('.Discount, .HDTopRight').on('click', () => {
 	$('.SendMessageToInMobileIndex').show("fade", { direction: "up" }, 500);
 	$('.SendMessageToInMobileIndexOverllay').show("fade", { direction: "right" }, 500);
+	$('.SendMessageToIndex').show("slide", { direction: "up" }, 300);
 })
 
 $('.MoneyAsk ').on('click', () => {
 	$('.SendMessageToInMobile').show("slide", { direction: "right" }, 300);
 	$('.SendMessageToInMobileOverllay').show("slide", { direction: "right" }, 300);
+	$('.SendMessageToIndex').show("slide", { direction: "up" }, 300);
+
 })
 
-$(".CloseBtnForMoneyAsk ").on('click', () => {
+$(".CloseBtnForMoneyAsk , .SendMessageToInMobileIndexOverllay").on('click', () => {
 
 	var mq2 = window.matchMedia("(max-width: 991px)");
 
@@ -422,6 +425,7 @@ $(".CloseBtnForMoneyAsk ").on('click', () => {
 
 	$('.SendMessageToInMobileIndex').hide("fade", { direction: "right" }, 400);
 	$('.SendMessageToInMobileIndexOverllay').hide("fade", { direction: "right" }, 400);
+	$('.SendMessageToIndex').hide("slide", { direction: "down" }, 300);
 
 
 })
@@ -485,6 +489,8 @@ $('.SendMessageToSendBtn ').on('click', () => {
 
 			$('.SendMessageToInMobileIndex').hide("fade", { direction: "right" }, 1200);
 			$('.SendMessageToInMobileIndexOverllay').hide("fade", { direction: "right" }, 1200);
+			$('.SendMessageToIndex').hide("slide", { direction: "down" }, 300);
+
 
 		}, 1400);
 
@@ -546,6 +552,17 @@ $('.CloseIconForMM').on('click', () => {
 })
 
 
+$(window).click(function () {
+
+	$('.sideBarMenuMobile').hide("drop", { direction: "right" }, 300);
+	$('#navbarSupportedContent').hide("slide", { direction: "right" }, 300);
+
+});
+
+$('.navbar-toggler , .sideBarMenuMobile').click(function (event) {
+	event.stopPropagation();
+});
+
 $('.CityItemInModal').on('click', () => {
 	$('.ShowCityParent').hide(400);
 	$('.ShowCityChild').show(400);
@@ -586,18 +603,16 @@ if (mq3.matches) {
 		var thisscroll = $(this).scrollTop();
 		if (thisscroll >= 100) {
 			if (thisscroll > previousScroll) {
-				$('.SubmitOfferMobile').hide();
+				$('.SubmitOfferMobile').hide('slide', { direction: "right" }, 50);
 				$('.main-nav').css('min-height', '88px');
-
 			} else {
-				$('.SubmitOfferMobile').show('fade', 'up', 20);
 				$('.main-nav').css('min-height', '130px');
-
+				$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
 			}
 			previousScroll = thisscroll;
 		}
 		else {
-			$('.SubmitOfferMobile').show();
+			$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
 		}
 	});
 
@@ -635,14 +650,20 @@ $('.HDTopLeft').on('click', () => {
 	$('.CLoseMeCCD').show("puff", { direction: "left" }, 200);
 
 	$('.CCDs1').show("fade", { direction: "up" }, 300);
-	$('.CCDs2').show("fade", { direction: "up" }, 300);
-	$('.CCDs3').show("fade", { direction: "up" }, 300);
+	$('.CCDs2').show("fade", { direction: "up" }, 500);
+	$('.CCDs3').show("fade", { direction: "up" }, 700);
 
-	setTimeout(() => {
-		$('.CCDs1').css('display', "flex");
-		$('.CCDs2').css('display', "flex");
-		$('.CCDs3').css('display', "flex");
-	}, 311);
+	// setTimeout(() => {
+	// $('.CCDs1').css('display', "flex");
+	// }, 302);
+
+	// setTimeout(() => {
+	// $('.CCDs2').css('display', "flex");
+	// }, 502);
+
+	// setTimeout(() => {
+	// $('.CCDs3').css('display', "flex");
+	// }, 702);
 
 })
 
@@ -653,15 +674,36 @@ $('.CLoseMeCCD').on('click', () => {
 
 	$('.HDTopRight , .HDBottomLeft').css('opacity', 1)
 
-	$('.ContactChild').hide("slide", { direction: "down" }, 200);
+	$('.ContactChild').hide("slide", { direction: "down" }, 500);
 
 	$('.CLoseMeCCD').hide("puff", { direction: "right" }, 400);
 
-	$('.CCDs1').hide("slide", { direction: "down" }, 300);
-	$('.CCDs2').hide("slide", { direction: "down" }, 500);
-	$('.CCDs3').hide("slide", { direction: "down" }, 900);
+	// $('.CCDs1').hide("slide", { direction: "down" }, 300);
+	// $('.CCDs2').hide("slide", { direction: "down" }, 500);
+	// $('.CCDs3').hide("slide", { direction: "down" }, 900);
 
 })
+
+
+$(window).click(function () {
+
+	$('.HDTopLeft').css('background', '#FFF');
+
+	$('.HDTopRight , .HDBottomLeft').css('opacity', 1)
+
+	$('.ContactChild').hide("slide", { direction: "down" }, 500);
+
+	$('.CLoseMeCCD').hide("puff", { direction: "right" }, 400);
+
+	// $('.CCDs1').hide("slide", { direction: "down" }, 300);
+	// $('.CCDs2').hide("slide", { direction: "down" }, 500);
+	// $('.CCDs3').hide("slide", { direction: "down" }, 900);
+
+});
+
+$('.ContactChild , .HDTopLeft').click(function (event) {
+	event.stopPropagation();
+});
 
 var NavNum = 0;
 
