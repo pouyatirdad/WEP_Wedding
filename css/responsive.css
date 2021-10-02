@@ -767,6 +767,15 @@
 }
 
 @media only screen and (max-width: 991px) {
+  body {
+    padding-top: 140px;
+  }
+  #main-nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
   .ts-gutter-30 > div {
     padding-top: 0 !important;
     padding-bottom: 0 !important;

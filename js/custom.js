@@ -579,42 +579,40 @@ $('.BackBtnInCityList').on('click', () => {
 
 var mq3 = window.matchMedia("(max-width: 991px)");
 if (mq3.matches) {
-	$('#main-navMObile').hide();
-	$(window).scroll(function () {
-		var header = $('#main-nav');
-		var headerMobile = $('#main-navMObile');
-		var scroll = $(window).scrollTop();
-		// console.log(scroll);
-		if (scroll >= 100) {
-			header.hide();
-			headerMobile.show();
-			headerMobile.addClass('stickyMobile');
-		}
-		else {
-			header.show('fade', 200);
-			headerMobile.hide();
-			headerMobile.removeClass('stickyMobile');
-		}
+	// $(window).scroll(function () {
+	// 	var header = $('#main-nav');
+	// 		header.addClass('sticky');
+	//  $("body").css("padding-top", "175px");
 
-	});
+	// var scroll = $(window).scrollTop();
+	// if (scroll >= 90) {
+	// header.addClass('sticky');
+	// $("body").css("padding-top", "175px");
+	// }
+	// else {
+	// header.removeClass('sticky');
+	// $("body").css("padding-top", "0px");
+	// }
 
-	var previousScroll = 0;
-	$(window).scroll(function (event) {
-		var thisscroll = $(this).scrollTop();
-		// if (thisscroll >= 100) {
-		// 	if (thisscroll > previousScroll) {
-		// 		$('.SubmitOfferMobile').hide('slide', { direction: "right" }, 50);
-		// 		$('.main-nav').css('min-height', '88px');
-		// 	} else {
-		// 		$('.main-nav').css('min-height', '130px');
-		// 		$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
-		// 	}
-		// 	previousScroll = thisscroll;
-		// }
-		// else {
-		// 	$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
-		// }
-	});
+	// });
+
+	// var previousScroll = 0;
+	// $(window).scroll(function (event) {
+	// 	var thisscroll = $(this).scrollTop();
+	// if (thisscroll >= 100) {
+	// 	if (thisscroll > previousScroll) {
+	// 		$('.SubmitOfferMobile').hide('slide', { direction: "right" }, 50);
+	// 		$('.main-nav').css('min-height', '88px');
+	// 	} else {
+	// 		$('.main-nav').css('min-height', '130px');
+	// 		$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
+	// 	}
+	// 	previousScroll = thisscroll;
+	// }
+	// else {
+	// 	$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
+	// }
+	// });
 
 }
 else {

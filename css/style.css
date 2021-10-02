@@ -889,6 +889,9 @@ Last Update : 1399/1/1
 /* ==========================================
 // Typography
 ============================================= */
+* {
+  scroll-behavior: smooth;
+}
 body {
   background: #fff;
   color: #000;
@@ -6008,7 +6011,9 @@ body {
 
   .SubmitOfferMobile {
     position: absolute !important;
-    bottom: 0;
+    top: 0;
+    margin: 0 !important;
+    margin-top: 85px !important;
     width: 100%;
     left: 0;
     display: flex;
@@ -6016,7 +6021,6 @@ body {
     align-items: center;
     flex-direction: row-reverse;
     border-radius: 0 !important;
-    margin: 0 !important;
   }
 
   .SubmitOfferMobile i {
@@ -6026,7 +6030,7 @@ body {
 
   #main-nav {
     position: relative;
-    min-height: 130px;
+    min-height: 85px;
   }
 
   .nav-search {
@@ -7781,7 +7785,7 @@ img {
 }
 
 .sticky {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
   z-index: 10;
