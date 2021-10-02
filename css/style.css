@@ -6784,6 +6784,32 @@ textarea::placeholder {
   margin-bottom: 33px;
 }
 
+.post-comments-new .showCm .Dta .ReplyText {
+  position: relative;
+  font-size: 11px;
+  font-weight: 600;
+  color: #414998;
+  background: #fff;
+  border-radius: 9px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  width: calc(auto - 30px);
+  border: 1px solid #727cd462;
+  margin-bottom: 33px;
+}
+
+.post-comments-new .showCm .Dta .ReplyText .ReplyCmTitle {
+  position: absolute;
+  right: 3px;
+  top: -25px;
+  font-family: "iranyekan", "BYekanPlus";
+  color: #414998;
+  font-size: 11px;
+  font-weight: 600;
+}
+
 .post-comments-new .showCm .Dta .Text .Date {
   position: absolute;
   left: 0;
@@ -6822,6 +6848,26 @@ textarea::placeholder {
 .post-comments-new .showCm .Dta .Text .Author i {
   padding-left: 4px;
   padding-bottom: 2px;
+}
+
+.post-comments-new .showCm .Dta .Text .ReplyCm {
+  position: absolute;
+  left: 182px;
+  bottom: -24px;
+  background: #5963c1;
+  padding: 0 11px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.post-comments-new .showCm .Dta .Text .ReplyCm:hover {
+  background: #1a226b;
 }
 
 .showMoreCM {
