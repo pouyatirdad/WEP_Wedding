@@ -1725,6 +1725,15 @@
     width: 100%;
     height: 100%;
   }
+  .BottomRight {
+    bottom: 28px;
+  }
+  .CategorySliderMedia .CSDowner {
+    font-size: 12px;
+  }
+  .ShowMoreCs .CSDowner {
+    width: 79%;
+  }
 }
 @media only screen and (max-width: 485px) {
   .LeftSidePartsBlog {
@@ -1740,6 +1749,9 @@
   }
   .form-control::placeholder {
     font-size: 9px !important;
+  }
+  .ShowMoreCs img {
+    height: 110px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1769,7 +1781,7 @@
   .BlogMedias .ShortDescBl {
     font-size: 10px;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1788,6 +1800,10 @@
   }
   .RateTextFh {
     font-size: 12px;
+  }
+
+  .ShowMoreCs img {
+    height: 98px;
   }
 }
 .emptySlider {
@@ -1905,10 +1921,10 @@
   .ContactChildData {
     width: 45%;
     right: 54%;
-    bottom: -36px;
+    bottom: -7px;
   }
   .CCDs {
-    min-height: 40px;
+    min-height: 30px;
     font-size: 13px;
     border-radius: 3px;
   }
@@ -1988,6 +2004,18 @@
   .LeftSidePartsBlog {
     height: 40%;
     width: 83%;
+  }
+
+  .CategorySliderMedia .CSDowner {
+    font-size: 9px;
+  }
+  .ShowMoreCs .CSDowner {
+    width: 73%;
+    height: 23px;
+  }
+
+  .ShowMoreCs img {
+    height: 88px;
   }
 }
 
