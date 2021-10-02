@@ -601,19 +601,19 @@ if (mq3.matches) {
 	var previousScroll = 0;
 	$(window).scroll(function (event) {
 		var thisscroll = $(this).scrollTop();
-		if (thisscroll >= 100) {
-			if (thisscroll > previousScroll) {
-				$('.SubmitOfferMobile').hide('slide', { direction: "right" }, 50);
-				$('.main-nav').css('min-height', '88px');
-			} else {
-				$('.main-nav').css('min-height', '130px');
-				$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
-			}
-			previousScroll = thisscroll;
-		}
-		else {
-			$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
-		}
+		// if (thisscroll >= 100) {
+		// 	if (thisscroll > previousScroll) {
+		// 		$('.SubmitOfferMobile').hide('slide', { direction: "right" }, 50);
+		// 		$('.main-nav').css('min-height', '88px');
+		// 	} else {
+		// 		$('.main-nav').css('min-height', '130px');
+		// 		$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
+		// 	}
+		// 	previousScroll = thisscroll;
+		// }
+		// else {
+		// 	$('.SubmitOfferMobile').show('slide', { direction: "right" }, 50);
+		// }
 	});
 
 }

@@ -3335,6 +3335,7 @@ ul.navbar-nav > li.mega-dropdown {
   position: absolute;
   box-shadow: 0px 2px 7px #0000001c;
   top: 5px;
+  left: 10px;
 }
 
 .nav-search i {
@@ -3721,10 +3722,10 @@ ul.navbar-nav > li.mega-dropdown {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-
+/* 
 .post-overaly-style:hover {
   background-position: 60%;
-}
+} */
 
 .post-overaly-style.post-sm {
   min-height: 225px;
@@ -5155,6 +5156,7 @@ ul.navbar-nav > li.mega-dropdown {
 }
 .BackBtnInCityList h5 {
   font-size: 17px;
+  color: #414998 !important;
   margin: 0 10px;
   font-family: "iranyekan";
 }
@@ -5988,7 +5990,7 @@ body {
     font-size: 10px !important;
   }
 
-  .main-nav {
+  #main-nav {
     position: relative;
     min-height: 130px;
   }
@@ -6134,6 +6136,7 @@ body {
   background-color: #fff;
   color: #606060;
   padding: 10px !important;
+  padding-right: 5px !important;
   font-size: 15px;
   border-radius: 7px;
   box-shadow: rgb(0 0 0 / 7%) 0px 4px 6px;
@@ -6847,7 +6850,7 @@ textarea::placeholder {
   align-items: center;
   box-shadow: 0 4px 10px rgb(0 0 0 / 6%);
   width: 100%;
-  min-height: 50px;
+  min-height: 46px;
   margin: 3px 0;
   background: #fff;
   border-radius: 10px;
@@ -7256,7 +7259,7 @@ img {
 }
 .SearchAreaInPc input {
   position: absolute;
-  left: 70px;
+  left: 51px;
   top: 5px;
   height: 35px;
   width: 220px;
@@ -7457,7 +7460,7 @@ img {
 
 .select-selected {
   padding: 0 !important;
-  padding-right: 3px !important;
+  padding-right: 0px !important;
 }
 
 .select-selected.select-arrow-active:after {
@@ -7471,6 +7474,7 @@ img {
   padding: 7px 3px;
   user-select: none;
   margin: 0 10px;
+  margin-right: 5px;
   border-bottom: 1px solid #41499842;
 }
 
@@ -7738,6 +7742,7 @@ img {
   opacity: 0;
   transform: translateY(-100%);
   transition: all 0.5s;
+  min-height: 88px;
 }
 
 .sticky {
