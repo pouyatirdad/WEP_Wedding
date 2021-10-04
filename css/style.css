@@ -7940,16 +7940,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-/* 
-.ReserveForSingleOverllay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.486);
-  z-index: 3;
-} */
 
 .ReverseForSingle {
   position: fixed;
@@ -8062,4 +8052,143 @@ img {
   font-size: 20px;
   opacity: 72%;
   color: #ffc655;
+}
+
+/* ////////////////// */
+
+.ReverseMenuForSingle {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.884);
+  z-index: 200;
+  display: none;
+}
+
+.ReverseMenuForSingleData {
+  z-index: 201;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.SendMessageToIndexInReverseMenu {
+  /* display: none; */
+  min-width: 700px;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
+}
+
+.SendMessageToIndexInReverseMenu {
+  background: #f6f7ff;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.SendMessageToIndexInReverseMenu h4 {
+  margin: auto;
+  width: 60%;
+  color: #4751b7;
+  border-bottom: 1px solid #606ad880;
+  padding-bottom: 12px;
+  padding-top: 4px;
+  margin-bottom: 20px;
+}
+
+.SendMessageToIndexInReverseMenu .CloseBtnForMoneyAskInReverseMenu {
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: 7px;
+  cursor: pointer;
+}
+.SendMessageToIndexInReverseMenu .CloseBtnForMoneyAskInReverseMenu i {
+  font-size: 20px;
+  opacity: 72%;
+  color: #ffc655;
+}
+.ReserveMenu {
+  max-height: 60vh;
+  direction: ltr;
+  overflow-y: auto;
+  text-align: center;
+}
+
+/* width */
+.ReserveMenu::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+/* Track */
+.ReserveMenu::-webkit-scrollbar-track {
+  box-shadow: 0 0 5px #00000013;
+  border-radius: 10px;
+}
+
+/* Handle */
+.ReserveMenu::-webkit-scrollbar-thumb {
+  background: #4751b7;
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+.ReserveMenu::-webkit-scrollbar-thumb:hover {
+  background: #1e2783;
+}
+
+.ReserveMenu .ReserveMenuitems {
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 0;
+  height: 120px;
+  margin: 10px 5px;
+}
+
+.ReserveMenu .ReserveMenuitems .ReserveMenuitemsUp {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px 9px 0 0;
+  height: 70%;
+}
+
+.ReserveMenu .ReserveMenuitems .ReserveMenuitemsUp h5 {
+  color: #4751b7;
+  font-size: 16px;
+  direction: rtl;
+  font-weight: 600;
+  font-family: "iranyekan";
+  margin: 0;
+  padding: 0;
+}
+
+.ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom {
+  background-color: #4751b7;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 0 0 9px 9px;
+  height: 30%;
+  cursor: pointer;
+}
+
+.ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom h5 {
+  color: #fff;
+  direction: rtl;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "iranyekan";
+  margin: 0;
+  padding: 0;
 }

@@ -834,27 +834,32 @@ $('.SendMessageToSendBtnInReverse ').on('click', () => {
 	if (PhoneINT.length > 0) {
 		$('.SendMessageToSendBtnInReverse').removeClass("RedWarningFieldBG");
 		PhoneLBL.removeClass("RedWarningFieldCL");
-		setTimeout(() => {
-			$('.SendMessageToSendBtnInReverse').text('.');
-		}, 200);
-		setTimeout(() => {
-			$('.SendMessageToSendBtnInReverse').text('..');
-		}, 500);
-		setTimeout(() => {
-			$('.SendMessageToSendBtnInReverse').text('...');
-		}, 900);
-		setTimeout(() => {
-			$('.SendMessageToSendBtnInReverse').text('درخواست شما ارسال شد');
-		}, 1200);
+		// setTimeout(() => {
+		// 	$('.SendMessageToSendBtnInReverse').text('.');
+		// }, 200);
+		// setTimeout(() => {
+		// 	$('.SendMessageToSendBtnInReverse').text('..');
+		// }, 500);
+		// setTimeout(() => {
+		// 	$('.SendMessageToSendBtnInReverse').text('...');
+		// }, 900);
+		// setTimeout(() => {
+		// 	$('.SendMessageToSendBtnInReverse').text('درخواست شما ارسال شد');
+		// }, 1200);
 
-		setTimeout(() => {
-			$('.ReverseForSingle').hide("fade", { direction: "right" }, 1200);
-		}, 1400);
+		// setTimeout(() => {
+		// 	$('.ReverseForSingle').hide("fade", { direction: "right" }, 1200);
+		// }, 1400);
 
-		setTimeout(() => {
-			$(".PhoneNumber input").val('');
-			$('.SendMessageToSendBtnInReverse').text('دریافت  کد');
-		}, 4000);
+		// setTimeout(() => {
+		// 	$(".PhoneNumber input").val('');
+		// 	$('.SendMessageToSendBtnInReverse').text('دریافت  کد');
+		// }, 4000);
+
+		$('.ReverseForSingle').hide("fade", { direction: "right" }, 600);
+
+		$('.ReverseMenuForSingle').show("fade", { direction: "right" }, 800);
+
 	} else {
 		$('.SendMessageToSendBtnInReverse').addClass("RedWarningFieldBG");
 		$('.SendMessageToSendBtnInReverse').text('اطلاعات را درست وارد کنید');
@@ -873,3 +878,14 @@ function isNumberKey(evt) {
 		return false;
 	return true;
 }
+
+
+$('.ReverseMenuForSingle , .CloseBtnForMoneyAskInReverseMenu , .ReserveMenuitemsBottom').click(function () {
+
+	$('.ReverseMenuForSingle').hide("fade", { direction: "top" }, 400);
+
+});
+
+$('.SendMessageToIndexInReverseMenu').click(function (event) {
+	event.stopPropagation();
+});
