@@ -6491,9 +6491,44 @@ body {
   margin: 0;
 }
 
-.HDBottomLeft h6 {
+.HDBottomLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 6%);
+  min-height: 60px;
+  background-color: #ffc653;
+  border-radius: 9px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+.HDBottomLeft:hover {
+  background-color: #d49b29;
+}
+
+.HDBottomLeft h5 {
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "iranyekan";
+  margin: 0;
+}
+
+.DiscountInSingleItems {
+  box-shadow: none;
+  border: 1px solid #444cb73b;
+  background-color: #fff;
+  margin: -50px 15px 20px 15px;
+  padding: 9px;
+  border-radius: 9px;
+}
+
+.DiscountInSingleItems h6 {
   font-size: 14px;
   font-weight: 700;
+  line-height: 1.4;
   color: #414998;
   font-family: "iranyekan";
   margin: 0;
@@ -6906,11 +6941,6 @@ textarea::placeholder {
   100% {
     top: 3px;
   }
-}
-
-.HDBottomLeft {
-  box-shadow: none !important;
-  border: 1px solid #444cb73b;
 }
 
 .ContactChild {
@@ -7406,6 +7436,7 @@ img {
 .HDTopLeft,
 .HDTopRight {
   cursor: pointer;
+  transition: all 400ms;
 }
 
 .post-header-area ul li:nth-child(2) div:first-child:hover {
@@ -7908,4 +7939,127 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* 
+.ReserveForSingleOverllay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.486);
+  z-index: 3;
+} */
+
+.ReverseForSingle {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.884);
+  z-index: 200;
+  display: none;
+}
+
+.ReverseForSingleData {
+  z-index: 201;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.SendMessageToIndexInReverse {
+  /* display: none; */
+  max-width: 470px;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
+}
+
+.SendMessageToIndexInReverse {
+  background: #f6f7ff;
+  padding: 20px 14px;
+  border-radius: 10px;
+}
+.SendMessageToIndexInReverse h4 {
+  color: #4751b7;
+  border-bottom: 1px solid #606ad880;
+  padding-bottom: 12px;
+  padding-top: 4px;
+  margin-bottom: 20px;
+}
+.SendMessageToIndexInReverse .input-group label {
+  width: 100%;
+  font-size: 12px;
+  font-family: "iranyekan";
+  color: #333;
+  padding-right: 3px;
+}
+
+.SendMessageToIndexInReverse .input-group input {
+  background: #fff;
+  border-radius: 6px 0px 0px 6px !important;
+  border: 0;
+  /* box-shadow: -4px 0px 6px rgb(0 0 0 / 10%); */
+  padding-right: 0;
+  color: #6e6e6e;
+}
+.SendMessageToIndexInReverse .input-group textarea {
+  background: #fff;
+  border-radius: 6px !important;
+  border: 0;
+  /* box-shadow: 0px 0px 6px rgb(0 0 0 / 10%); */
+  padding: 4px 9px;
+  color: #6e6e6e;
+}
+
+.SendMessageToSendBtnInReverse {
+  border-radius: 9px;
+  margin-top: 16px !important;
+  margin-bottom: 4px !important;
+}
+
+.SendMessageToIndexInReverse .input-group {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.SendMessageToIndexInReverse i {
+  font-size: 20px;
+  color: #414998;
+}
+
+.SendMessageToIndexInReverse .input-group-text {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 0 6px 6px 0;
+  border: 0;
+  /* box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.144); */
+}
+
+.SendMessageToIndexInReverse .input-group-text i {
+  color: #636dd4;
+}
+
+.SendMessageToIndexInReverse .form-control {
+  background-color: #fff;
+}
+
+.SendMessageToIndexInReverse .CloseBtnForMoneyAskInReverse {
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: 7px;
+  cursor: pointer;
+}
+.SendMessageToIndexInReverse .CloseBtnForMoneyAskInReverse i {
+  font-size: 20px;
+  opacity: 72%;
+  color: #ffc655;
 }
