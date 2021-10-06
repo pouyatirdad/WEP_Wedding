@@ -880,7 +880,7 @@ function isNumberKey(evt) {
 }
 
 
-$('.ReverseMenuForSingle , .CloseBtnForMoneyAskInReverseMenu , .ReserveMenuitemsBottom').click(function () {
+$('.ReverseMenuForSingle , .CloseBtnForMoneyAskInReverseMenu').click(function () {
 
 	$('.ReverseMenuForSingle').hide("fade", { direction: "top" }, 400);
 
@@ -889,3 +889,66 @@ $('.ReverseMenuForSingle , .CloseBtnForMoneyAskInReverseMenu , .ReserveMenuitems
 $('.SendMessageToIndexInReverseMenu').click(function (event) {
 	event.stopPropagation();
 });
+
+$('.ReserveMenuitemsBottom').on('click', () => {
+
+	$('.ReserveDatePicker').show("fade", { direction: "top" }, 400);
+
+})
+
+var DTPK = "<div class='CHODYTPKMenu'><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 11:00</p></div><div class='CHODYTPKItem CLSHORS'><p> 12:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 13:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 15:00</p></div><div class='CHODYTPKItem CLSHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 17:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 18:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem CLSHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div><div class='CHODYTPKItem OPNHORS'><p> 10:00</p></div></div>";
+
+var ReserveNum = 0;
+
+var ReserveTime = 0;
+
+var menuTime = $('.ReserveDatePickerMenuDataTime');
+
+var menuDate = $('.ReserveDatePickerMenuDataDate');
+
+
+
+$(document).on('click', '.ReserveDatePickerItemsLeftData.OpenDay', function (e) {
+	e.preventDefault();
+
+	if (ReserveTime == 1) {
+
+		$(document).on('click', '.CHODYTPKItem.OPNHORS', function () {
+			$(this).addClass('CHOSHORS');
+			menuTime.text($(this).find('p').text());
+			ReserveTime = 0;
+		})
+
+	} else {
+		if (ReserveNum == 0) {
+			$(this).addClass('CHODY');
+			$(this).append(DTPK);
+			menuDate.text($(this).find('.DPILDNum h6').text() + $('.ReserveDatePickerItemsLeftUpper h6').text());
+			ReserveNum = 1;
+			ReserveTime = 1;
+		} else {
+			$('.CHODYTPKMenu').remove();
+			$('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
+			$(this)
+			ReserveNum = 0;
+		}
+	}
+
+});
+
+
+
+$('.CloseBtnForMoneyAskInDatePicker').click(function () {
+
+	$('.ReserveDatePicker').hide("fade", { direction: "top" }, 400);
+
+});
+
+
+$('.ReserveDatePickerItemsRightReserveBtn').on('click', () => {
+
+	$('.ReverseMenuForSingle').hide("fade", { direction: "top" }, 400);
+
+	$('.ReserveDatePicker').hide("fade", { direction: "top" }, 400);
+
+})
