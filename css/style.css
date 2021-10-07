@@ -8203,7 +8203,7 @@ img {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.884);
   z-index: 200;
-  display: none;
+  /* display: none; */
 }
 
 .ReserveDatePicker .sidebar-widget {
@@ -8439,6 +8439,16 @@ img {
 
 .ReserveDatePickerItemsLeftData.OpenDay > .DPILDNum {
   cursor: pointer;
+}
+
+.ReserveDatePickerItemsLeftData.Today > .DPILText {
+  cursor: pointer;
+  background-color: red;
+}
+
+.ReserveDatePickerItemsLeftData.Today > .DPILDNum {
+  cursor: pointer;
+  background-color: red;
 }
 
 .ReserveDatePickerItemsLeftData.CHODY {
