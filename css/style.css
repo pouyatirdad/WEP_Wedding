@@ -8456,15 +8456,17 @@ img {
 }
 
 .CHODYTPKMenu {
-  position: absolute;
+  /* position: absolute;
   top: 112%;
   left: 0;
   right: calc(-22vw - 2px);
-  width: calc(500px + 2px);
+  width: calc(500px + 2px); */
+  margin-top: 20px;
+  width: 100%;
   height: auto;
   max-height: 205px;
   border-radius: 9px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   background-color: #f7f7ff;
   display: flex;
   justify-content: center;
@@ -8472,17 +8474,18 @@ img {
   flex-wrap: wrap;
   text-align: center;
 }
-
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* 
+ Hide scrollbar for Chrome, Safari and Opera
 .CHODYTPKMenu::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+/* Hide scrollbar for IE, Edge and Firefox 
 .CHODYTPKMenu {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+  -ms-overflow-style: none; /* IE and Edge
+  scrollbar-width: none; /* Firefox 
+} 
+*/
 
 .CHODYTPKMenu .CHODYTPKItem {
   background-color: #fff;

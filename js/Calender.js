@@ -116,15 +116,7 @@ $.fn.datepickerFa = function (y = 0, m = 0) {
                 if ((jFirstDay <= wd || dayCount >= 1) && dayCount < daysInMonth) {
                     dayCount++;
                     $("#dt-table" + randnum).append(
-                        // "<td><input class='btn btn-sm' type='button' value='" +
-                        // ep(dayCount) +
-                        // "' onclick='getVal(this)' id='dt-days-num-" +
-                        // dayCount +
-                        // "-wd-" +
-                        // wd +
-                        // "'></td>"
-                        // + 
-                        '<div class="ReserveDatePickerItemsLeftData OpenDay" onclick="getVal(this)" id="dt-days-num-'
+                        '<div class="ReserveDatePickerItemsLeftData OpenDay"  id="dt-days-num-'
                         +
                         dayCount
                         +
@@ -256,10 +248,10 @@ function ep(en) {
     return pn;
 }
 
-function getVal(e) {
-    alert(year + "/" + (month + 1) + "/" + $(e).find('.DPILDNum h6').text());
-    // console.log($(e).find('.DPILDNum h6').text());
-}
+// function getVal(e) {
+//     alert(year + "/" + (month + 1) + "/" + $(e).find('.DPILDNum h6').text());
+//     // console.log($(e).find('.DPILDNum h6').text());
+// }
 
 function nextMonth(e) {
     if (month == 11) {

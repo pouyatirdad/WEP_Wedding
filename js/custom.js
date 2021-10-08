@@ -908,31 +908,62 @@ var menuDate = $('.ReserveDatePickerMenuDataDate');
 
 
 
-$(document).on('click', '.ReserveDatePickerItemsLeftData.OpenDay', function (e) {
-	e.preventDefault();
+$(document).on('click', '.ReserveDatePickerItemsLeft', function () {
+	// e.preventDefault();
 
 	if (ReserveTime == 1) {
 
 		$(document).on('click', '.CHODYTPKItem.OPNHORS', function () {
+			$('.CHODYTPKItem.CHOSHORS').removeClass('CHOSHORS');
 			$(this).addClass('CHOSHORS');
 			menuTime.text($(this).find('p').text());
-			ReserveTime = 0;
+			ReserveTime = 2;
 		})
 
+	} else if (ReserveTime == 2) {
+		$('.CHODYTPKMenu').remove();
+		$('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
+		ReserveTime = 0;
+		ReserveNum = 0;
 	} else {
 		if (ReserveNum == 0) {
-			$(this).addClass('CHODY');
-			$(this).append(DTPK);
-			menuDate.text($(this).find('.DPILDNum h6').text() + $('.ReserveDatePickerItemsLeftUpper h6').text());
+
+			$(document).on('click', '.ReserveDatePickerItemsLeftData.OpenDay', function () {
+				if ($('.ReserveDatePickerItemsLeftData').hasClass('CHODY')) {
+					$('.ReserveDatePickerItemsLeftData.CHODY').removeClass('CHODY');
+					$('.CHODYTPKMenu').remove();
+				}
+				$(this).addClass('CHODY');
+				$('.ReserveDatePickerItemsLeft').append(DTPK);
+				menuDate.text($(this).find('.DPILDNum h6').text() + $('.ReserveDatePickerItemsLeftUpper h6').text());
+
+			})
 			ReserveNum = 1;
 			ReserveTime = 1;
-		} else {
-			$('.CHODYTPKMenu').remove();
-			$('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
-			$(this)
-			ReserveNum = 0;
-		}
+
+		}// else {
+		// 	console.log('yes');
+
+		// 	$('.CHODYTPKMenu').remove();
+		// 	$('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
+		// 	// $(this)
+		// 	ReserveNum = 0;
+		// }
+
 	}
+
+
+	// $('.ReserveDatePickerItemsLeftDatas').click(function () {
+
+	// 	$('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
+
+	// 	$('.CHODYTPKMenu').remove();
+
+	// });
+
+	// $('.CHODYTPKMenu').click(function (event) {
+	// 	event.stopPropagation();
+	// });
 
 });
 
