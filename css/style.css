@@ -8150,6 +8150,7 @@ img {
   padding: 0;
   height: 120px;
   margin: 10px 5px;
+  cursor: pointer;
 }
 
 .ReserveMenu .ReserveMenuitems .ReserveMenuitemsUp {
@@ -8180,7 +8181,6 @@ img {
   margin: 0;
   border-radius: 0 0 9px 9px;
   height: 30%;
-  cursor: pointer;
 }
 
 .ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom h5 {
@@ -8201,9 +8201,18 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.884);
   z-index: 200;
-  /* display: none; */
+  display: none;
+}
+
+.overllayReserveDatePicker {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.884);
+  z-index: 201;
 }
 
 .ReserveDatePicker .sidebar-widget {
@@ -8223,6 +8232,8 @@ img {
   padding: 20px 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
+  z-index: 202;
+  height: 90%;
 }
 .SendMessageToIndexInDatePicker h4 {
   margin: auto;
@@ -8258,7 +8269,7 @@ img {
   z-index: 201;
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: 75%;
 }
 
 .ReserveDatePickerItems .ReserveDatePickerItemsRight {
@@ -8271,6 +8282,16 @@ img {
   height: 100%;
   padding-right: 15px;
   position: relative;
+  overflow-y: auto;
+}
+
+.ReserveDatePickerItems .ReserveDatePickerItemsLeft::-webkit-scrollbar {
+  display: none;
+}
+
+.ReserveDatePickerItems .ReserveDatePickerItemsLeft {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .ReserveDatePickerItems .ReserveMenuitems {
@@ -8400,10 +8421,11 @@ img {
   align-items: center;
 }
 
-.ReserveDatePickerItemsLeft .ReserveDatePickerItemsLeftUpper i {
+.ReserveDatePickerItemsLeft .ReserveDatePickerItemsLeftUpper span {
   color: #4751b7;
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .ReserveDatePickerItemsLeft .ReserveDatePickerItemsLeftUpper h6 {
@@ -8430,7 +8452,7 @@ img {
   width: calc(100px - 5px);
   align-items: center;
   padding: 0;
-  margin: 5px auto;
+  margin: 5px 2px;
 }
 
 .ReserveDatePickerItemsLeftData.OpenDay > .DPILText {

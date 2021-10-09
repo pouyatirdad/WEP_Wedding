@@ -136,6 +136,9 @@
   .mega-menu-content {
     max-width: 940px;
   }
+  .SendMessageToIndexInReverseMenu {
+    width: 80%;
+  }
 }
 
 @media (min-width: 575px) {
@@ -995,6 +998,14 @@
   .DiscountInSingleItems {
     margin: -35px 15px 20px 15px;
   }
+
+  .SendMessageToIndexInReverseMenu {
+    width: 100%;
+  }
+  .SendMessageToIndexInDatePicker {
+    min-width: auto;
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .post-overaly-style.post-lg {
@@ -1446,6 +1457,14 @@
   .SendMessageToIndexInReverse .input-group-text {
     border-radius: 0 3px 3px 0;
   }
+  .SendMessageToIndexInReverseMenu {
+    width: 40%;
+    min-width: 498px;
+    height: 90vh;
+  }
+  .ReserveMenu {
+    max-height: 72vh;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1778,6 +1797,24 @@
   .DiscountInSingleItems h6 {
     font-size: 10px;
   }
+
+  .SendMessageToIndexInReverseMenu {
+    width: 30%;
+    min-width: 400px;
+    height: 90vh;
+  }
+  .ReserveMenu {
+    max-height: 72vh;
+  }
+  .ReserveMenu .ReserveMenuitems {
+    height: 90px;
+  }
+  .ReserveMenu .ReserveMenuitems .ReserveMenuitemsUp h5 {
+    font-size: 12px;
+  }
+  .ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom h5 {
+    font-size: 11px;
+  }
 }
 @media only screen and (max-width: 485px) {
   .LeftSidePartsBlog {
@@ -1857,6 +1894,11 @@
 
   .DiscountInSingleItems h6 {
     font-size: 9px;
+  }
+  .SendMessageToIndexInReverseMenu {
+    width: 96%;
+    min-width: auto;
+    height: 90vh;
   }
 }
 .emptySlider {
@@ -2079,6 +2121,24 @@
   .DiscountInSingleItems h6 {
     font-size: 8px;
   }
+
+  .SendMessageToIndexInReverseMenu {
+    width: 100%;
+    min-width: auto;
+    height: 100vh;
+  }
+  .ReserveMenu {
+    max-height: 82vh;
+  }
+  .ReserveMenu .ReserveMenuitems {
+    height: 80px;
+  }
+  .ReserveMenu .ReserveMenuitems .ReserveMenuitemsUp h5 {
+    font-size: 10px;
+  }
+  .ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom h5 {
+    font-size: 9px;
+  }
 }
 
 @media only screen and (max-width: 333px) {
@@ -2128,6 +2188,24 @@
   }
   .RateTextFh {
     font-size: 10px;
+  }
+
+  .SendMessageToIndexInReverseMenu {
+    width: 100%;
+    min-width: auto;
+    height: 100vh;
+  }
+  .ReserveMenu {
+    max-height: 82vh;
+  }
+  .ReserveMenu .ReserveMenuitems {
+    height: 60px;
+  }
+  .ReserveMenu .ReserveMenuitems .ReserveMenuitemsUp h5 {
+    font-size: 10px;
+  }
+  .ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom h5 {
+    font-size: 8px;
   }
 }
 

@@ -890,7 +890,7 @@ $('.SendMessageToIndexInReverseMenu').click(function (event) {
 	event.stopPropagation();
 });
 
-$('.ReserveMenuitemsBottom').on('click', () => {
+$('.ReserveMenuitems').on('click', () => {
 
 	$('.ReserveDatePicker').show("fade", { direction: "top" }, 400);
 
@@ -983,3 +983,12 @@ $('.ReserveDatePickerItemsRightReserveBtn').on('click', () => {
 	$('.ReserveDatePicker').hide("fade", { direction: "top" }, 400);
 
 })
+
+
+$('.overllayReserveDatePicker').click(function () {
+
+	$('.ReserveDatePicker').hide("fade", { direction: "top" }, 400);
+
+	$('.ReverseMenuForSingle').hide("fade", { direction: "top" }, 400);
+
+});
