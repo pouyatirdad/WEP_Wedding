@@ -1004,7 +1004,16 @@
   }
   .SendMessageToIndexInDatePicker {
     min-width: auto;
-    width: 90%;
+    width: 98%;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems {
+    height: 100px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsUp h5 {
+    font-size: 12px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsBottom h5 {
+    font-size: 11px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1458,12 +1467,61 @@
     border-radius: 0 3px 3px 0;
   }
   .SendMessageToIndexInReverseMenu {
-    width: 40%;
-    min-width: 498px;
-    height: 90vh;
+    border-radius: 3px;
   }
-  .ReserveMenu {
-    max-height: 72vh;
+  .SendMessageToIndexInReverseMenu {
+    border-radius: 3px;
+  }
+  .ReserveMenu .ReserveMenuitems {
+    border-radius: 3px;
+  }
+  .ReserveMenu .ReserveMenuitems .ReserveMenuitemsUp {
+    border-radius: 3px 3px 0 0;
+  }
+  .ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom {
+    border-radius: 0 0 3px 3px;
+  }
+  .SendMessageToIndexInDatePicker {
+    border-radius: 3px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems {
+    border-radius: 3px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsUp {
+    border-radius: 3px 3px 0 0;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsBottom {
+    border-radius: 0 0 3px 3px;
+  }
+  .ReserveDatePickerItemsRight .ReserveDatePickerMenuData {
+    border-radius: 3px;
+  }
+  .ReserveDatePickerItemsRightReserveBtn {
+    border-radius: 3px;
+  }
+  .ReserveDatePickerItemsLeft .ReserveDatePickerItemsLeftUpper {
+    border-radius: 3px;
+  }
+  .ReserveDatePickerItemsLeftData {
+    border-radius: 3px;
+  }
+  .CHODYTPKMenu {
+    border-radius: 3px;
+  }
+  .CHODYTPKMenu .CHODYTPKItem {
+    border-radius: 3px;
+  }
+  .DPILDNum {
+    border-radius: 0 3px 3px 0;
+  }
+  .DPILText {
+    border-radius: 3px 0 0 3px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsUp h5 {
+    font-size: 11px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsBottom h5 {
+    font-size: 10px;
   }
 }
 
@@ -1815,6 +1873,43 @@
   .ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom h5 {
     font-size: 11px;
   }
+  .SendMessageToIndexInDatePicker {
+    max-height: 98%;
+    overflow-y: auto;
+  }
+  .ReserveDatePickerItems {
+    flex-direction: column;
+  }
+  .ReserveDatePickerItems .ReserveDatePickerItemsRight {
+    width: 100%;
+  }
+  .ReserveDatePickerItems .ReserveDatePickerItemsLeft {
+    width: 100%;
+    margin-top: 10px;
+    overflow-y: hidden;
+  }
+  .CHODYTPKMenu {
+    max-height: unset;
+  }
+  .SendMessageToIndexInDatePicker h4 {
+    width: 90%;
+    font-size: 17px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems {
+    height: 80px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsUp h5 {
+    font-size: 11px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsBottom h5 {
+    font-size: 11px;
+  }
+  .DPILDNum h6 {
+    font-size: 16px;
+  }
+  .DPILText h6 {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 485px) {
   .LeftSidePartsBlog {
@@ -1899,6 +1994,16 @@
     width: 96%;
     min-width: auto;
     height: 90vh;
+  }
+
+  .ReserveDatePickerItems .ReserveMenuitems {
+    height: 60px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsUp h5 {
+    font-size: 11px;
+  }
+  .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsBottom h5 {
+    font-size: 10px;
   }
 }
 .emptySlider {
