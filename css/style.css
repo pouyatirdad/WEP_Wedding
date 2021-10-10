@@ -915,7 +915,7 @@ h5,
 h6 {
   color: #1c1c1c;
   font-weight: 700;
-  font-family: "Barlow", sans-serif;
+  font-family: "iranyekan";
 }
 
 h1 {
@@ -8466,12 +8466,25 @@ img {
 
 .ReserveDatePickerItemsLeftData.Today > .DPILText {
   cursor: pointer;
-  background-color: red;
+  border: 1px solid #ffc655;
+  border-right: 0;
 }
 
 .ReserveDatePickerItemsLeftData.Today > .DPILDNum {
   cursor: pointer;
-  background-color: red;
+  background-color: #fff;
+  border: 1px solid #ffc655;
+  border-left: 0;
+}
+
+.ReserveDatePickerItemsLeftData.Today > .DPILText h6 {
+  cursor: pointer;
+  color: #ffc655;
+}
+
+.ReserveDatePickerItemsLeftData.Today > .DPILDNum h6 {
+  cursor: pointer;
+  color: #ffc655;
 }
 
 .ReserveDatePickerItemsLeftData.CHODY {
@@ -8487,7 +8500,7 @@ img {
   margin-top: 20px;
   width: 100%;
   height: auto;
-  max-height: 205px;
+  max-height: 10vh;
   border-radius: 9px;
   /* overflow-y: auto; */
   background-color: #f7f7ff;

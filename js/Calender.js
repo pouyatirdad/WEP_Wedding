@@ -48,9 +48,6 @@ $.fn.datepickerFa = function (y = 0, m = 0) {
     var days = ["شنبه", "یکشنبه", "دوشنبه", "سه شنبه", "چهارشنبه", "پنجشنبه", "جمعه"];
 
 
-
-
-
     this.each(function () {
         var randnum = Math.floor((Math.random() * 999999) + 1);
         // var table = '<div class="row d-flex justify-content-between" id="datepicker" style="display:block">' +
@@ -116,13 +113,13 @@ $.fn.datepickerFa = function (y = 0, m = 0) {
                 if ((jFirstDay <= wd || dayCount >= 1) && dayCount < daysInMonth) {
                     dayCount++;
                     $("#dt-table" + randnum).append(
-                        '<div class="ReserveDatePickerItemsLeftData OpenDay"  id="dt-days-num-'
+                        '<div class="ReserveDatePickerItemsLeftData" id="dt-days-num-'
                         +
                         dayCount
                         +
-                        "-wd-"
+                        "-mth-"
                         +
-                        wd
+                        (month + 1)
                         +
                         '">'
                         +
@@ -140,6 +137,18 @@ $.fn.datepickerFa = function (y = 0, m = 0) {
                         +
                         '</div>'
                     );
+                    if (month == today.jMonth()) {
+                        if (day > dayCount) {
+                            $(".ReserveDatePickerItemsLeftData[id^='dt-days-num-" + dayCount + "']").addClass("CLSORSVD");
+                        } else {
+                            $(".ReserveDatePickerItemsLeftData[id^='dt-days-num-" + dayCount + "']").addClass("OpenDay");
+                        }
+                    } else if (month > today.jMonth()) {
+                        $(".ReserveDatePickerItemsLeftData[id^='dt-days-num-" + dayCount + "']").addClass("OpenDay");
+                    }
+                    else {
+                        $(".ReserveDatePickerItemsLeftData[id^='dt-days-num-" + dayCount + "']").addClass("CLSORSVD");
+                    }
                 } else {
                     // $("#dt-days-row-" + j + randnum).append("<td></td>");
                 }
@@ -148,7 +157,7 @@ $.fn.datepickerFa = function (y = 0, m = 0) {
         }
 
         //Rang kardane rozha
-        $("input[id$='wd-6']").addClass("btn-warning");
+        // $("input[id$='wd-6']").addClass("btn-warning");
 
         if (month == today.jMonth() && year == today.jYear())
             $(".ReserveDatePickerItemsLeftData[id^='dt-days-num-" + day + "']").addClass("Today");

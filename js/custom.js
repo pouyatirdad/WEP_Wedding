@@ -909,8 +909,6 @@ var menuDate = $('.ReserveDatePickerMenuDataDate');
 
 
 $(document).on('click', '.ReserveDatePickerItemsLeft', function () {
-	// e.preventDefault();
-
 	if (ReserveTime == 1) {
 
 		$(document).on('click', '.CHODYTPKItem.OPNHORS', function () {
@@ -921,53 +919,25 @@ $(document).on('click', '.ReserveDatePickerItemsLeft', function () {
 		})
 
 	} else if (ReserveTime == 2) {
-		$('.CHODYTPKMenu').remove();
-		$('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
+		// $('.CHODYTPKMenu').remove();
+		// $('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
 		ReserveTime = 0;
 		ReserveNum = 0;
-	} else {
-		if (ReserveNum == 0) {
-
-			$(document).on('click', '.ReserveDatePickerItemsLeftData.OpenDay', function () {
-				if ($('.ReserveDatePickerItemsLeftData').hasClass('CHODY')) {
-					$('.ReserveDatePickerItemsLeftData.CHODY').removeClass('CHODY');
-					$('.CHODYTPKMenu').remove();
-				}
-				$(this).addClass('CHODY');
-				$('.ReserveDatePickerItemsLeft').append(DTPK);
-				menuDate.text($(this).find('.DPILDNum h6').text() + $('.ReserveDatePickerItemsLeftUpper h6').text());
-
-			})
-			ReserveNum = 1;
-			ReserveTime = 1;
-
-		}// else {
-		// 	console.log('yes');
-
-		// 	$('.CHODYTPKMenu').remove();
-		// 	$('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
-		// 	// $(this)
-		// 	ReserveNum = 0;
-		// }
-
 	}
-
-
-	// $('.ReserveDatePickerItemsLeftDatas').click(function () {
-
-	// 	$('.ReserveDatePickerItemsLeftData').removeClass('CHODY');
-
-	// 	$('.CHODYTPKMenu').remove();
-
-	// });
-
-	// $('.CHODYTPKMenu').click(function (event) {
-	// 	event.stopPropagation();
-	// });
-
 });
 
+$(document).on('click', '.ReserveDatePickerItemsLeftData.OpenDay', function () {
+	if ($('.ReserveDatePickerItemsLeftData').hasClass('CHODY')) {
+		$('.ReserveDatePickerItemsLeftData.CHODY').removeClass('CHODY');
+		$('.CHODYTPKMenu').remove();
+	}
+	$(this).addClass('CHODY');
+	$('.ReserveDatePickerItemsLeft').append(DTPK);
+	menuDate.text($(this).find('.DPILDNum h6').text() + $('.ReserveDatePickerItemsLeftUpper h6').text());
 
+	ReserveNum = 1;
+	ReserveTime = 1;
+})
 
 $('.CloseBtnForMoneyAskInDatePicker').click(function () {
 

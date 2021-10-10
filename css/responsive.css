@@ -1015,6 +1015,9 @@
   .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsBottom h5 {
     font-size: 11px;
   }
+  /* .CHODYTPKMenu {
+    max-height: 10vh;
+  } */
 }
 @media only screen and (max-width: 767px) {
   .post-overaly-style.post-lg {
@@ -1483,6 +1486,7 @@
   }
   .SendMessageToIndexInDatePicker {
     border-radius: 3px;
+    max-height: 98%;
   }
   .ReserveDatePickerItems .ReserveMenuitems {
     border-radius: 3px;
