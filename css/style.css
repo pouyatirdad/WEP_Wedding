@@ -8240,7 +8240,7 @@ img {
   margin: auto;
   width: 60%;
   color: #4751b7;
-  border-bottom: 1px solid #606ad880;
+  border-bottom: 1px solid #1c247c36;
   padding-bottom: 12px;
   padding-top: 4px;
   margin-bottom: 20px;
@@ -8331,7 +8331,7 @@ img {
   margin: 0;
   border-radius: 0 0 9px 9px;
   height: 30%;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsBottom h5 {
@@ -8474,7 +8474,7 @@ img {
   cursor: pointer;
   background-color: #fff;
   border: 1px solid #ffc655;
-  border-left: 0;
+  /* border-left: 0; */
 }
 
 .ReserveDatePickerItemsLeftData.Today > .DPILText h6 {
@@ -8610,11 +8610,16 @@ img {
 }
 
 .CHODY .DPILDNum {
+  border: 0 !important;
   background-color: #fff;
 }
+.CHODY .DPILDNum h6 {
+  color: #4751b7 !important;
+}
 .CHODY .DPILText {
+  border: 0 !important;
   background-color: #4751b7;
 }
 .CHODY .DPILText h6 {
-  color: #fff;
+  color: #fff !important;
 }
