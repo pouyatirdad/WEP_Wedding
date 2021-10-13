@@ -916,6 +916,8 @@ $(document).on('click', '.ReserveDatePickerItemsLeft', function () {
 			$(this).addClass('CHOSHORS');
 			menuTime.text($(this).find('p').text());
 			ReserveTime = 2;
+			$('.ReserveDatePickerItemsRightReserveBtn').removeClass('deActiveBtn');
+			$('.ReserveDatePickerItemsRightReserveBtn').addClass('ActiveBtn');
 		})
 
 	} else if (ReserveTime == 2) {
@@ -931,15 +933,39 @@ $(document).on('click', '.ReserveDatePickerItemsLeftData.OpenDay', function () {
 		$('.ReserveDatePickerItemsLeftData.CHODY').removeClass('CHODY');
 		$('.CHODYTPKMenu').remove();
 	}
+
+	$('.ReserveDatePickerItemsRightReserveBtn').removeClass('ActiveBtn');
+
+	$('.ReserveDatePickerItemsRightReserveBtn').addClass('deActiveBtn');
+
 	$(this).addClass('CHODY');
 	$('.ReserveDatePickerItemsLeft').append(DTPK);
 	menuDate.text($(this).find('.DPILDNum h6').text() + $('.ReserveDatePickerItemsLeftUpper h6').text());
+
+
+	var mobileMediaQuery = window.matchMedia("(max-width: 500px)");
+	if (mobileMediaQuery.matches) {
+
+		$('.ReserveDatePickerItemsLeft').animate({
+			scrollTop: $(".CHODYTPKMenu").offset().top
+		}, 50);
+
+	}
 
 	ReserveNum = 1;
 	ReserveTime = 1;
 })
 
 $('.CloseBtnForMoneyAskInDatePicker').click(function () {
+
+
+	$('.ReserveDatePickerItemsRightReserveBtn').removeClass('ActiveBtn');
+
+	$('.ReserveDatePickerItemsRightReserveBtn').addClass('deActiveBtn');
+
+	$('.ReserveDatePickerItemsLeftData.CHODY').removeClass('CHODY');
+
+	$('.CHODYTPKMenu').remove();
 
 	$('.ReserveDatePicker').hide("fade", { direction: "top" }, 400);
 
@@ -948,17 +974,50 @@ $('.CloseBtnForMoneyAskInDatePicker').click(function () {
 
 $('.ReserveDatePickerItemsRightReserveBtn').on('click', () => {
 
-	$('.ReverseMenuForSingle').hide("fade", { direction: "top" }, 400);
+	if ($('.ReserveDatePickerItemsRightReserveBtn').hasClass('ActiveBtn')) {
 
-	$('.ReserveDatePicker').hide("fade", { direction: "top" }, 400);
+		$('.ReserveDatePickerItemsRightReserveBtn').removeClass('ActiveBtn');
+
+		$('.ReserveDatePickerItemsRightReserveBtn').addClass('deActiveBtn');
+
+		$('.ReserveDatePickerItemsLeftData.CHODY').removeClass('CHODY');
+
+		$('.CHODYTPKMenu').remove();
+
+		$('.ReverseMenuForSingle').hide("fade", { direction: "top" }, 400);
+
+		$('.ReserveDatePicker').hide("fade", { direction: "top" }, 400);
+
+	}
 
 })
 
 
 $('.overllayReserveDatePicker').click(function () {
 
+
+	$('.ReserveDatePickerItemsRightReserveBtn').removeClass('ActiveBtn');
+
+	$('.ReserveDatePickerItemsRightReserveBtn').addClass('deActiveBtn');
+
+	$('.ReserveDatePickerItemsLeftData.CHODY').removeClass('CHODY');
+
+	$('.CHODYTPKMenu').remove();
+
 	$('.ReserveDatePicker').hide("fade", { direction: "top" }, 400);
 
 	$('.ReverseMenuForSingle').hide("fade", { direction: "top" }, 400);
 
 });
+
+$('.ReplyCm').on('click', () => {
+	$('.sendCm h5').text('پاسخ شما');
+	$('.sendCm textarea').attr('placeholder', 'متن پاسخ');
+	$('.sendCm button').text('ارسال پاسخ');
+})
+
+$('.sendCm button').on('click', () => {
+	$('.sendCm h5').text('نظر شما');
+	$('.sendCm textarea').attr('placeholder', 'متن نظر');
+	$('.sendCm button').text('ارسال نظر');
+})

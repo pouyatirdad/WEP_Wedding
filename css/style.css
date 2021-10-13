@@ -4930,7 +4930,7 @@ ul.navbar-nav > li.mega-dropdown {
   font-family: "iranyekan", "BYekanPlus";
   display: -webkit-box;
   -webkit-line-clamp: 5;
-  height: 98px;
+  height: 94px;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -7366,7 +7366,7 @@ img {
 .BlogMedias .BottomBlog div:last-child i {
   position: absolute;
   left: 2px;
-  top: 15px;
+  top: 13px;
 }
 
 .SearchAreaInPc {
@@ -8366,16 +8366,14 @@ img {
 }
 
 .ReserveDatePickerItemsRight .ReserveDatePickerMenuData h4:nth-child(1),
-.ReserveDatePickerItemsRight .ReserveDatePickerMenuData h4:nth-child(2),
-.ReserveDatePickerItemsRight .ReserveDatePickerMenuData h4:nth-child(3) {
+.ReserveDatePickerItemsRight .ReserveDatePickerMenuData h4:nth-child(2) {
   padding-bottom: 8px;
 }
 
 .ReserveDatePickerItemsRight .ReserveDatePickerMenuData h4:nth-child(1)::before,
-.ReserveDatePickerItemsRight .ReserveDatePickerMenuData h4:nth-child(2)::before,
 .ReserveDatePickerItemsRight
   .ReserveDatePickerMenuData
-  h4:nth-child(3)::before {
+  h4:nth-child(2)::before {
   content: "";
   position: absolute;
   margin-left: auto;
@@ -8399,7 +8397,7 @@ img {
   font-family: "iranyekan";
   font-size: 15px;
   font-weight: 600;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .ReserveDatePickerItemsLeft .ReserveDatePickerItemsLeftUpper {
@@ -8622,4 +8620,18 @@ img {
 }
 .CHODY .DPILText h6 {
   color: #fff !important;
+}
+.flexinMobileBigger {
+  display: flex;
+}
+
+.ActiveBtn {
+  background-color: #414998;
+  cursor: pointer;
+}
+.deActiveBtn {
+  background-color: #a6a6a6;
+}
+.deActiveBtn:hover {
+  background-color: #a6a6a6;
 }

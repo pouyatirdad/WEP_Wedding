@@ -1599,10 +1599,12 @@
   .map .map-route div:first-child i {
     position: relative;
     bottom: 4px;
+    padding-bottom: 0;
   }
 
   .map .map-route div i {
     font-size: 12px;
+    padding-bottom: 6px;
   }
   .map .map-route div h5 {
     font-size: 11px;
@@ -1621,7 +1623,7 @@
   .post-other-images img {
     width: 100%;
     height: 160px;
-    margin: 8px 0;
+    margin: 14px 0;
     border-radius: 4px;
   }
   .post-faqs h3 {
@@ -1696,10 +1698,11 @@
   }
 
   .ContactChildData {
-    width: 47%;
-    right: 52%;
+    width: 46%;
+    right: 54%;
     bottom: -31px;
   }
+
   .CCDs {
     min-height: 40px;
     font-size: 17px;
@@ -1707,7 +1710,7 @@
   }
   .CLoseMeCCD {
     top: 17%;
-    left: 48%;
+    left: 47%;
     font-size: 20px !important;
   }
   .BlogItemUp img {
@@ -2114,6 +2117,10 @@
   .ReserveDatePickerItems .ReserveMenuitems .ReserveMenuitemsBottom h5 {
     font-size: 14px;
   }
+
+  .flexinMobileBigger {
+    display: block;
+  }
 }
 .emptySlider {
   width: 100%;
@@ -2133,9 +2140,16 @@
   .map .map-route div h5 {
     font-size: 9px;
   }
+
+  .map .map-route div:first-child i {
+    position: relative;
+    bottom: 4px;
+    padding-bottom: 0;
+  }
   .map .map-route div i {
     font-size: 12px;
     padding: 0 2px;
+    padding-bottom: 6px;
   }
   .post-header-area ul li div:last-child {
     width: 37px;
@@ -2420,6 +2434,9 @@
   }
   .ReserveMenu .ReserveMenuitems .ReserveMenuitemsBottom h5 {
     font-size: 8px;
+  }
+  .post-other-images img {
+    height: 115px;
   }
 }
 
