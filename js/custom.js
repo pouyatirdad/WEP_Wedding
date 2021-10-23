@@ -762,6 +762,7 @@ $(document).ready(function () {
 		var item = this.getElementsByClassName("SubTextBlog2")[0];
 
 		$(item).css("bottom", "-14px");
+		$(item).css("opacity", "1");
 		$(item).css("z-index", "3");
 
 	});
@@ -772,6 +773,7 @@ $(document).ready(function () {
 		var item = this.getElementsByClassName("SubTextBlog2")[0];
 
 		$(item).css("bottom", "-64px");
+		$(item).css("opacity", "0");
 		$(item).css("z-index", "-2");
 
 	});
@@ -1021,3 +1023,4 @@ $('.sendCm button').on('click', () => {
 	$('.sendCm textarea').attr('placeholder', 'متن نظر');
 	$('.sendCm button').text('ارسال نظر');
 })
+
